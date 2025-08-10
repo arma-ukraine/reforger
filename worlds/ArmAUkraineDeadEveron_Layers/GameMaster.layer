@@ -26,6 +26,11 @@ SCR_AIWorld : "{70CCCF16487C927F}Prefabs/AI/SCR_AIWorld_Eden.et" {
 }
 SCR_GameModeEditor GameMode_Editor_Full1 : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" {
  components {
+  DeletePrefabOnStart "{6614AEA1EF09E1B6}" {
+   m_PrefabsToDelete {
+    "{B9003EF716A534D4}Prefabs/Structures/Infrastructure/Lamps/LampStreet_E_02/LampStreet_E_02_single.et"
+   }
+  }
   SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
    m_bKillIndefinitelyUnconsciousPlayers 1
   }
