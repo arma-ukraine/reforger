@@ -1,0 +1,74 @@
+$grp ARMST_TRIGGER_GROUPSPAWN : "{2ED7F83D6D572F31}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_GROUPS.et" {
+ {
+  coords 7062.232 109.548 4838.292
+  m_GroupPrefab1 "{98A57A34F787D1C1}PrefabLibrary/Groups/Group_Zombies_CIV_4.et"
+  m_GroupPrefab2 ""
+  m_GroupPrefab3 ""
+ }
+ {
+  coords 7139.893 119.426 4767.65
+  m_GroupPrefab1 "{98A57A34F787D1C1}PrefabLibrary/Groups/Group_Zombies_CIV_4.et"
+  m_GroupPrefab2 ""
+  m_GroupPrefab3 ""
+ }
+}
+GenericEntity MortarRearmingKit_FIA_661B175A929559DF : "{6D23A74151533374}Prefabs/Items/Equipment/Kits/MortarRearmingKit/MortarRearmingKit_FIA.et" {
+ coords 7059.962 109.272 4847.939
+}
+$grp ARMST_TRIGGER_SPAWN : "{762B4CCA245C6ECD}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_ANOMAL.et" {
+ {
+  coords 7137.218 118.644 4759.851
+  SphereRadius 30
+  DrawShape 0
+  m_ObjectPrefab "{764A0D38D69BA7F3}Prefabs/Anomals/Jarka/ARMST_JARKA.et"
+  m_ObjectPrefab2 ""
+  m_ObjectPrefab3 ""
+  m_CenterBias 0.3
+  m_MinDistanceToPlayer 5
+ }
+ {
+  coords 6949.164 103.237 5197.837
+  DrawShape 0
+  m_ObjectPrefab "{B1FA3C87A571F3F3}Prefabs/Atmosphere/Anomalies/NewAnoms/FruitPunch.et"
+  m_ObjectPrefab2 ""
+  m_ObjectPrefab3 ""
+  m_SpawnCount 20
+  m_CenterBias 0.1
+ }
+}
+GenericEntity armst_Ithaca_37_661B175614B61F47 : "{9655CB851205DF47}Prefabs/Weapons/Rifles/armst_Ithaca_37.et" {
+ coords 7063.66 113.416 4839.522
+ angleX 69.089
+ angleY -1.697
+ angleZ 85.298
+}
+SCR_IndestructibleEnvironmentalEntity : "{9E2BBF29099E2C3F}Prefabs/Atmosphere/Anomalies/NewAnoms/LargeShards.et" {
+ coords 7064.39 110.102 4853.078
+}
+GenericEntity medicine_661B332BBE5B708D : "{A57F0BCA83824DF4}PrefabLibrary/Resources/medicine.et" {
+ coords 7136.345 122.622 4766.714
+ angleY 175.391
+}
+$grp SCR_IndestructibleEnvironmentalEntity : "{D442D38B65994B9B}Prefabs/Atmosphere/Anomalies/NewAnoms/Burner.et" {
+ {
+  coords 7053.88 108.089 4841.09
+ }
+ {
+  coords 7052.813 107.597 4846.561
+ }
+ {
+  coords 7063.357 118.054 4840.438
+ }
+}
+GenericEntity ammo_661B3328207D330B : "{E1900AC846375A46}PrefabLibrary/Resources/ammo.et" {
+ coords 7064.231 113.236 4839.473
+ angleX -4.856
+ angleY -25.958
+ angleZ -6.093
+}
+SCR_IndestructibleEnvironmentalEntity : "{F76D13758611BC03}Prefabs/Orgaos/Banheira02/Banheira02.et" {
+ coords 7067.45 2.073 4848.424
+ angleX 12.853
+ angleY -1.108
+ angleZ 167.2
+}

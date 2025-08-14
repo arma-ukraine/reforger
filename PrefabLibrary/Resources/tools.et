@@ -1,0 +1,8 @@
+GenericEntity : "{6D23A74151533375}Prefabs/Items/Equipment/Resources/building_materials.et" {
+ editorData {
+  RandomizationEditorData {
+   randomYaw 1
+   alignToNormal 1
+  }
+ }
+}

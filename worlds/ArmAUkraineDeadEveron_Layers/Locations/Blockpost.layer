@@ -1,0 +1,18 @@
+$grp ARMST_TRIGGER_GROUPSPAWN : "{2ED7F83D6D572F31}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_GROUPS.et" {
+ {
+  coords 6822.489 72.206 4829.882
+  SphereRadius 300
+  m_GroupPrefab1 "{8DE0C0830FE0C33D}Prefabs/Groups/OPFOR/Group_USSR_Base.et"
+  m_GroupPrefab2 ""
+  m_GroupPrefab3 ""
+  m_SpawnChance 100
+ }
+ {
+  coords 6831.65 72.485 4835.725
+  SphereRadius 100
+  m_GroupPrefab1 "{8DE0C0830FE0C33D}Prefabs/Groups/OPFOR/Group_USSR_Base.et"
+  m_GroupPrefab2 ""
+  m_GroupPrefab3 ""
+  m_SpawnChance 100
+ }
+}

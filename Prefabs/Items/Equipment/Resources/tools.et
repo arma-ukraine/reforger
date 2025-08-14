@@ -1,0 +1,8 @@
+GenericEntity : "{6D23A74151533374}Prefabs/Items/Equipment/Kits/MortarRearmingKit/MortarRearmingKit_FIA.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  SCR_ArsenalComponent "{61A2A755D00BCAB6}" {
+   Enabled 0
+  }
+ }
+}

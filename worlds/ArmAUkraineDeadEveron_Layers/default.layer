@@ -5451,11 +5451,6 @@ $grp GenericEntity : "{007FC5A2B665E5CC}Assets/Bodies/human/Military/Soldier_Sit
   angleZ 5.56
  }
  {
-  coords 7215.066 118.88 5013.951
-  angleY 92.3
-  angleZ -0.079
- }
- {
   coords 6329.715 86.59 5629.067
   angleX 2.147
   angleY -149.069
@@ -5542,7 +5537,7 @@ SCR_DestructibleBuildingEntity : "{00B6CAF6E4A5BAB4}Prefabs/Structures/Infrastru
  angleZ -1.5
  scale 0.7
 }
-SCR_DestructibleBuildingEntity : "{00FD2B4A0BDEC271}Prefabs/Structures/Commercial/FuelStations/FuelStation_E_01/HouseAddons/FuelStation_E_01_building.et" {
+SCR_DestructibleBuildingEntity : "{00FD2B4A0BDEC271}Prefabs/Structures/Commercial/FuelStations/FuelStation_E_01/FuelStation_E_01_building.et" {
  coords 5538.958 0.164 5637.194
 }
 $grp GenericEntity : "{013297BA01640EB9}Prefabs/Props/Garbage/Military/Ammo/GarbageAmmunition_USSR_02.et" {
@@ -10536,9 +10531,9 @@ $grp GenericEntity : "{111673E62CB11177}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GameEntity Bayonet_VZ58_v3_660B2D6134FE77E7 : "{1125E1072C3541D3}Prefabs/Weapons/Attachments/Bayonets/Bayonet_VZ58/Bayonet_VZ58_v3.et" {
- coords 7684.227 342.225 3095.953
- angleX -77.2
- angleY 164.7
+ coords 7684.227 340.891 3095.953
+ angleY 4.755
+ angleZ 90
 }
 $grp Tree : "{1244D02EB99D4756}Prefabs/Vegetation/Tree/t_carpinus_betulus/t_carpinus_betulus_branch_01.et" {
  {
@@ -28409,7 +28404,7 @@ $grp GenericEntity : "{41A9C55B61F375F0}Prefabs/Items/Equipment/Backpacks/Backpa
   angleZ 0.952
  }
  Backpack_Kolobok_660B2D6134F9CBB9 {
-  coords 7233.402 119.24 4989.43
+  coords 7228.316 124.271 5007.147
   angleY -56.6
  }
 }
@@ -34122,14 +34117,8 @@ $grp GenericEntity : "{5BD7E085DFB4DB35}Prefabs/Compositions/Misc/SubComposition
 Tree : "{5C594649DBDD5EAE}Prefabs/Vegetation/Tree/t_betula_pendula/t_betula_pendula_2s.et" {
  coords 7201.573 0.002 2431.365
 }
-$grp GenericEntity : "{5C5C6EE05EE2FF1A}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled.et" {
- Backpack_ALICE_Medium_assembled_5DA11622B09A4D42 {
-  coords 4886.015 28.594 11929.688
- }
- Backpack_ALICE_Medium_assembled_660B2D6134C78621 {
-  coords 7227.15 123.195 5001.762
-  angleY -30.5
- }
+GenericEntity Backpack_ALICE_Medium_assembled_5DA11622B09A4D42 : "{5C5C6EE05EE2FF1A}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled.et" {
+ coords 4886.015 28.594 11929.688
 }
 $grp StaticModelEntity : "{5C9F32A26A42876F}Prefabs/Structures/Infrastructure/Towers/AntennaVOR_01/AntennaVOR_01.et" {
  {
@@ -37430,8 +37419,8 @@ $grp GenericEntity : "{645A92146ECBA8F1}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GenericEntity Grenade_RGD5_660B2D6134C6F187 : "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" {
- coords 4822.979 83.296 4429.115
- angleX 3.206
+ coords 4823.266 83.28 4428.796
+ angleX 3.216
  angleY 43.647
 }
 GenericEntity : "{6475CD495DE1C931}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V3.et" {
@@ -46151,10 +46140,6 @@ $grp GenericEntity : "{7AC107CA7AFC9B59}Prefabs/Items/Equipment/Backpacks/Backpa
  Backpack_Medical_Soviet_5DA11622B0925ECF {
   coords 10157.781 3.125 1533.242
   angleY 103.2
- }
- Backpack_Medical_Soviet_660B2D6134C4F685 {
-  coords 7227.121 127.984 5001.447
-  angleY 74
  }
 }
 GenericEntity : "{7AC52EA221868331}Prefabs/Props/Furniture/BenchChurch_02/BenchChurch_02_short_simple.et" {
@@ -60634,7 +60619,7 @@ $grp LightEntity : "{8CAD466D49510CDF}Prefabs/Structures/Infrastructure/Lamps/La
   LV 15.09
  }
 }
-$grp GenericEntity : "{8D01E253FD83E46F}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_white.et" {
+$grp SCR_DestructibleEntity : "{8D01E253FD83E46F}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_white.et" {
  {
   coords 9721.347 10.887 1517.977
   angleX 3.103
@@ -64764,22 +64749,26 @@ SCR_DestructibleBuildingEntity : "{988FF0CF4EDF72D6}Prefabs/Structures/Cultural/
 }
 $grp GameEntity : "{98C79F5FAE12F9B6}Prefabs/Weapons/Attachments/Bayonets/Bayonet_6Kh4.et" {
  Bayonet_6Kh4_660B2D6134C2145B {
-  coords 4891.394 129.371 8094.812
+  coords 4891.683 129.054 8094.523
+  angleY 4.996
+  angleZ 90
  }
  Bayonet_6Kh4_660B2D6134C21792 {
-  coords 4819.679 28.034 11499.158
-  angleX -71.1
-  angleY -32.4
+  coords 4819.679 27.921 11499.158
+  angleX -0.736
+  angleY 4.996
+  angleZ 90
  }
  Bayonet_6Kh4_660B2D6134C21753 {
-  coords 10260.962 212.745 3197.921
-  angleY -119.408
+  coords 10261.106 212.431 3197.776
+  angleY 5.185
+  angleZ 90
  }
  Bayonet_6Kh4_660B2D6134C2170D {
-  coords 8682.931 195.415 1442.522
-  angleX -16.1
-  angleY 3.5
-  angleZ -5.7
+  coords 8682.931 194.542 1442.518
+  angleX 1.862
+  angleY 5.19
+  angleZ 90
  }
 }
 SCR_DestructibleBuildingEntity : "{994F6F8925DA98DD}Prefabs/Structures/Infrastructure/Naval/Cranes/HarborCrane_01_turret.et" {
@@ -70733,10 +70722,6 @@ $grp GenericEntity : "{B17411929589C43C}Prefabs/MP/Campaign/Assets/CampaignHQRad
  {
   coords 10732.703 5.637 4088.523
   angleY -133.4
- }
- {
-  coords 7226.316 127.992 5001.355
-  angleY -7.4
  }
  {
   coords 6320.569 88.366 5681.265
@@ -83937,7 +83922,7 @@ $grp SCR_DestructibleBuildingEntity : "{CF86E4F10D9173E9}Prefabs/Structures/Infr
   coords 5144.833 31.469 10254.749
  }
 }
-$grp SCR_DestructibleBuildingEntity : "{CFE8511B2B7E8AAA}Prefabs/Structures/Commercial/Shops/ShopModern_E_01/ShopModern_E_01.et" {
+$grp SCR_DestructibleBuildingEntity : "{CFE8511B2B7E8AAA}Prefabs/Structures/Commercial/Shops/ShopModern_E_01.et" {
  {
   components {
    BaseSlotComponent "{1873A7825AB9C45E}" {
@@ -84067,7 +84052,7 @@ $grp SCR_DestructibleBuildingEntity : "{D0947E26A8A39ECF}Prefabs/Structures/Fore
 GenericEntity : "{D0B44EB8DBEDDA97}Prefabs/Props/Civilian/Bucket_02.et" {
  coords 4440.796 31.821 10731.842
 }
-$grp GenericEntity : "{D0E01CBC080D4F84}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_red.et" {
+$grp SCR_DestructibleEntity : "{D0E01CBC080D4F84}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_red.et" {
  {
   coords 5550.902 106.741 5621.866
   angleX -0.013
@@ -95903,12 +95888,6 @@ $grp GenericEntity : "{E9CDA137E0F1DCAA}Prefabs/Compositions/Misc/SubComposition
   angleX -1.76
   angleY -10.41
   angleZ 0.323
- }
- {
-  coords 7205.315 119.071 5004.446
-  angleX -4.222
-  angleY 138.501
-  angleZ -3.417
  }
 }
 $grp SCR_DestructibleBuildingEntity : "{E9F0814557EC3DA9}Prefabs/Structures/Commercial/FuelStations/FuelStation_E_01/HouseAddons/FuelStation_E_01_roof.et" {

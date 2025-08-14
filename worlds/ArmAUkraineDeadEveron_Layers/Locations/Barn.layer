@@ -1,0 +1,20 @@
+$grp ARMST_TRIGGER_GROUPSPAWN : "{2ED7F83D6D572F31}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_GROUPS.et" {
+ {
+  coords 7354.941 122.32 5191.96
+  m_GroupPrefab1 "{98A57A34F787D1C1}PrefabLibrary/Groups/Group_Zombies_CIV_4.et"
+  m_GroupPrefab2 ""
+  m_GroupPrefab3 ""
+  m_SpawnChance 100
+ }
+ {
+  coords 7371.544 122.489 5181.842
+  m_GroupPrefab1 "{98A57A34F787D1C1}PrefabLibrary/Groups/Group_Zombies_CIV_4.et"
+  m_GroupPrefab2 ""
+  m_GroupPrefab3 ""
+  m_SpawnChance 100
+ }
+}
+GenericEntity medicine_661CD3A8EBBB3D1D : "{A57F0BCA83824DF4}PrefabLibrary/Resources/medicine.et" {
+ coords 7374.639 123.49 5181.98
+ angleY 128.566
+}
