@@ -52,7 +52,7 @@ SCR_GameModeEditor SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Edit
    ID "56E685E92F1B7E7A"
    Factions {
     SCR_Faction "{56DEAC40D2DBC8B1}" {
-     m_bIsPlayable 1
+     m_bShowInWelcomeScreenIfNonPlayable 0
     }
     SCR_Faction "{56DEAC40D3C2E623}" {
      m_bShowInWelcomeScreenIfNonPlayable 0
@@ -61,8 +61,6 @@ SCR_GameModeEditor SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Edit
      m_bShowInWelcomeScreenIfNonPlayable 0
     }
     SCR_Faction "{607AA5C7A94496DA}" {
-     m_bIsPlayable 1
-     m_bShowInWelcomeScreenIfNonPlayable 1
      m_bIsMilitary 1
      m_aFriendlyFactionsIds {
       "US"

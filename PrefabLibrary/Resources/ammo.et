@@ -1,8 +1,0 @@
-GenericEntity : "{36696C3AC01ACE97}Prefabs/Items/Equipment/Resources/ammo.et" {
- editorData {
-  RandomizationEditorData {
-   randomYaw 1
-   alignToNormal 1
-  }
- }
-}

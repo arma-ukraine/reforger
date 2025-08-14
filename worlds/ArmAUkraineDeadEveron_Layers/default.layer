@@ -24941,20 +24941,6 @@ $grp GenericEntity : "{32654927F2657E8A}Prefabs/Props/Forest/WoodPile/WoodLog_01
   angleY -20.7
   angleZ -1
  }
- {
-  coords 7234.298 118.632 4999.685
-  angleX 90
- }
- {
-  coords 7232.825 118.531 5001.73
-  angleX 90
-  angleY -75.6
- }
- {
-  coords 7234.74 118.546 4999.017
-  angleX 90
-  angleY 19.4
- }
 }
 $grp GenericEntity : "{326E60F7A7358EDA}Prefabs/Props/Crates/CrateWooden_01_blue.et" {
  {
@@ -26125,11 +26111,6 @@ $grp GenericEntity : "{3533DB963FA9C81F}Prefabs/Props/Industrial/CargoContainers
 }
 GenericEntity : "{35471BCFBAA62925}Prefabs/Compositions/Misc/SubCompositions/PalletMREStack_US_01.et" {
  coords 4883.362 31.733 11934.78
-}
-SCR_DestructibleEntity : "{35809B38A793EFE6}Prefabs/Structures/Walls/Wooden/WoodenWall_01/WoodenWall_01_weathered_4m_D.et" {
- coords 7198.537 2.185 5014.351
- angleY -29.2
- scale 1.75
 }
 $grp SCR_DestructibleBuildingEntity : "{35A406D39D6E0ADA}Prefabs/Structures/Military/Houses/Barracks_01/Barracks_01_military_camo_v1.et" {
  {
@@ -28392,21 +28373,9 @@ GenericEntity : "{41A0ECE98B6961D6}Prefabs/Structures/BuildingParts/Signs/SignRo
  angleY -175.3
  scale 0.5
 }
-$grp GenericEntity : "{41A9C55B61F375F0}Prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et" {
- Backpack_Kolobok_5DA11622B084D95B {
-  coords 4886.645 28.594 11929.065
-  angleY -141.5
- }
- Backpack_Kolobok_660B2D6134F9CB83 {
-  coords 7215.878 119.394 4996.602
-  angleX 1.246
-  angleY 0.021
-  angleZ 0.952
- }
- Backpack_Kolobok_660B2D6134F9CBB9 {
-  coords 7228.316 124.271 5007.147
-  angleY -56.6
- }
+GenericEntity Backpack_Kolobok_5DA11622B084D95B : "{41A9C55B61F375F0}Prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et" {
+ coords 4886.645 28.594 11929.065
+ angleY -141.5
 }
 SCR_JunctionPowerPole : "{423EDC5895441FD2}Prefabs/Structures/Infrastructure/Power/Powerlines/PowerLine_EHV_01/PowerLine_EHV_01_junction.et" {
  coords 5771.448 -2.328 7190.306
@@ -36399,17 +36368,6 @@ $grp GenericEntity : "{5E317DC74EA1F1A4}Prefabs/Props/Forest/WoodPile/WoodLog_01
   angleY -20.7
   angleZ -1
  }
- {
-  coords 7234.482 118.944 4999.063
-  angleX 90
-  angleY -159.3
- }
- {
-  coords 7232.837 118.7 5001.911
-  angleX 90
-  angleY -247.8
-  scale 1.1
- }
 }
 GenericEntity : "{5E37C6EAF3E6A034}Prefabs/Props/Agriculture/Beehive_01/Beehive_01_base.et" {
  coords 7192.352 120.156 5002.28
@@ -37419,9 +37377,10 @@ $grp GenericEntity : "{645A92146ECBA8F1}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GenericEntity Grenade_RGD5_660B2D6134C6F187 : "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" {
- coords 4823.266 83.28 4428.796
- angleX 3.216
+ coords 4823.482 83.268 4428.556
+ angleX 3.196
  angleY 43.647
+ angleZ 1.811
 }
 GenericEntity : "{6475CD495DE1C931}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V3.et" {
  coords 10724.008 0.774 4084.938
@@ -40622,6 +40581,13 @@ $grp StaticModelEntity : "{6DEC3A82BA35F108}Prefabs/Compositions/Misc/SubComposi
  {
   coords 7216.148 118.695 5014.156
   angleY -87.8
+  {
+   StaticModelEntity {
+    ID "5706DE626E3DCAAC"
+    coords 0.44 0.17 -0.506
+    angleY -1.632
+   }
+  }
  }
 }
 $grp Tree : "{6DF33B3CBC51D6D9}Prefabs/Vegetation/Tree/t_picea_abies/t_picea_abies_3f.et" {
@@ -58518,14 +58484,6 @@ $grp GenericEntity : "{86909381FEDC8B93}Prefabs/Vegetation/Tree/Debris/T_trunk_d
 }
 $grp GenericEntity : "{869914063728EFF8}Prefabs/Props/Forest/WoodPile/WoodLog_01_D.et" {
  {
-  coords 7233.258 118.43 5001.303
-  angleX 90
- }
- {
-  coords 7234.847 118.557 4998.771
-  angleX 90
- }
- {
   coords 7239.944 119.467 4991.943
   angleX 90
  }
@@ -58591,14 +58549,6 @@ $grp GenericEntity : "{869914063728EFF8}Prefabs/Props/Forest/WoodPile/WoodLog_01
  }
  {
   coords 7231.356 119.048 5006.609
-  angleX 90
- }
- {
-  coords 7230.267 118.969 5000.928
-  angleX 90
- }
- {
-  coords 7232.833 119.008 4997.299
   angleX 90
  }
  {
@@ -64755,7 +64705,7 @@ $grp GameEntity : "{98C79F5FAE12F9B6}Prefabs/Weapons/Attachments/Bayonets/Bayone
  }
  Bayonet_6Kh4_660B2D6134C21792 {
   coords 4819.679 27.921 11499.158
-  angleX -0.736
+  angleX -0.737
   angleY 4.996
   angleZ 90
  }
@@ -64765,7 +64715,7 @@ $grp GameEntity : "{98C79F5FAE12F9B6}Prefabs/Weapons/Attachments/Bayonets/Bayone
   angleZ 90
  }
  Bayonet_6Kh4_660B2D6134C2170D {
-  coords 8682.931 194.542 1442.518
+  coords 8682.931 194.542 1442.515
   angleX 1.862
   angleY 5.19
   angleZ 90
@@ -74530,17 +74480,6 @@ $grp GenericEntity : "{BBA4B6B98BB002A4}Prefabs/Vegetation/Tree/Debris/T_trunk_d
   angleZ 9.383
  }
 }
-$grp GenericEntity : "{BBAD313E424466CF}Prefabs/Props/Forest/WoodPile/WoodLog_01_C.et" {
- {
-  coords 7233.086 118.801 5001.513
-  angleX 90
- }
- {
-  coords 7234.453 118.927 4999.286
-  angleX 90
-  angleY 141
- }
-}
 $grp GenericEntity : "{BC16FA49B7483E63}Prefabs/Props/Military/MilitaryCrates/CrateStack_01/CrateStack_01_decals_01.et" {
  {
   coords 4995.461 2.187 3850.511
@@ -75898,11 +75837,6 @@ $grp GenericEntity : "{C1F38F057250EE4E}Prefabs/Structures/Agriculture/Barn/Barn
   scale 1.2
  }
  {
-  coords 7232.722 119.094 4985.416
-  angleY -179.4
-  scale 1.2
- }
- {
   coords 7236.369 118.933 4986.783
   angleY -221.3
   scale 1.2
@@ -75920,16 +75854,6 @@ $grp GenericEntity : "{C1F38F057250EE4E}Prefabs/Structures/Agriculture/Barn/Barn
  {
   coords 7237.641 118.308 4997.604
   angleY -303.2
-  scale 1.2
- }
- {
-  coords 7234.752 118.27 4998.224
-  angleY -391.3
-  scale 1.2
- }
- {
-  coords 7232.098 118.232 5001.975
-  angleY -572.4
   scale 1.2
  }
  {
@@ -75969,11 +75893,6 @@ $grp GenericEntity : "{C1F38F057250EE4E}Prefabs/Structures/Agriculture/Barn/Barn
  }
  {
   coords 7210.903 118.541 5019.057
-  angleY -730.7
-  scale 1.2
- }
- {
-  coords 7206.766 118.654 5018.286
   angleY -730.7
   scale 1.2
  }
@@ -83267,10 +83186,6 @@ $grp Tree : "{CD20C2FBFB2D5BB6}Prefabs/Vegetation/Tree/t_pinus_sylvestris/t_pinu
   angleY -380.7
  }
 }
-SCR_DestructibleEntity : "{CD35654A00776225}Prefabs/Structures/Walls/Net/GameProofFence_01/GameProofFence_01_Stairs.et" {
- coords 7233.383 0 5000.911
- angleY 59.2
-}
 $grp GenericEntity : "{CD67070EFAFC28C7}Prefabs/Props/Military/Sandbags/Sandbag_01_wall_burlap.et" {
  {
   coords 7173.657 140.155 2472.99
@@ -86474,15 +86389,6 @@ $grp GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
   coords 10654.867 186.966 2474.51
   angleY 79.2
   scale 0.48
- }
- {
-  coords 7233.747 118.469 5001.945
- }
- {
-  coords 7235.308 118.483 4999.553
-  angleX -0.062
-  angleY -88.002
-  angleZ 1.789
  }
  {
   coords 7213.563 118.532 4992.052
@@ -90488,12 +90394,6 @@ $grp GenericEntity : "{E641FDA9C7D9AA72}Prefabs/Props/Construction/WoodHolder_01
   angleX 3.555
   angleY -0.278
   angleZ -4.476
- }
- {
-  coords 7205.641 118.842 5019.004
-  angleX -2.819
-  angleY 13.767
-  angleZ 0.23
  }
 }
 $grp GenericEntity : "{E64A1F4EC46ADBF4}Prefabs/Props/Construction/BrickPile/BrickPileOld_01_Small.et" {

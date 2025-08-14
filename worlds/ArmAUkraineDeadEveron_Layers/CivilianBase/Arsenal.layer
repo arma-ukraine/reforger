@@ -1,0 +1,131 @@
+GenericEntity PaperMap_01_folded_661A571B9B8CB39C : "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" {
+ coords 7218.483 119.34 5015.728
+}
+GenericEntity RearmingKit_01_FIA_661D324C72F5D53F : "{36696C3AC01ACE96}Prefabs/Items/Equipment/Kits/RearmingKit_01/RearmingKit_01_FIA.et" {
+ components {
+  SCR_ArsenalComponent "{5E2A83C89613DAE4}" {
+   m_OverwriteArsenalConfig SCR_ArsenalItemListConfig "{661D324C615CCB32}" {
+    m_aArsenalItems {
+     SCR_ArsenalItemStandalone "{661D324C6219338D}" {
+      m_ItemResourceName "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
+     }
+     SCR_ArsenalItemStandalone "{661D37BE967F89D9}" {
+      m_ItemResourceName "{B0DFDF7AAA9C5D39}Prefabs/Weapons/Magazines/BC_Shell_12ga_Buckshot.et"
+     }
+    }
+   }
+  }
+ }
+ coords 7227.409 118.578 5004.042
+ angleY 32.738
+}
+$grp GenericEntity : "{41A9C55B61F375F0}Prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et" {
+ Backpack_Kolobok_660B2D6134F9CBB9 {
+  coords 7215.239 119.416 5016.67
+  angleY -56.6
+ }
+ Backpack_Kolobok_660B2D6134F9CB83 {
+  coords 7218.558 119.389 5015.138
+  angleX 1.246
+  angleY 0.021
+  angleZ 0.952
+ }
+}
+GenericEntity Compass_Adrianov_661A571BFE1366DE : "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" {
+ coords 7218.635 119.341 5015.765
+}
+GenericEntity MedicalKit_01_FIA_661D324C49F01669 : "{9132672C4D9B2102}Prefabs/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01_FIA.et" {
+ coords 7227.46 118.577 5004.485
+ angleY -51.656
+}
+$grp GenericEntity : "{CA96DF808C7F2269}Prefabs/Weapons/Magazines/Magazine_762x54_B30_Mosin_Nagant.et" {
+ Magazine_762x54_B30_Mosin_Nagant_661D37BF9F21715B {
+  coords 7216.363 119.759 5011.681
+  angleY -91.79
+ }
+ Magazine_762x54_B30_Mosin_Nagant_661D37BF80CB9D15 {
+  coords 7216.111 119.759 5011.695
+  angleY -111.763
+ }
+ Magazine_762x54_B30_Mosin_Nagant_661D37BF96C88887 {
+  coords 7216.101 119.76 5011.781
+  angleY -113.187
+ }
+ Magazine_762x54_B30_Mosin_Nagant_661D37BF972A3FD0 {
+  coords 7216.229 119.759 5011.717
+  angleY -91.79
+ }
+ Magazine_762x54_B30_Mosin_Nagant_661D37BF98336A51 {
+  coords 7216.282 119.76 5011.781
+  angleY -119.083
+ }
+ Magazine_762x54_B30_Mosin_Nagant_661D37BF99F4A522 {
+  coords 7216.08 119.759 5011.667
+  angleY -52.234
+ }
+ Magazine_762x54_B30_Mosin_Nagant_661D37BF9C2786CA {
+  coords 7216.349 119.76 5011.771
+  angleY -116.487
+ }
+ Magazine_762x54_B30_Mosin_Nagant_661D37BF9B32F609 {
+  coords 7216.153 119.76 5011.773
+  angleY -119.371
+ }
+ Magazine_762x54_B30_Mosin_Nagant_661D37BF9DCD929F {
+  coords 7216.175 119.76 5011.796
+  angleY -91.79
+ }
+ Magazine_762x54_B30_Mosin_Nagant_661D37BF9EC731C9 {
+  coords 7216.109 119.76 5011.865
+  angleY -91.79
+ }
+}
+GenericEntity : "{E3118FD7CB7FCF7E}Prefabs/Props/Military/Arsenal/WeaponRacks/FIA/WeaponRackCabinetArsenal_FIA.et" {
+ components {
+  RigidBody "{5584D66370FCAEE9}" {
+   ResponseIndex "HugeDestructible"
+  }
+  SCR_ArsenalComponent "{661D37BEF0831B75}" {
+   m_eSupportedArsenalItemTypes 0
+   m_eSupportedArsenalItemModes 0
+  }
+  SCR_ArsenalDisplayComponent "{589F01C8E2FEDEE5}" {
+   m_OverwriteArsenalConfig SCR_ArsenalItemListConfig "{661D37BC6CD8EC3D}" {
+    m_aArsenalItems {
+     SCR_ArsenalItemStandalone "{661D37BC6DD33F60}" {
+      m_eItemMode WEAPON
+      m_ItemResourceName "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/armst_PM.et"
+     }
+     SCR_ArsenalItemStandalone "{661D37BC0ECB2792}" {
+      m_eItemType PISTOL
+      m_eItemMode WEAPON
+     }
+    }
+   }
+  }
+  SCR_FactionAffiliationComponent "{5A50E76678BE335D}" {
+   "faction affiliation" "FIA"
+  }
+ }
+ coords 7228.822 118.496 5006.873
+ angleY -104
+}
+GenericEntity armst_Mosin_661D37BFD237A91D : "{EF0F94B9829A0935}Prefabs/Weapons/Rifles/armst_Mosin.et" {
+ coords 7217.026 119.781 5011.922
+ angleX 0.454
+ angleY -92.894
+ angleZ 99.946
+}
+GenericEntity Binoculars_B12_661A571BE8E5FEA5 : "{F2539FA5706E51E4}Prefabs/Items/Equipment/Binoculars/Binoculars_B12/Binoculars_B12.et" {
+ coords 7218.628 119.377 5015.958
+ angleY 36.184
+}
+GenericEntity : "{F542F974956C255F}Prefabs/Props/Military/Compositions/CIV/ArsenalBox_CIV.et" {
+ components {
+  SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+   m_eSupportedArsenalItemTypes 556032
+  }
+ }
+ coords 7229.122 118.578 5004.457
+ angleY -16
+}

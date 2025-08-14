@@ -1,0 +1,8 @@
+GenericEntity : "{B728C4AE0E6EB1E8}Prefabs/Props/Military/Arsenal/AmmoBoxes/USSR/AmmoBoxArsenal_Equipment_USSR.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SCR_ArsenalComponent "{589F01C9C8D4A475}" {
+   Enabled 0
+  }
+ }
+}

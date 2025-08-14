@@ -1,8 +1,0 @@
-GenericEntity : "{9132672C4D9B2103}Prefabs/Items/Equipment/Resources/medicine.et" {
- editorData {
-  RandomizationEditorData {
-   randomYaw 1
-   alignToNormal 1
-  }
- }
-}
