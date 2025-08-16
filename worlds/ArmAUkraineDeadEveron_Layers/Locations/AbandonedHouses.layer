@@ -2,31 +2,18 @@ $grp ARMST_TRIGGER_GROUPSPAWN : "{2ED7F83D6D572F31}Prefabs/Anomals/TRIGGERS/ARMS
  {
   coords 7062.232 109.548 4838.292
   m_GroupPrefab1 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
-  m_GroupPrefab2 ""
-  m_GroupPrefab3 ""
+  m_GroupPrefab2 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+  m_GroupPrefab3 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
  }
  {
   coords 7139.893 119.426 4767.65
   m_GroupPrefab1 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
-  m_GroupPrefab2 ""
-  m_GroupPrefab3 ""
+  m_GroupPrefab2 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+  m_GroupPrefab3 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
  }
 }
-GenericEntity RearmingKit_01_FIA_661D324C72F5D53F2 : "{36696C3AC01ACE96}Prefabs/Items/Equipment/Kits/RearmingKit_01/RearmingKit_01_FIA.et" {
- components {
-  SCR_ArsenalComponent "{5E2A83C89613DAE4}" {
-   m_OverwriteArsenalConfig SCR_ArsenalItemListConfig "{661D324C615CCB32}" {
-    m_aArsenalItems {
-     SCR_ArsenalItemStandalone "{661D324C6219338D}" {
-      m_ItemResourceName "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et"
-     }
-    }
-   }
-  }
- }
- coords 7064.451 113.277 4839.073
- angleY 32.738
- angleZ -9.756
+ParticleEffectEntity : "{60D88B47635E7627}Prefabs/Anomals/Electro/ARMST_ELECTRO.et" {
+ coords 7105.96 128.547 4884.64
 }
 $grp ARMST_TRIGGER_SPAWN : "{762B4CCA245C6ECD}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_ANOMAL.et" {
  {
@@ -34,19 +21,38 @@ $grp ARMST_TRIGGER_SPAWN : "{762B4CCA245C6ECD}Prefabs/Anomals/TRIGGERS/ARMST_TRI
   SphereRadius 30
   DrawShape 0
   m_ObjectPrefab "{764A0D38D69BA7F3}Prefabs/Anomals/Jarka/ARMST_JARKA.et"
-  m_ObjectPrefab2 ""
-  m_ObjectPrefab3 ""
+  m_ObjectPrefab2 "{764A0D38D69BA7F3}Prefabs/Anomals/Jarka/ARMST_JARKA.et"
+  m_ObjectPrefab3 "{764A0D38D69BA7F3}Prefabs/Anomals/Jarka/ARMST_JARKA.et"
   m_CenterBias 0.3
   m_MinDistanceToPlayer 5
  }
  {
   coords 6949.164 103.237 5197.837
   DrawShape 0
-  m_ObjectPrefab "{B1FA3C87A571F3F3}Prefabs/Atmosphere/Anomalies/NewAnoms/FruitPunch.et"
-  m_ObjectPrefab2 ""
-  m_ObjectPrefab3 ""
+  m_ObjectPrefab "{E696A918826666EB}Prefabs/Anomals/Studen/ARMST_STUDEN.et"
+  m_ObjectPrefab2 "{E696A918826666EB}Prefabs/Anomals/Studen/ARMST_STUDEN.et"
+  m_ObjectPrefab3 "{E696A918826666EB}Prefabs/Anomals/Studen/ARMST_STUDEN.et"
   m_SpawnCount 20
   m_CenterBias 0.1
+ }
+ {
+  coords 7061.454 108.986 4853.752
+  DrawShape 0
+  m_ObjectPrefab "{98176AEB295150D9}Prefabs/Anomals/Glasses/ARMST_GLASSES.et"
+  m_ObjectPrefab2 "{98176AEB295150D9}Prefabs/Anomals/Glasses/ARMST_GLASSES.et"
+  m_ObjectPrefab3 "{98176AEB295150D9}Prefabs/Anomals/Glasses/ARMST_GLASSES.et"
+  m_CenterBias 0.5
+ }
+}
+$grp ParticleEffectEntity : "{764A0D38D69BA7F3}Prefabs/Anomals/Jarka/ARMST_JARKA.et" {
+ {
+  coords 7053.828 108.077 4841.063
+ }
+ {
+  coords 7063.278 118.065 4840.413
+ }
+ {
+  coords 7049.511 105.72 4847.227
  }
 }
 GenericEntity armst_Ithaca_37_661B175614B61F47 : "{9655CB851205DF47}Prefabs/Weapons/Rifles/armst_Ithaca_37.et" {
@@ -54,20 +60,6 @@ GenericEntity armst_Ithaca_37_661B175614B61F47 : "{9655CB851205DF47}Prefabs/Weap
  angleX 69.089
  angleY -1.697
  angleZ 85.298
-}
-SCR_IndestructibleEnvironmentalEntity : "{9E2BBF29099E2C3F}Prefabs/Atmosphere/Anomalies/NewAnoms/LargeShards.et" {
- coords 7064.39 110.102 4853.078
-}
-$grp SCR_IndestructibleEnvironmentalEntity : "{D442D38B65994B9B}Prefabs/Atmosphere/Anomalies/NewAnoms/Burner.et" {
- {
-  coords 7053.88 108.089 4841.09
- }
- {
-  coords 7052.813 107.597 4846.561
- }
- {
-  coords 7063.357 118.054 4840.438
- }
 }
 SCR_IndestructibleEnvironmentalEntity : "{F76D13758611BC03}Prefabs/Orgaos/Banheira02/Banheira02.et" {
  coords 7067.45 2.073 4848.424

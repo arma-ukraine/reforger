@@ -1,0 +1,23 @@
+SCR_ChimeraCharacter : "{395ED4BE78A966CB}Prefabs/Factions/STALKERS/Character_STALKER_BaseLoadout.et" {
+ ID "520EC961A090BE1E"
+ components {
+  CharacterWeaponSlotComponent "{520EA1D2F659CFDC}" {
+   WeaponTemplate ""
+  }
+  BaseLoadoutManagerComponent "{520EA1D2DB11821E}" {
+   Slots {
+    LoadoutSlotInfo Back {
+     Prefab ""
+    }
+   }
+  }
+  SCR_InventoryStorageManagerComponent "{520EA1D2DB118DE5}" {
+   InitialInventoryItems {
+    ItemsInitConfigurationItem "{616A98AAD0AC5F61}" {
+     PrefabsToSpawn {
+     }
+    }
+   }
+  }
+ }
+}

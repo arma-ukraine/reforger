@@ -37,3 +37,109 @@ $grp GenericEntity : "{C1F38F057250EE4E}Prefabs/Structures/Agriculture/Barn/Barn
   scale 1.2
  }
 }
+$grp GenericEntity : "{CC66836BF4E211F9}Prefabs/Props/Military/Camps/Duckboard_01.et" {
+ {
+  components {
+   Hierarchy "{569C80D17ED9C2EB}" {
+   }
+  }
+  coords 7224.446 118.527 5007.699
+  angleY 81.811
+ }
+ {
+  components {
+   Hierarchy "{569C80D17ED9C2EB}" {
+   }
+  }
+  coords 7225.167 118.5 5002.9
+  angleY 81.811
+ }
+ {
+  components {
+   Hierarchy "{569C80D17ED9C2EB}" {
+   }
+  }
+  coords 7225.225 118.52 5001.679
+  angleY 81.811
+ }
+ {
+  components {
+   Hierarchy "{569C80D17ED9C2EB}" {
+   }
+  }
+  coords 7228.117 118.531 5008.288
+  angleY 81.811
+ }
+ {
+  components {
+   Hierarchy "{569C80D17ED9C2EB}" {
+   }
+  }
+  coords 7224.833 118.513 5005.278
+  angleY 81.811
+ }
+ {
+  components {
+   Hierarchy "{569C80D17ED9C2EB}" {
+   }
+  }
+  coords 7224.631 118.521 5006.484
+  angleY 81.811
+ }
+ {
+  components {
+   Hierarchy "{569C80D17ED9C2EB}" {
+   }
+  }
+  coords 7228.449 118.473 5005.872
+  angleY 81.811
+ }
+ {
+  components {
+   Hierarchy "{569C80D17ED9C2EB}" {
+   }
+  }
+  coords 7226.572 121.454 5010.822
+  angleY 81.811
+ }
+ {
+  components {
+   Hierarchy "{569C80D17ED9C2EB}" {
+   }
+  }
+  coords 7228.853 118.491 5003.469
+  angleY 81.811
+ }
+ {
+  components {
+   Hierarchy "{569C80D17ED9C2EB}" {
+   }
+  }
+  coords 7224.99 118.503 5004.117
+  angleY 81.811
+ }
+ {
+  components {
+   Hierarchy "{569C80D17ED9C2EB}" {
+   }
+  }
+  coords 7228.971 118.469 5002.247
+  angleY 81.811
+ }
+ {
+  components {
+   Hierarchy "{569C80D17ED9C2EB}" {
+   }
+  }
+  coords 7228.626 118.488 5004.662
+  angleY 81.811
+ }
+ {
+  components {
+   Hierarchy "{569C80D17ED9C2EB}" {
+   }
+  }
+  coords 7228.236 118.492 5007.101
+  angleY 81.811
+ }
+}

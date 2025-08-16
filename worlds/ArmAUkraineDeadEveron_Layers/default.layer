@@ -37377,10 +37377,10 @@ $grp GenericEntity : "{645A92146ECBA8F1}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GenericEntity Grenade_RGD5_660B2D6134C6F187 : "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" {
- coords 4823.482 83.268 4428.556
- angleX 3.196
+ coords 4823.554 83.264 4428.476
+ angleX 3.216
  angleY 43.647
- angleZ 1.811
+ angleZ 1.825
 }
 GenericEntity : "{6475CD495DE1C931}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V3.et" {
  coords 10724.008 0.774 4084.938
@@ -64715,10 +64715,10 @@ $grp GameEntity : "{98C79F5FAE12F9B6}Prefabs/Weapons/Attachments/Bayonets/Bayone
   angleZ 90
  }
  Bayonet_6Kh4_660B2D6134C2170D {
-  coords 8682.931 194.542 1442.515
-  angleX 1.862
+  coords 8682.931 194.542 1442.514
+  angleX 1.868
   angleY 5.19
-  angleZ 90
+  angleZ 89.271
  }
 }
 SCR_DestructibleBuildingEntity : "{994F6F8925DA98DD}Prefabs/Structures/Infrastructure/Naval/Cranes/HarborCrane_01_turret.et" {
@@ -85320,10 +85320,6 @@ GenericEntity : "{D27D94CE584C22E6}Prefabs/Props/Garbage/Cardboard/Cardboard_02.
  angleX -1.968
  angleY 64.376
  angleZ -2.032
-}
-GenericEntity : "{D31D0F615378FA6B}Prefabs/Compositions/Misc/SubCompositions/CanvasCover_Cluttered_US_03.et" {
- coords 7228.746 118.482 5003.421
- angleY -7.1
 }
 $grp GenericEntity : "{D5062960B7211EB4}Prefabs/Props/Construction/GarbageStack_01/GarbageStack_01_Long.et" {
  {

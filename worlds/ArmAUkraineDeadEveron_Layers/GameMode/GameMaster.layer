@@ -24,9 +24,24 @@ SCR_AIWorld SCR_AiWorld : "{70CCCF16487C927F}Prefabs/AI/SCR_AIWorld_Eden.et" {
  }
  coords 4897.106 28.594 11880.031
 }
-SCR_GameModeEditor SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" {
+SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" {
  components {
+  EPF_PersistenceManagerComponent "{661F1B4AEC8F6B7E}" {
+   Enabled 0
+   components {
+    EPF_BasicRespawnSystemComponent "{661F1B4A9A56886F}" {
+     Enabled 0
+    }
+    EPF_PersistentDoorStateManagerComponent "{661F1B4AEF0558F6}" {
+     Enabled 0
+    }
+   }
+   m_pConnectionInfo EDF_JsonFileDbConnectionInfo "{661F1B4A824BA2CA}" {
+    m_sDatabaseName "ArmAUkraineDeadEveron"
+   }
+  }
   SCR_EditorRespawnBriefingComponent "{570245454BF91285}" {
+   Enabled 0
    m_Info SCR_FormatUIInfo "{57024551E01725D4}" {
     m_aDescriptionBlocks {
      SCR_BulletPointBlockUIName "{66193D1B6720A66F}" {
@@ -35,11 +50,23 @@ SCR_GameModeEditor SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Edit
     }
    }
   }
-  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
-   m_bKillIndefinitelyUnconsciousPlayers 1
+  SCR_NotificationSenderComponent "{56FA84B04BE7D4C0}" {
+   Enabled 0
   }
-  SCR_InitWeatherComponent "{58DCAB6D83A0CB17}" {
-   m_sInitialStartingWeatherId ""
+  SCR_PlayerSpawnPointManagerComponent "{56C2DDA69EF94C6D}" {
+   Enabled 0
+  }
+  SCR_RespawnTimerComponent "{56C2DDA6EE0E4071}" {
+   Enabled 0
+  }
+  SCR_ScoringSystemComponent "{56C2DDA6F5A5E41B}" {
+   Enabled 0
+  }
+  SCR_VotingManagerComponent "{5650BB6B6089393A}" {
+   Enabled 0
+  }
+  SCR_WelcomeScreenComponent "{5D7290AC8A3E657E}" {
+   Enabled 0
   }
  }
  coords 4898.61 28.594 11880.03
@@ -52,6 +79,7 @@ SCR_GameModeEditor SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Edit
    ID "56E685E92F1B7E7A"
    Factions {
     SCR_Faction "{56DEAC40D2DBC8B1}" {
+     m_bIsPlayable 1
      m_bShowInWelcomeScreenIfNonPlayable 0
     }
     SCR_Faction "{56DEAC40D3C2E623}" {
@@ -67,7 +95,6 @@ SCR_GameModeEditor SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Edit
      }
     }
     SCR_Faction "{56F0B239B04E3E34}" {
-     m_bIsPlayable 0
      m_bShowInWelcomeScreenIfNonPlayable 0
     }
     SCR_Faction "{616AFAF5BBCF187E}" {

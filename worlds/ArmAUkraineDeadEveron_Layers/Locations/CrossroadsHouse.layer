@@ -1,3 +1,11 @@
+GenericEntity : "{18D538B625CBE38E}PrefabsEditable/Auto/Props/ZombieHive/E_ZombieHive.et" {
+ components {
+  SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+   Enabled 0
+  }
+ }
+ coords 6985.283 102.71 5083.775
+}
 $grp ARMST_TRIGGER_GROUPSPAWN : "{2ED7F83D6D572F31}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_GROUPS.et" {
  {
   coords 6988.219 102.698 5086.167
@@ -11,8 +19,8 @@ $grp ARMST_TRIGGER_GROUPSPAWN : "{2ED7F83D6D572F31}Prefabs/Anomals/TRIGGERS/ARMS
   coords 6987.875 102.698 5086.679
   SphereRadius 200
   m_GroupPrefab1 "{8D4FD74FA2960B81}PrefabLibrary/Groups/Group_Zombies_CIV.et"
-  m_GroupPrefab2 ""
-  m_GroupPrefab3 ""
+  m_GroupPrefab2 "{8685F968392A66B4}622120A5448725E3/Prefabs/Groups/Group_Zombies_High.et"
+  m_GroupPrefab3 "{8685F968392A66B4}622120A5448725E3/Prefabs/Groups/Group_Zombies_High.et"
   m_SpawnChance 100
  }
 }

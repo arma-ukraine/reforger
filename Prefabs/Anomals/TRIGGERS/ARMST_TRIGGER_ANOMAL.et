@@ -1,0 +1,10 @@
+ARMST_TRIGGER_SPAWN {
+ ID "626A35CDF1F10951"
+ SphereRadius 150
+ DrawShape 0
+ UpdatePeriod 10
+ m_ObjectPrefab ""
+ m_ObjectPrefab2 ""
+ m_ObjectPrefab3 ""
+ m_CenterBias 0.3
+}

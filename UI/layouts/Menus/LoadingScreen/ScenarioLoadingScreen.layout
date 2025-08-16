@@ -1,0 +1,40 @@
+FrameWidgetClass {
+ {
+  OverlayWidgetClass "{5DFF03E4AD9D1E88}" {
+   Prefab "{5DFF03E4AD9D1E88}"
+   {
+    ScaleWidgetClass "{5CFCF5E894AE6629}" {
+     Prefab "{5CFCF5E894AE6629}"
+     {
+      ImageWidgetClass "{5CFCF5E894AE6628}" {
+       Prefab "{5CFCF5E894AE6628}"
+       Color 0.402 0.3663 0.2532 1
+       Texture "{1236EC56E571EB1C}UI/Gemini_Generated_Image_4tec7v4tec7v4tec.edds"
+       Size 2816 1536
+       Saturation 1
+      }
+     }
+    }
+   }
+  }
+  FrameWidgetClass "{5E04A017BD489B2A}" {
+   Prefab "{5E04A017BD489B2A}"
+   {
+    OverlayWidgetClass "{5DFF03E4AD9D1E85}" {
+     Prefab "{5DFF03E4AD9D1E85}"
+     {
+      VerticalLayoutWidgetClass "{5DFF03E4AD9D1EE1}" {
+       Prefab "{5DFF03E4AD9D1EE1}"
+       {
+        TextWidgetClass "{5DFF03E4AD9D1EDB}" {
+         Prefab "{5DFF03E4AD9D1EDB}"
+         Text "by ArmA Ukraine"
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

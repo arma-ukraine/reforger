@@ -1,0 +1,15 @@
+FrameWidgetClass {
+ {
+  FrameWidgetClass "{657CABDD0B1FDF2E}" {
+   Prefab "{657CABDD0B1FDF2E}"
+   {
+    ImageWidgetClass "{657CABDD0B1FDF2F}" {
+     Prefab "{657CABDD0B1FDF2F}"
+     Color 0.8118 0.7372 0.5059 1
+     Texture "{178A9736EAF72C45}UI/Gemini_Generated_Image_dzoz6cdzoz6cdzoz.edds"
+     Size 2816 1536
+    }
+   }
+  }
+ }
+}
