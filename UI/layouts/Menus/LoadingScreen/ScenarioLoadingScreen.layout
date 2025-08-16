@@ -8,7 +8,7 @@ FrameWidgetClass {
      {
       ImageWidgetClass "{5CFCF5E894AE6628}" {
        Prefab "{5CFCF5E894AE6628}"
-       Color 0.402 0.3663 0.2532 1
+       Color 0.8118 0.7372 0.5059 1
        Texture "{1236EC56E571EB1C}UI/Gemini_Generated_Image_4tec7v4tec7v4tec.edds"
        Size 2816 1536
        Saturation 1
@@ -26,9 +26,35 @@ FrameWidgetClass {
       VerticalLayoutWidgetClass "{5DFF03E4AD9D1EE1}" {
        Prefab "{5DFF03E4AD9D1EE1}"
        {
+        TextWidgetClass "{5DFF03E4AD9D1EE5}" {
+         Prefab "{5DFF03E4AD9D1EE5}"
+         FontProperties FontProperties "{546AF489DFD25402}" {
+          OutlineSize 1
+         }
+        }
         TextWidgetClass "{5DFF03E4AD9D1EDB}" {
          Prefab "{5DFF03E4AD9D1EDB}"
          Text "by ArmA Ukraine"
+         FontProperties FontProperties "{546AF489DFD25402}" {
+          OutlineSize 2
+         }
+        }
+        RichTextWidgetClass "{5DFF03E4AD9D1ED9}" {
+         Prefab "{5DFF03E4AD9D1ED9}"
+         FontProperties FontProperties "{546AF489DFD25402}" {
+          OutlineSize 2
+         }
+        }
+       }
+      }
+      HorizontalLayoutWidgetClass "{5DFF03E4AD9D1ED0}" {
+       Prefab "{5DFF03E4AD9D1ED0}"
+       {
+        RichTextWidgetClass "{5DFF03E4AD9D1ED5}" {
+         Prefab "{5DFF03E4AD9D1ED5}"
+         FontProperties FontProperties "{546AF489DFD25402}" {
+          OutlineSize 2
+         }
         }
        }
       }

@@ -1,0 +1,30 @@
+$grp ARMST_TRIGGER_GROUPSPAWN : "{2ED7F83D6D572F31}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_GROUPS.et" {
+ {
+  coords 6357.471 86.123 5720.654
+  SphereRadius 300
+  m_GroupPrefab1 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_GroupPrefab2 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_GroupPrefab3 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_SpawnChance 100
+ }
+ {
+  coords 6331.917 86.296 5641.491
+  SphereRadius 300
+  m_GroupPrefab1 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_GroupPrefab2 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_GroupPrefab3 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_SpawnChance 100
+ }
+ {
+  coords 6313.759 85.934 5707.057
+  SphereRadius 300
+  m_GroupPrefab1 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_GroupPrefab2 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_GroupPrefab3 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_SpawnChance 100
+ }
+}
+SCR_ChimeraCharacter Character_USSR_Sharpshooter_6620C00FF8E8EF19 : "{976AC400219898FA}Prefabs/Characters/Factions/OPFOR/USSR_Army/Character_USSR_Sharpshooter.et" {
+ coords 6349.521 93.46 5727.481
+ angleY 98.177
+}

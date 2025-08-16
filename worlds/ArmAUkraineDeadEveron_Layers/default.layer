@@ -10531,7 +10531,7 @@ $grp GenericEntity : "{111673E62CB11177}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GameEntity Bayonet_VZ58_v3_660B2D6134FE77E7 : "{1125E1072C3541D3}Prefabs/Weapons/Attachments/Bayonets/Bayonet_VZ58/Bayonet_VZ58_v3.et" {
- coords 7684.227 340.891 3095.953
+ coords 7684.227 341.651 3095.953
  angleY 4.755
  angleZ 90
 }
@@ -37377,10 +37377,9 @@ $grp GenericEntity : "{645A92146ECBA8F1}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GenericEntity Grenade_RGD5_660B2D6134C6F187 : "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" {
- coords 4823.554 83.264 4428.476
- angleX 3.216
+ coords 4823.625 83.261 4428.398
+ angleX 3.206
  angleY 43.647
- angleZ 1.825
 }
 GenericEntity : "{6475CD495DE1C931}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V3.et" {
  coords 10724.008 0.774 4084.938
@@ -64715,10 +64714,10 @@ $grp GameEntity : "{98C79F5FAE12F9B6}Prefabs/Weapons/Attachments/Bayonets/Bayone
   angleZ 90
  }
  Bayonet_6Kh4_660B2D6134C2170D {
-  coords 8682.931 194.542 1442.514
-  angleX 1.868
+  coords 8682.931 194.542 1442.513
+  angleX 1.862
   angleY 5.19
-  angleZ 89.271
+  angleZ 90
  }
 }
 SCR_DestructibleBuildingEntity : "{994F6F8925DA98DD}Prefabs/Structures/Infrastructure/Naval/Cranes/HarborCrane_01_turret.et" {

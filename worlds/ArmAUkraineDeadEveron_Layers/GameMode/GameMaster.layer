@@ -24,7 +24,7 @@ SCR_AIWorld SCR_AiWorld : "{70CCCF16487C927F}Prefabs/AI/SCR_AIWorld_Eden.et" {
  }
  coords 4897.106 28.594 11880.031
 }
-SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" {
+SCR_GameModeEditor "66208C916092E7D0" : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_Full.et" {
  components {
   EPF_PersistenceManagerComponent "{661F1B4AEC8F6B7E}" {
    Enabled 0
@@ -70,7 +70,7 @@ SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_
   }
  }
  coords 4898.61 28.594 11880.03
- m_bAllowFactionChange 0
+ m_eGME_GlobalAISkill VETERAN
  {
   RadioManagerEntity RadioManagerEntity {
    ID "56E685E9ECAABCFD"
@@ -139,4 +139,10 @@ SCR_GameModeEditor : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Editor/GameMode_Editor_
    }
   }
  }
+}
+GenericEntity : "{4705EEEA4B5B0840}Prefabs/Sounds/armst_sound_drone.et" {
+ coords 7219.653 118.66 4992.544
+}
+GenericEntity : "{AA25183A4FFC5F60}Prefabs/Sounds/armst_sound_ambient_underground.et" {
+ coords 7219.804 118.611 4994.301
 }

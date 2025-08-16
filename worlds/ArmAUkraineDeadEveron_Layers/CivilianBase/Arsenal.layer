@@ -1,6 +1,14 @@
 GenericEntity PaperMap_01_folded_661A571B9B8CB39C : "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" {
  coords 7218.483 119.34 5015.728
 }
+GenericEntity RepairKit_01_wrench_6620C00A77A509E7 : "{33B2DFDCD0EBA3DB}Prefabs/Items/Equipment/Kits/RepairKit_01/RepairKit_01_wrench.et" {
+ coords 7226.831 119.398 5008.004
+ angleY -74.361
+}
+GameEntity armst_itm_atmos_661F4B404C6B56CE : "{33C169417F310F0D}Prefabs/Items/devices/armst_itm_atmos.et" {
+ coords 7229.544 119.109 5003.972
+ angleY -74.662
+}
 GenericEntity RearmingKit_01_FIA_661D324C72F5D53F : "{36696C3AC01ACE96}Prefabs/Items/Equipment/Kits/RearmingKit_01/RearmingKit_01_FIA.et" {
  components {
   SCR_ArsenalComponent "{5E2A83C89613DAE4}" {
@@ -90,6 +98,28 @@ $grp GenericEntity : "{CA96DF808C7F2269}Prefabs/Weapons/Magazines/Magazine_762x5
   angleY -91.79
  }
 }
+$grp GenericEntity : "{CB67A30D05AA4F29}Prefabs/Items/Medicine/armst_itm_medkit_ai2.et" {
+ armst_itm_medkit_ai2_66205D5F6FA91ABA {
+  coords 7229.604 118.736 5004.427
+  angleY 31.22
+ }
+ armst_itm_medkit_ai2_66205D5F19DEEFAD {
+  coords 7229.619 118.742 5003.973
+  angleY 91.22
+ }
+ armst_itm_medkit_ai2_66205D5F1442D6D1 {
+  coords 7229.534 118.736 5004.164
+  angleY 19.22
+ }
+ armst_itm_medkit_ai2_66205D5F138AC679 {
+  coords 7229.701 118.737 5004.098
+  angleY 102.22
+ }
+ armst_itm_medkit_ai2_66205D5F6F787F8B {
+  coords 7229.639 118.736 5004.278
+  angleY 16.22
+ }
+}
 GenericEntity : "{E3118FD7CB7FCF7E}Prefabs/Props/Military/Arsenal/WeaponRacks/FIA/WeaponRackCabinetArsenal_FIA.et" {
  components {
   RigidBody "{5584D66370FCAEE9}" {
@@ -130,6 +160,22 @@ GenericEntity : "{E3118FD7CB7FCF7E}Prefabs/Props/Military/Arsenal/WeaponRacks/FI
  coords 7228.822 118.496 5006.873
  angleY -104
 }
+$grp GenericEntity : "{E787ABC7B9D4A084}Prefabs/Items/Medicine/armst_itm_stim_derad.et" {
+ armst_itm_stim_derad_66205D5F36A2CCEE {
+  coords 7229.614 119.109 5004.149
+ }
+ armst_itm_stim_derad_66205D5F3793FD94 {
+  coords 7229.589 119.109 5004.05
+  angleY -38.734
+ }
+ armst_itm_stim_derad_66205D5F39B77BFC {
+  coords 7229.531 119.109 5004.187
+  angleY 38.979
+ }
+ armst_itm_stim_derad_66205D5F3B840233 {
+  coords 7229.736 119.109 5004.079
+ }
+}
 GenericEntity armst_Mosin_661D37BFD237A91D : "{EF0F94B9829A0935}Prefabs/Weapons/Rifles/armst_Mosin.et" {
  coords 7217.026 119.781 5011.922
  angleX 0.454
@@ -148,4 +194,21 @@ GenericEntity : "{F542F974956C255F}Prefabs/Props/Military/Compositions/CIV/Arsen
  }
  coords 7227.458 118.621 5008.11
  angleY -13
+}
+$grp GenericEntity : "{FA1A1C2700C3306D}Prefabs/New_Equipment/backpack/armst_backpack_kolobok.et" {
+ armst_backpack_kolobok_6620C00A4305BB32 {
+  coords 7227.163 119.433 5007.983
+ }
+ armst_backpack_kolobok_6620C00A4463A41C {
+  coords 7227.8 119.39 5008.137
+  angleY -32.35
+ }
+ armst_backpack_kolobok_6620C00A4945D8BA {
+  coords 7226.408 118.627 5007.919
+  angleY 31.946
+ }
+ armst_backpack_kolobok_6620C00A4BF0D2CC {
+  coords 7225.906 118.622 5008.256
+  angleY -36.783
+ }
 }

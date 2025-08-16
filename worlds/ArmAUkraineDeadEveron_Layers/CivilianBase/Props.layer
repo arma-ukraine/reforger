@@ -20,6 +20,16 @@ GenericEntity : "{869914063728EFF8}Prefabs/Props/Forest/WoodPile/WoodLog_01_D.et
  coords 7200.502 119.96 5018.103
  angleX 90
 }
+$grp GenericEntity : "{8871B00C873DA8B7}Prefabs/Props/Civilian/Shelves/Shelf_Metal.et" {
+ {
+  coords 7229.542 0.112 5005.137
+  angleY -120
+ }
+ {
+  coords 7229.662 0.111 5004.217
+  angleY -82
+ }
+}
 $grp GenericEntity : "{C1F38F057250EE4E}Prefabs/Structures/Agriculture/Barn/Barn_E_03/Barn_E_03_Wall_01.et" {
  {
   coords 7199.489 119.185 5016.083

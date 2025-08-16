@@ -1,0 +1,16 @@
+GenericEntity : "{39568880CC1F9CED}Prefabs/Props/Military/Arsenal/ArsenalBoxes/FIA/ArsenalBox_FIA.et" {
+ coords 3424.512 17.856 1592.509
+ angleY -5
+}
+GenericEntity : "{511C041EFC7BAE60}Prefabs/Props/Arsenal/ArsenalBox_STALKEr.et" {
+ coords 3425.919 17.385 1586.813
+ angleY -5
+}
+GenericEntity : "{BE99D77D1155B127}Prefabs/Props/Military/Arsenal/ArsenalBoxes/US/ArsenalBox_US.et" {
+ coords 3424.829 17.806 1590.933
+ angleY -5
+}
+GenericEntity : "{EDE6EC8B05227E3E}Prefabs/Props/Military/Arsenal/ArsenalBoxes/USSR/ArsenalBox_USSR.et" {
+ coords 3425.177 17.693 1589.346
+ angleY -5
+}

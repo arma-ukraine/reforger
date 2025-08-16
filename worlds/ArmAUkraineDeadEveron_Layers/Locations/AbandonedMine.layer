@@ -1,0 +1,20 @@
+$grp ParticleEffectEntity : "{544B7E088E789058}Prefabs/Systems/Gas/Wrapper_Gas_Covid.et" {
+ {
+  coords 6302.414 107.182 5257.628
+ }
+ {
+  coords 6318.183 117.328 5278.161
+ }
+ {
+  coords 6288.644 114.822 5254.642
+ }
+ {
+  coords 6385.827 94.905 5251.419
+ }
+ {
+  coords 6313.832 116.185 5294.762
+ }
+ {
+  coords 6297.233 119.407 5282.074
+ }
+}
