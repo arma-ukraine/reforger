@@ -1,0 +1,10 @@
+GenericEntity {
+ ID "51A29B4ADBAAA1B1"
+ components {
+  SCR_AmbientSoundsComponent "{51A2F42C82EA6A82}" {
+   Filenames {
+    "{2087D83CCC0E114A}Sounds/Environment/Ambients2D/Environment_Ambients_2D.acp" "" "{0579F6FE58C2CC46}Sounds/Environment/Ambients3D/Environment_Ambients_3D_Random_2.acp" "{A2F102A63CDA65BD}Sounds/Environment/Ambients3D/Environment_Ambients_3D_Vegetation.acp" "{A10776C0B0CC94F6}Sounds/Environment/Ambients3D/Environment_Ambients_3D_Insects.acp"
+   }
+  }
+ }
+}

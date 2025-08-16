@@ -29,7 +29,7 @@ FrameWidgetClass {
         TextWidgetClass "{5DFF03E4AD9D1EE5}" {
          Prefab "{5DFF03E4AD9D1EE5}"
          FontProperties FontProperties "{546AF489DFD25402}" {
-          OutlineSize 1
+          OutlineSize 2
          }
         }
         TextWidgetClass "{5DFF03E4AD9D1EDB}" {
@@ -42,7 +42,7 @@ FrameWidgetClass {
         RichTextWidgetClass "{5DFF03E4AD9D1ED9}" {
          Prefab "{5DFF03E4AD9D1ED9}"
          FontProperties FontProperties "{546AF489DFD25402}" {
-          OutlineSize 2
+          OutlineSize 3
          }
         }
        }
@@ -53,7 +53,7 @@ FrameWidgetClass {
         RichTextWidgetClass "{5DFF03E4AD9D1ED5}" {
          Prefab "{5DFF03E4AD9D1ED5}"
          FontProperties FontProperties "{546AF489DFD25402}" {
-          OutlineSize 2
+          OutlineSize 3
          }
         }
        }

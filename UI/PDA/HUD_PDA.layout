@@ -1,0 +1,46 @@
+FrameWidgetClass {
+ {
+  FrameWidgetClass "{65B4655D5DDA8E73}" {
+   Prefab "{65B4655D5DDA8E73}"
+   {
+    ImageWidgetClass "{658CA21EA19A3CA4}" {
+     Prefab "{658CA21EA19A3CA4}"
+     "Is Visible" 0
+    }
+   }
+  }
+  FrameWidgetClass "{65B4655CF648CA4F}" {
+   Prefab "{65B4655CF648CA4F}"
+   {
+    FrameWidgetClass "{65B4655DC39FD7E5}" {
+     Prefab "{65B4655DC39FD7E5}"
+     "Is Visible" 0
+    }
+   }
+  }
+  ButtonWidgetClass "{65B4655D249434F9}" {
+   Prefab "{65B4655D249434F9}"
+   "Is Visible" 0
+  }
+  ButtonWidgetClass "{65B4655EB0C610B7}" {
+   Prefab "{65B4655EB0C610B7}"
+   "Is Visible" 0
+  }
+  ButtonWidgetClass "{65B4655E45B8DFA2}" {
+   Prefab "{65B4655E45B8DFA2}"
+   "Is Visible" 0
+  }
+  ButtonWidgetClass "{65B4655E0E99A195}" {
+   Prefab "{65B4655E0E99A195}"
+   "Is Visible" 0
+  }
+  ButtonWidgetClass "{65B4655E1C396952}" {
+   Prefab "{65B4655E1C396952}"
+   "Is Visible" 0
+  }
+  ButtonWidgetClass "{65B4A2B036F86C12}" {
+   Prefab "{65B4A2B036F86C12}"
+   "Is Visible" 0
+  }
+ }
+}

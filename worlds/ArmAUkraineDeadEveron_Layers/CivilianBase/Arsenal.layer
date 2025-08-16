@@ -1,5 +1,19 @@
+GenericEntity armst_itm_food_fish2_66214DA7E7FF5E36 : "{0202B1521F180725}Prefabs/Items/Food/armst_itm_food_fish2.et" {
+ coords 7229.552 119.481 5005.019
+}
 GenericEntity PaperMap_01_folded_661A571B9B8CB39C : "{13772C903CB5E4F7}Prefabs/Items/Equipment/Maps/PaperMap_01_folded.et" {
  coords 7218.483 119.34 5015.728
+}
+$grp GenericEntity : "{1472B9856B26B931}Prefabs/Items/Food/armst_itm_food_tushonka_1.et" {
+ armst_itm_food_tushonka_1_66214DA7ECA5B2C7 {
+  coords 7229.571 119.108 5005.037
+ }
+ armst_itm_food_tushonka_1_66214DA7EC4B60F5 {
+  coords 7229.606 119.108 5004.902
+ }
+}
+GenericEntity armst_itm_food_bottle_beer_66214DA7E1627152 : "{334A819055D47B97}Prefabs/Items/Food/armst_itm_food_bottle_beer.et" {
+ coords 7229.516 119.481 5005.131
 }
 GenericEntity RepairKit_01_wrench_6620C00A77A509E7 : "{33B2DFDCD0EBA3DB}Prefabs/Items/Equipment/Kits/RepairKit_01/RepairKit_01_wrench.et" {
  coords 7226.831 119.398 5008.004
@@ -28,6 +42,9 @@ GenericEntity RearmingKit_01_FIA_661D324C72F5D53F : "{36696C3AC01ACE96}Prefabs/I
   }
   ActionsManagerComponent "{508AB5952B584B2E}" {
    additionalActions {
+    SCR_PickUpItemAction "{51EC842E3A187379}" {
+     Duration 5
+    }
     SCR_ResupplySelfSupportStationAction "{5E24C776B0C50B76}" {
      m_bCheckIfItemInStorage 1
     }
@@ -37,6 +54,45 @@ GenericEntity RearmingKit_01_FIA_661D324C72F5D53F : "{36696C3AC01ACE96}Prefabs/I
  coords 7229.462 119.102 5005.215
  angleY -168.262
 }
+$grp GameEntity : "{3A421547BC29F679}Prefabs/Items/Equipment/Flashlights/Flashlight_MX991/Flashlight_MX991.et" {
+ Flashlight_MX991_66214DA447D03216 {
+  coords 7229.578 119.476 5004.411
+ }
+ Flashlight_MX991_66214DA44D5845CF {
+  coords 7229.589 119.482 5004.356
+  angleY 141
+ }
+}
+$grp GenericEntity : "{412D824412DA9D97}Prefabs/Items/Food/armst_itm_food_fish.et" {
+ armst_itm_food_fish_66214DA7E99C69EB {
+  coords 7229.384 119.481 5005.211
+ }
+ armst_itm_food_fish_66214DA7EAE36BD9 {
+  coords 7229.56 119.481 5004.895
+ }
+}
+$grp GenericEntity : "{52D3FE1E430900D3}Prefabs/Items/Food/armst_itm_food_canteen_water.et" {
+ armst_itm_food_canteen_water_66214DA7E5A333DD {
+  coords 7229.678 119.481 5004.958
+  angleY -86
+ }
+ armst_itm_food_canteen_water_66214DA79C32672B {
+  coords 7229.478 118.735 5005.3
+ }
+ armst_itm_food_canteen_water_66214DA79DD5AF4A {
+  coords 7229.539 118.735 5005.191
+ }
+ armst_itm_food_canteen_water_66214DA79E945F2D {
+  coords 7229.364 118.735 5005.256
+  angleY 101
+ }
+}
+GenericEntity armst_itm_food_canteen_empty_66214DA7E31645D7 : "{654D80AC7C1E0F80}Prefabs/Items/Food/armst_itm_food_canteen_empty.et" {
+ coords 7229.486 119.481 5005.292
+}
+GenericEntity armst_itm_pda_66214DA6E4CEED05 : "{6E2790C4C516701B}Prefabs/Items/devices/armst_itm_pda.et" {
+ coords 7229.778 118.736 5004.384
+}
 GenericEntity Compass_Adrianov_661A571BFE1366DE : "{7CEF68E2BC68CE71}Prefabs/Items/Equipment/Compass/Compass_Adrianov.et" {
  coords 7218.635 119.341 5015.765
 }
@@ -44,6 +100,9 @@ GenericEntity MedicalKit_01_FIA_661D324C49F01669 : "{9132672C4D9B2102}Prefabs/It
  components {
   ActionsManagerComponent "{508AB5952B584B2E}" {
    additionalActions {
+    SCR_PickUpItemAction "{51EC842E3A187379}" {
+     Duration 5
+    }
     SCR_ResupplySelfSupportStationAction "{5E3CC268E10A1B09}" {
      m_bCheckIfItemInStorage 1
     }
@@ -55,6 +114,15 @@ GenericEntity MedicalKit_01_FIA_661D324C49F01669 : "{9132672C4D9B2102}Prefabs/It
  }
  coords 7229.647 119.113 5004.374
  angleY -118.298
+}
+$grp GenericEntity : "{B8CBA02D61B3B70E}Prefabs/Items/Food/armst_itm_food_crackers.et" {
+ armst_itm_food_crackers_66214DA792713B18 {
+  coords 7229.641 118.735 5004.996
+  angleY -48
+ }
+ armst_itm_food_crackers_66214DA79421411A {
+  coords 7229.497 118.735 5005.083
+ }
 }
 $grp GenericEntity : "{CA96DF808C7F2269}Prefabs/Weapons/Magazines/Magazine_762x54_B30_Mosin_Nagant.et" {
  Magazine_762x54_B30_Mosin_Nagant_661D37BF9F21715B {
@@ -194,6 +262,9 @@ GenericEntity : "{F542F974956C255F}Prefabs/Props/Military/Compositions/CIV/Arsen
  }
  coords 7227.458 118.621 5008.11
  angleY -13
+}
+GenericEntity armst_itm_food_mre_66214DA7ED657037 : "{F6D97BFA381DC370}Prefabs/Items/Food/armst_itm_food_mre.et" {
+ coords 7229.467 119.108 5005.013
 }
 $grp GenericEntity : "{FA1A1C2700C3306D}Prefabs/New_Equipment/backpack/armst_backpack_kolobok.et" {
  armst_backpack_kolobok_6620C00A4305BB32 {
