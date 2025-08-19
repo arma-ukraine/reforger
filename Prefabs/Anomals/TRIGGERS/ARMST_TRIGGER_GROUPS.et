@@ -5,5 +5,4 @@ ARMST_TRIGGER_GROUPSPAWN {
  m_GroupPrefab1 ""
  m_GroupPrefab2 ""
  m_GroupPrefab3 ""
- m_SpawnChance 50
 }

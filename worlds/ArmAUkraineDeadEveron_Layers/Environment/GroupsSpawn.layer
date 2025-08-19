@@ -1,0 +1,95 @@
+$grp ARMST_TRIGGER_GROUPSPAWN : "{2ED7F83D6D572F31}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_GROUPS.et" {
+ {
+  coords 7139.893 119.426 4767.65
+  m_GroupPrefab1 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+  m_GroupPrefab2 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+  m_GroupPrefab3 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+ }
+ {
+  coords 7062.232 109.548 4838.292
+  m_GroupPrefab1 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+  m_GroupPrefab2 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+  m_GroupPrefab3 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+ }
+ {
+  coords 7378.686 119.138 5184.081
+  m_GroupPrefab1 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+  m_GroupPrefab2 "{8685F968392A66B4}622120A5448725E3/Prefabs/Groups/Group_Zombies_High.et"
+  m_GroupPrefab3 ""
+ }
+ {
+  coords 7385.193 126.939 5089.892
+  m_GroupPrefab1 "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
+  m_GroupPrefab2 "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
+  m_GroupPrefab3 "{813B0F968868FA48}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV_Large.et"
+ }
+ {
+  coords 6988.219 102.698 5086.167
+  m_GroupPrefab1 "{8685F968392A66B4}622120A5448725E3/Prefabs/Groups/Group_Zombies_High.et"
+  m_GroupPrefab2 ""
+  m_GroupPrefab3 ""
+  m_SpawnChance 100
+ }
+ {
+  coords 7059.928 115.463 5345.746
+  m_GroupPrefab1 "{58251EDC277CE499}622120A5448725E3/Prefabs/Groups/Group_Zombies_USSR.et"
+  m_GroupPrefab2 "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
+  m_GroupPrefab3 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+ }
+ {
+  coords 6831.65 72.485 4835.725
+  m_GroupPrefab1 "{58251EDC277CE499}622120A5448725E3/Prefabs/Groups/Group_Zombies_USSR.et"
+  m_GroupPrefab2 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+  m_GroupPrefab3 "{8685F968392A66B4}622120A5448725E3/Prefabs/Groups/Group_Zombies_High.et"
+  m_SpawnChance 100
+ }
+ {
+  coords 6822.489 72.206 4829.882
+  m_GroupPrefab1 "{58251EDC277CE499}622120A5448725E3/Prefabs/Groups/Group_Zombies_USSR.et"
+  m_GroupPrefab2 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+  m_GroupPrefab3 "{813B0F968868FA48}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV_Large.et"
+  m_SpawnChance 100
+ }
+ {
+  coords 6357.471 86.123 5720.654
+  m_GroupPrefab1 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_GroupPrefab2 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_GroupPrefab3 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_SpawnChance 100
+ }
+ {
+  coords 6331.917 86.296 5641.491
+  m_GroupPrefab1 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_GroupPrefab2 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_GroupPrefab3 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_SpawnChance 100
+ }
+ {
+  coords 6313.759 85.934 5707.057
+  m_GroupPrefab1 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_GroupPrefab2 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_GroupPrefab3 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  m_SpawnChance 100
+ }
+ {
+  coords 7413.127 136.292 4763.604
+  m_GroupPrefab1 "{54F0DDCB5359C160}PrefabLibrary/Groups/Group_Zombies_CIV_Large.et"
+  m_GroupPrefab2 ""
+  m_GroupPrefab3 ""
+ }
+ {
+  coords 7466.556 137.747 4757.08
+  m_GroupPrefab1 "{54F0DDCB5359C160}PrefabLibrary/Groups/Group_Zombies_CIV_Large.et"
+  m_GroupPrefab2 ""
+  m_GroupPrefab3 ""
+ }
+ {
+  coords 7517.011 138.779 4713.777
+  m_GroupPrefab1 "{54F0DDCB5359C160}PrefabLibrary/Groups/Group_Zombies_CIV_Large.et"
+  m_GroupPrefab2 ""
+  m_GroupPrefab3 ""
+ }
+}
+ARMST_TRIGGER_GROUPSPAWN : "{6D0AF92565F1A207}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_GROUPS_FOREST.et" {
+ coords 6339.152 99.325 5075.988
+}

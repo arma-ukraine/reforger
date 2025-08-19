@@ -28,6 +28,10 @@ FrameWidgetClass {
        {
         TextWidgetClass "{5DFF03E4AD9D1EE5}" {
          Prefab "{5DFF03E4AD9D1EE5}"
+         Name "m_wTitle"
+         Slot LayoutSlot "{58EEB32453337B82}" {
+          Padding 0 0 0 5
+         }
          FontProperties FontProperties "{546AF489DFD25402}" {
           OutlineSize 2
          }
@@ -43,6 +47,8 @@ FrameWidgetClass {
          Prefab "{5DFF03E4AD9D1ED9}"
          FontProperties FontProperties "{546AF489DFD25402}" {
           OutlineSize 3
+          ShadowSize 16
+          ShadowOffset 10 10
          }
         }
        }

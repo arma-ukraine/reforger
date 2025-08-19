@@ -1,0 +1,27 @@
+$grp ARMST_TRIGGER_SPAWN : "{762B4CCA245C6ECD}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_ANOMAL.et" {
+ {
+  coords 6578.68 87.576 5302.461
+  SphereRadius 85
+  m_ObjectPrefab "{60D88B47635E7627}Prefabs/Anomals/Electro/ARMST_ELECTRO.et"
+  m_ObjectPrefab2 "{60D88B47635E7627}Prefabs/Anomals/Electro/ARMST_ELECTRO.et"
+  m_ObjectPrefab3 "{60D88B47635E7627}Prefabs/Anomals/Electro/ARMST_ELECTRO.et"
+  m_CenterBias 0.6
+ }
+ {
+  coords 6949.164 103.237 5197.837
+  SphereRadius 85
+  m_ObjectPrefab "{E696A918826666EB}Prefabs/Anomals/Studen/ARMST_STUDEN.et"
+  m_ObjectPrefab2 "{E696A918826666EB}Prefabs/Anomals/Studen/ARMST_STUDEN.et"
+  m_ObjectPrefab3 "{E696A918826666EB}Prefabs/Anomals/Studen/ARMST_STUDEN.et"
+  m_SpawnCount 20
+  m_CenterBias 0.6
+ }
+ {
+  coords 6308.066 105.976 5242.979
+  SphereRadius 85
+  m_ObjectPrefab "{544B7E088E789058}Prefabs/Systems/Gas/Wrapper_Gas_Covid.et"
+  m_ObjectPrefab2 "{544B7E088E789058}Prefabs/Systems/Gas/Wrapper_Gas_Covid.et"
+  m_ObjectPrefab3 "{544B7E088E789058}Prefabs/Systems/Gas/Wrapper_Gas_Covid.et"
+  m_CenterBias 0.6
+ }
+}

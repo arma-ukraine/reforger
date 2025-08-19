@@ -1,0 +1,32 @@
+GenericEntity : "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbarages.et" {
+ coords 7231.37 119.5 4986.001
+}
+GenericEntity : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et" {
+ coords 7228.178 129.589 5004.3
+}
+GenericEntity : "{511C041EFC7BAE60}Prefabs/Props/Arsenal/ArsenalBox_STALKEr.et" {
+ coords 7227.951 129.59 5006.599
+ angleY -6.902
+}
+GenericEntity : "{AD59EDEAA26CE792}Prefabs/Props/Military/Compositions/USSR/ArsenalBox_USSR.et" {
+ coords 7228.253 129.603 5003.548
+}
+GenericEntity : "{B53B98CEA2D72735}Prefabs/Props/Military/Compositions/FIA/ArsenalBox_FIA.et" {
+ coords 7228.211 129.592 5005.02
+ angleY -6.902
+}
+$grp GenericEntity : "{F542F974956C255F}Prefabs/Props/Military/Compositions/CIV/ArsenalBox_CIV.et" {
+ {
+  coords 7228.091 129.591 5005.694
+  angleY -6.902
+ }
+ {
+  components {
+   SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+    m_eSupportedArsenalItemTypes 2031614
+   }
+  }
+  coords 7227.039 118.569 5005.508
+  angleY -6.902
+ }
+}

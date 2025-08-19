@@ -1,0 +1,8 @@
+ARMST_TRIGGER_GROUPSPAWN : "{2ED7F83D6D572F31}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_GROUPS.et" {
+ ID "65591EA089EF6AF0"
+ SphereRadius 200
+ UpdatePeriod 10
+ m_GroupPrefab1 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+ m_GroupPrefab2 "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
+ m_GroupPrefab3 ""
+}

@@ -1,6 +1,0 @@
-ARMST_TRIGGER_GROUPSPAWN : "{2ED7F83D6D572F31}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_GROUPS.et" {
- coords 7385.193 126.939 5089.892
- m_GroupPrefab1 "{813B0F968868FA48}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV_Large.et"
- m_GroupPrefab2 "{813B0F968868FA48}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV_Large.et"
- m_GroupPrefab3 "{813B0F968868FA48}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV_Large.et"
-}

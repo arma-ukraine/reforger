@@ -1,0 +1,11 @@
+$grp GenericEntity : "{4705EEEA4B5B0840}Prefabs/Sounds/armst_sound_drone.et" {
+ {
+  coords 7209.102 122.786 5254.085
+ }
+ {
+  coords 5752.67 85.707 5310.376
+ }
+ {
+  coords 8863.85 204.033 3947.269
+ }
+}
