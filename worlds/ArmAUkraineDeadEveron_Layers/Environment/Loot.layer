@@ -1,0 +1,141 @@
+$grp GenericEntity : "{13F428D2770E8D28}Prefabs/Props/LOOT_BOX/Loot_randomize_clothes.et" {
+ {
+  coords 7371.338 122.489 5185.627
+ }
+ {
+  coords 6502.188 90.303 5320.995
+ }
+ {
+  coords 6500.454 88.243 5277.21
+ }
+}
+GenericEntity : "{15B4996D9B5D0CC3}Prefabs/Props/LOOT_BOX/food/Loot_food_box2.et" {
+ coords 7084.78 116.493 5451.673
+}
+$grp GenericEntity : "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbarages.et" {
+ {
+  coords 7058.023 108.301 4851.478
+ }
+ {
+  coords 7063.212 109.232 4854.392
+ }
+ {
+  coords 7065.443 113.458 4837.429
+ }
+ {
+  coords 7062.882 109.59 4839.813
+ }
+ {
+  coords 7136.181 118.529 4758.439
+ }
+ {
+  coords 7136.83 119.35 4766.976
+ }
+ {
+  coords 7142.292 120.297 4764.976
+ }
+ {
+  coords 7390.239 123.548 5168.94
+ }
+ {
+  coords 7375.471 122.489 5177.277
+ }
+ {
+  coords 7358.428 123.561 5188.852
+ }
+ {
+  coords 7354.02 122.346 5198.867
+ }
+ {
+  coords 7069.606 115.463 5345.11
+ }
+ {
+  coords 7066.82 115.463 5343.229
+ }
+ {
+  coords 7052.365 115.463 5342.099
+ }
+ {
+  coords 7051.147 115.463 5340.926
+ }
+ {
+  coords 6832.637 72.485 4838.614
+ }
+ {
+  coords 6829.151 72.598 4842.772
+ }
+ {
+  coords 6514.654 86.797 5302.163
+ }
+ {
+  coords 6486.476 87.601 5289.365
+ }
+ {
+  coords 6312.735 104.903 5234.241
+ }
+ {
+  coords 6311.226 106.977 5232.301
+ }
+}
+$grp GenericEntity : "{2E48D4FB4D103DFD}Prefabs/Props/LOOT_BOX/Body/Loot_random_body.et" {
+ {
+  coords 7037.519 115.632 5365.573
+ }
+ {
+  coords 7056.441 116.697 5455.658
+ }
+}
+$grp GenericEntity : "{860A452E9D25FCB6}Prefabs/Props/LOOT_BOX/Loot_randomize_food.et" {
+ {
+  coords 7375.168 122.489 5179.455
+ }
+ {
+  coords 6830.982 72.513 4837.236
+ }
+ {
+  coords 6832.136 72.485 4838.652
+  angleY 80.464
+ }
+}
+$grp GenericEntity : "{91D86FC384A72660}Prefabs/Props/LOOT_BOX/Loot_randomize_medicine.et" {
+ {
+  coords 7366.808 122.489 5175.114
+ }
+ {
+  coords 7054.974 115.934 5349.335
+ }
+ {
+  coords 6832.933 72.485 4837.292
+ }
+ {
+  coords 6501.225 90.355 5319.933
+ }
+ {
+  coords 6502.727 88.861 5272.88
+ }
+}
+GenericEntity : "{ACA0244622E94EE1}Prefabs/Props/LOOT_BOX/tools/Loot_tools_box.et" {
+ coords 6834.735 72.537 4835.679
+ angleY 72.55
+}
+$grp GenericEntity : "{E2719E0AE25171C3}Prefabs/Props/LOOT_BOX/Loot_randomize_clothes2.et" {
+ {
+  coords 7378.334 123.333 5182.983
+ }
+ {
+  coords 7067.126 115.954 5344.48
+ }
+ {
+  coords 7050.693 115.964 5332.218
+ }
+ {
+  coords 6503.486 88.37 5272.028
+  angleY 146.504
+ }
+ {
+  coords 6514.079 88.792 5269.336
+ }
+}
+GenericEntity : "{EA0C171E40026467}Prefabs/Props/LOOT_BOX/medicine/Loot_medicals_backpack_2.et" {
+ coords 7057.703 116.708 5457.736
+}

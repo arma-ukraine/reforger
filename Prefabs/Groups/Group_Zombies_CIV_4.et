@@ -1,6 +1,0 @@
-Bacon_622120A5448725E3_InfectedGroup : "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et" {
- ID "62651601183F5AEE"
- m_aUnitPrefabSlots {
-  "{1228A830F9454F4B}622120A5448725E3/Prefabs/Characters/Zombie_CIV.et" "{1228A830F9454F4B}622120A5448725E3/Prefabs/Characters/Zombie_CIV.et" "{1228A830F9454F4B}622120A5448725E3/Prefabs/Characters/Zombie_CIV.et" "{1228A830F9454F4B}622120A5448725E3/Prefabs/Characters/Zombie_CIV.et" "" "" ""
- }
-}

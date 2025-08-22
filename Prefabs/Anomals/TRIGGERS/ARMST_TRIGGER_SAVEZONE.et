@@ -1,6 +1,0 @@
-ARMST_TRIGGER_SAVEZONE {
- ID "658858C28050B641"
- TriggerShapeType Sphere
- SphereRadius 100
- m_fDisable_damage 1
-}

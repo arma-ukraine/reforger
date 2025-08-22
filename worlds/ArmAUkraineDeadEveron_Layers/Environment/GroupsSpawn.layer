@@ -1,95 +1,135 @@
+GenericEntity : "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbarages.et" {
+ coords 6402.895 91.248 4885.609
+}
 $grp ARMST_TRIGGER_GROUPSPAWN : "{2ED7F83D6D572F31}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_GROUPS.et" {
  {
-  coords 7139.893 119.426 4767.65
-  m_GroupPrefab1 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
-  m_GroupPrefab2 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
-  m_GroupPrefab3 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+  coords 7057.05 108.396 4844.704
+  SphereRadius 200
+  PeriodicQueries 0
  }
  {
-  coords 7062.232 109.548 4838.292
-  m_GroupPrefab1 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
-  m_GroupPrefab2 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
-  m_GroupPrefab3 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+  coords 7055.835 108.179 4845.642
+  SphereRadius 200
+  m_GroupPrefab1 "{FBC6409B6650A30A}Prefabs/Monsters/Groups/Group_Zombie_RANDOM.et"
+  m_GroupPrefab2 "{1DBDD336741DF40E}Prefabs/Monsters/Groups/Group_Zombie_4.et"
+  m_GroupPrefab3 "{4117DB76F3A3AC53}Prefabs/Monsters/Groups/Group_Zombie_6.et"
  }
  {
-  coords 7378.686 119.138 5184.081
-  m_GroupPrefab1 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
-  m_GroupPrefab2 "{8685F968392A66B4}622120A5448725E3/Prefabs/Groups/Group_Zombies_High.et"
-  m_GroupPrefab3 ""
+  coords 7148.078 119.078 4759.549
+  SphereRadius 200
+  m_GroupPrefab1 "{FBC6409B6650A30A}Prefabs/Monsters/Groups/Group_Zombie_RANDOM.et"
+  m_GroupPrefab2 "{1DBDD336741DF40E}Prefabs/Monsters/Groups/Group_Zombie_4.et"
+  m_GroupPrefab3 "{4117DB76F3A3AC53}Prefabs/Monsters/Groups/Group_Zombie_6.et"
  }
  {
-  coords 7385.193 126.939 5089.892
-  m_GroupPrefab1 "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
-  m_GroupPrefab2 "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
-  m_GroupPrefab3 "{813B0F968868FA48}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV_Large.et"
- }
- {
-  coords 6988.219 102.698 5086.167
-  m_GroupPrefab1 "{8685F968392A66B4}622120A5448725E3/Prefabs/Groups/Group_Zombies_High.et"
-  m_GroupPrefab2 ""
-  m_GroupPrefab3 ""
+  coords 6851.357 75.645 4763.121
+  SphereRadius 200
+  m_GroupPrefab1 "{FBC6409B6650A30A}Prefabs/Monsters/Groups/Group_Zombie_RANDOM.et"
+  m_GroupPrefab2 "{1DBDD336741DF40E}Prefabs/Monsters/Groups/Group_Zombie_4.et"
+  m_GroupPrefab3 "{4117DB76F3A3AC53}Prefabs/Monsters/Groups/Group_Zombie_6.et"
   m_SpawnChance 100
  }
  {
-  coords 7059.928 115.463 5345.746
-  m_GroupPrefab1 "{58251EDC277CE499}622120A5448725E3/Prefabs/Groups/Group_Zombies_USSR.et"
-  m_GroupPrefab2 "{CB58D90EA14430AD}Prefabs/Groups/OPFOR/Group_USSR_SentryTeam.et"
-  m_GroupPrefab3 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
- }
- {
-  coords 6831.65 72.485 4835.725
-  m_GroupPrefab1 "{58251EDC277CE499}622120A5448725E3/Prefabs/Groups/Group_Zombies_USSR.et"
-  m_GroupPrefab2 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
-  m_GroupPrefab3 "{8685F968392A66B4}622120A5448725E3/Prefabs/Groups/Group_Zombies_High.et"
+  coords 6828.95 72.485 4835.008
+  SphereRadius 200
+  m_GroupPrefab1 "{FBC6409B6650A30A}Prefabs/Monsters/Groups/Group_Zombie_RANDOM.et"
+  m_GroupPrefab2 "{1DBDD336741DF40E}Prefabs/Monsters/Groups/Group_Zombie_4.et"
+  m_GroupPrefab3 "{4117DB76F3A3AC53}Prefabs/Monsters/Groups/Group_Zombie_6.et"
   m_SpawnChance 100
  }
  {
-  coords 6822.489 72.206 4829.882
-  m_GroupPrefab1 "{58251EDC277CE499}622120A5448725E3/Prefabs/Groups/Group_Zombies_USSR.et"
-  m_GroupPrefab2 "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
-  m_GroupPrefab3 "{813B0F968868FA48}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV_Large.et"
+  coords 7057.5 115.463 5343.316
+  SphereRadius 200
+  m_GroupPrefab1 "{FBC6409B6650A30A}Prefabs/Monsters/Groups/Group_Zombie_RANDOM.et"
+  m_GroupPrefab2 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab3 "{BB9E94F7D878AE66}Prefabs/Groups/BANDITS/Group_BANDIT_Location.et"
   m_SpawnChance 100
  }
  {
-  coords 6357.471 86.123 5720.654
-  m_GroupPrefab1 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
-  m_GroupPrefab2 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
-  m_GroupPrefab3 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
+  coords 6852.841 100.209 5249.011
+  SphereRadius 200
+ }
+ {
+  coords 6816.34 99.194 5328.734
+  SphereRadius 200
+ }
+ {
+  coords 6396.133 116.885 5189.876
+  SphereRadius 200
+ }
+ {
+  coords 6358.82 115.215 5049.874
+  SphereRadius 200
+ }
+ {
+  coords 6366.965 123.462 5354.056
+  SphereRadius 200
+ }
+ {
+  coords 6287.439 142.783 5363.933
+  SphereRadius 200
+ }
+ {
+  coords 6217.623 117.908 5219.563
+  SphereRadius 200
+ }
+ {
+  coords 6196.954 115.253 5107.298
+  m_GroupPrefab1 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab2 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab3 "{D0A3CEDDA09430C4}Prefabs/Groups/ARMY/Group_ARMY_Location_6x_squad.et"
+ }
+ {
+  coords 6335.544 86.165 5641.959
+  m_GroupPrefab1 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab2 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab3 "{D0A3CEDDA09430C4}Prefabs/Groups/ARMY/Group_ARMY_Location_6x_squad.et"
+ }
+ {
+  coords 6360.851 85.88 5719.809
+  m_GroupPrefab1 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab2 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab3 "{D0A3CEDDA09430C4}Prefabs/Groups/ARMY/Group_ARMY_Location_6x_squad.et"
+ }
+ {
+  coords 6309.359 85.906 5710.288
+  m_GroupPrefab1 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab2 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab3 "{D0A3CEDDA09430C4}Prefabs/Groups/ARMY/Group_ARMY_Location_6x_squad.et"
+ }
+ {
+  coords 6391.284 85.113 5657.537
+  m_GroupPrefab1 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab2 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab3 "{D0A3CEDDA09430C4}Prefabs/Groups/ARMY/Group_ARMY_Location_6x_squad.et"
+ }
+ {
+  coords 6361.808 84.697 5662.235
+  m_GroupPrefab1 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab2 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab3 "{D0A3CEDDA09430C4}Prefabs/Groups/ARMY/Group_ARMY_Location_6x_squad.et"
+ }
+ {
+  coords 6769.366 67.45 4837.142
+  SphereRadius 200
+  m_GroupPrefab1 "{FBC6409B6650A30A}Prefabs/Monsters/Groups/Group_Zombie_RANDOM.et"
+  m_GroupPrefab2 "{1DBDD336741DF40E}Prefabs/Monsters/Groups/Group_Zombie_4.et"
+  m_GroupPrefab3 "{4117DB76F3A3AC53}Prefabs/Monsters/Groups/Group_Zombie_6.et"
   m_SpawnChance 100
  }
  {
-  coords 6331.917 86.296 5641.491
-  m_GroupPrefab1 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
-  m_GroupPrefab2 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
-  m_GroupPrefab3 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
-  m_SpawnChance 100
+  coords 6505.973 87.333 5282.722
+  m_GroupPrefab1 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab2 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
+  m_GroupPrefab3 "{D0A3CEDDA09430C4}Prefabs/Groups/ARMY/Group_ARMY_Location_6x_squad.et"
  }
  {
-  coords 6313.759 85.934 5707.057
-  m_GroupPrefab1 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
-  m_GroupPrefab2 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
-  m_GroupPrefab3 "{E552DABF3636C2AD}Prefabs/Groups/OPFOR/Group_USSR_RifleSquad.et"
-  m_SpawnChance 100
- }
- {
-  coords 7413.127 136.292 4763.604
-  m_GroupPrefab1 "{54F0DDCB5359C160}PrefabLibrary/Groups/Group_Zombies_CIV_Large.et"
-  m_GroupPrefab2 ""
-  m_GroupPrefab3 ""
- }
- {
-  coords 7466.556 137.747 4757.08
-  m_GroupPrefab1 "{54F0DDCB5359C160}PrefabLibrary/Groups/Group_Zombies_CIV_Large.et"
-  m_GroupPrefab2 ""
-  m_GroupPrefab3 ""
- }
- {
-  coords 7517.011 138.779 4713.777
-  m_GroupPrefab1 "{54F0DDCB5359C160}PrefabLibrary/Groups/Group_Zombies_CIV_Large.et"
-  m_GroupPrefab2 ""
-  m_GroupPrefab3 ""
+  coords 7018.837 110.344 5247.083
+  SphereRadius 200
+  PeriodicQueries 0
  }
 }
-ARMST_TRIGGER_GROUPSPAWN : "{6D0AF92565F1A207}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_GROUPS_FOREST.et" {
- coords 6339.152 99.325 5075.988
+GenericEntity : "{976D293D7CEBB8F7}Prefabs/Props/LOOT_BOX/clothes/Loot_clothes_upper_green.et" {
+ coords 7065.323 116.107 5353.333
+ angleY 0
 }

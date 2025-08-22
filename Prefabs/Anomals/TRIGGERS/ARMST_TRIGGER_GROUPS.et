@@ -1,8 +1,4 @@
 ARMST_TRIGGER_GROUPSPAWN {
  ID "65591EA089EF6AF0"
- SphereRadius 200
- UpdatePeriod 10
- m_GroupPrefab1 ""
- m_GroupPrefab2 ""
- m_GroupPrefab3 ""
+ SphereRadius 300
 }

@@ -2,24 +2,41 @@ GenericEntity : "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbara
  coords 7231.37 119.5 4986.001
 }
 GenericEntity : "{45C675ED3CFBBEC5}Prefabs/Props/Military/Compositions/US/ArsenalBox_US.et" {
- coords 7228.178 129.589 5004.3
+ coords 6993.913 103.474 5096.124
+ angleY 38.723
 }
 GenericEntity : "{511C041EFC7BAE60}Prefabs/Props/Arsenal/ArsenalBox_STALKEr.et" {
- coords 7227.951 129.59 5006.599
- angleY -6.902
+ coords 6993.414 102.685 5095.553
+ angleY -52.815
+}
+GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_6626FD80F0FB0C77 : "{759115303A582527}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/AmmoBoxArsenal_Equipment_USSR_Apparel.et" {
+ components {
+  EPF_PersistenceComponent "{6626FD80F0FB393B}" {
+   m_pSaveData EPF_EntitySaveDataClass "{6626FD85959E5955}" {
+   }
+  }
+  UniversalInventoryStorageComponent "{58A17A341AB8F069}" {
+   UseCapacityCoefficient 0
+   MaxItemSize 1000 1000 1000
+  }
+  SCR_ArsenalInventoryStorageManagerComponent "{58A0B19B1E191CC1}" {
+   Enabled 0
+  }
+  Hierarchy "{58C28EA6A6653277}" {
+  }
+ }
+ coords 6989.947 102.698 5086.22
+ angleY -138.43
 }
 GenericEntity : "{AD59EDEAA26CE792}Prefabs/Props/Military/Compositions/USSR/ArsenalBox_USSR.et" {
- coords 7228.253 129.603 5003.548
+ coords 6993.536 103.57 5095.414
+ angleY -45.913
 }
 GenericEntity : "{B53B98CEA2D72735}Prefabs/Props/Military/Compositions/FIA/ArsenalBox_FIA.et" {
- coords 7228.211 129.592 5005.02
- angleY -6.902
+ coords 6993.966 102.687 5096.119
+ angleY 37.511
 }
 $grp GenericEntity : "{F542F974956C255F}Prefabs/Props/Military/Compositions/CIV/ArsenalBox_CIV.et" {
- {
-  coords 7228.091 129.591 5005.694
-  angleY -6.902
- }
  {
   components {
    SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
@@ -28,5 +45,9 @@ $grp GenericEntity : "{F542F974956C255F}Prefabs/Props/Military/Compositions/CIV/
   }
   coords 7227.039 118.569 5005.508
   angleY -6.902
+ }
+ {
+  coords 6993.104 103.557 5095.71
+  angleY -52.815
  }
 }

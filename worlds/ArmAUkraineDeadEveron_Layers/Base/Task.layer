@@ -1,6 +1,4 @@
 Vehicle Dnepr1 : "{552EE9910227FADE}Vehicles/Dnepr/Dnepr.et" {
- coords 6825.781 72.393 4831.685
-}
-GenericEntity : "{EF45148F01C94BCA}Prefabs/Props/Civilian/Jerrycan_01_slot.et" {
- coords 6825.232 72.229 4831.294
+ coords 6826.292 72.393 4832.304
+ angleY -60.42
 }
