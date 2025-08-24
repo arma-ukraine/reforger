@@ -5,28 +5,6 @@ GenericEntity : "{345566D2C7965C4A}Prefabs/Structures/BuildingParts/Windows/Win_
  angleZ 180
 }
 GameEntity : "{6597847D2AC253F5}Prefabs/Props/Military/Generators/GeneratorMilitary_USSR_01/GeneratorMilitary_USSR_01.et" {
- components {
-  ADM_ShopComponent "{6630AA927375228D}" {
-   m_ShopConfig "{F06650956BB0108C}configs/Shops/Cooking.conf"
-  }
-  ActionsManagerComponent "{6630AA926179F470}" {
-   ActionContexts {
-    UserActionContext "{6630AA9214D7247F}" {
-     ContextName "Shop"
-     Position PointInfo "{6630AA92CF2567BC}" {
-     }
-     Radius 2
-    }
-   }
-   additionalActions {
-    ADM_ShopAction "{6630AA926518DFBA}" {
-     ParentContextList {
-      "Shop"
-     }
-    }
-   }
-  }
- }
  coords 7222.918 118.834 4991.106
  angleY -13.185
  angleZ -1.409
