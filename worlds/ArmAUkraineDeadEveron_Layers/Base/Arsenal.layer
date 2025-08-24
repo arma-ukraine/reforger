@@ -22,7 +22,7 @@ GenericEntity : "{403E2B0BE16D6CC9}Prefabs/ItemShop_Base.et" {
      }
     }
     ADM_ShopMerchandise "{662EE487D9FAB868}" {
-     m_Merchandise ADM_MerchandisePrefab "{662EE487C3B2EBBF}" {
+     m_Merchandise ADM_MerchandiseItem "{662EE487C3B2EBBF}" {
       m_iMaxPurchaseQuantity 1
       m_sPrefab "{B0E67230AEEE2DF3}Prefabs/Items/Wallet.et"
      }
