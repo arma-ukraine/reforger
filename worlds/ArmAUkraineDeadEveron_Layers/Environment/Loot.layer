@@ -76,6 +76,9 @@ $grp GenericEntity : "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_ga
  {
   coords 6311.226 106.977 5232.301
  }
+ {
+  coords 6402.895 91.248 4885.609
+ }
 }
 $grp GenericEntity : "{2E48D4FB4D103DFD}Prefabs/Props/LOOT_BOX/Body/Loot_random_body.et" {
  {
@@ -113,6 +116,10 @@ $grp GenericEntity : "{91D86FC384A72660}Prefabs/Props/LOOT_BOX/Loot_randomize_me
  {
   coords 6502.727 88.861 5272.88
  }
+}
+GenericEntity : "{976D293D7CEBB8F7}Prefabs/Props/LOOT_BOX/clothes/Loot_clothes_upper_green.et" {
+ coords 7065.323 116.107 5353.333
+ angleY 0
 }
 GenericEntity : "{ACA0244622E94EE1}Prefabs/Props/LOOT_BOX/tools/Loot_tools_box.et" {
  coords 6834.735 72.537 4835.679

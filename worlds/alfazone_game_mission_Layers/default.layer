@@ -267,24 +267,42 @@ MusicManager : "{359452CCDBDD03F5}Prefabs/Sounds/Music/MusicManager_Campaign.et"
   }
  }
 }
+GenericEntity : "{403E2B0BE16D6CC9}Prefabs/ItemShop_Base.et" {
+ components {
+  ADM_ShopComponent "{5D775155BFB12BA4}" {
+   m_AdditionalMerchandise {
+    ADM_ShopMerchandise "{662F44D18B33D657}" {
+     m_Merchandise ADM_MerchandiseItem "{662F44D18E8269D0}" {
+      m_sPrefab "{B0E67230AEEE2DF3}Prefabs/Items/Wallet.et"
+     }
+     m_BuyPayment {
+      ADM_PaymentMethodCurrency "{662F44D1B1FA2A08}" {
+      }
+     }
+    }
+   }
+  }
+ }
+ coords 3319.362 300.796 2256.733
+}
 SCR_LoadoutManager : "{AA4E7419A1FF65B0}Prefabs/MP/Managers/Loadouts/LoadoutManager_Base.et" {
  coords 6641.961 308.196 2681.429
  m_aPlayerLoadouts {
   SCR_FactionPlayerLoadout "{5AEC9DF92837B715}" {
    m_sLoadoutName "#AR-Editor_ContentBrowser_Filter_ROLE_RIFLEMAN_Name"
-   m_sLoadoutResource "{CAAACF93FF038EFC}Prefabs/Factions/Character_STALKER_Player.et"
+   m_sLoadoutResource "{CAAACF93FF038EFC}Prefabs/Factions/PLAYER/Character_STALKER_Player.et"
    m_sLoadoutImage "{2B0877799B9B6C66}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_Rifleman.edds"
    m_sAffiliatedFaction "FACTION_STALKER"
   }
   SCR_PlayerArsenalLoadout "{5B0298F01E3A1A0D}" {
    m_sLoadoutName "#AR-Editor_AttributeCategory_Arsenal_Name"
-   m_sLoadoutResource "{CAAACF93FF038EFC}Prefabs/Factions/Character_STALKER_Player.et"
+   m_sLoadoutResource "{CAAACF93FF038EFC}Prefabs/Factions/PLAYER/Character_STALKER_Player.et"
    m_sLoadoutImage "{2B0877799B9B6C66}UI/Textures/EditorPreviews/Characters/BLUFOR/US_Army/Character_US_Rifleman.edds"
    m_sAffiliatedFaction "FACTION_STALKER"
   }
   SCR_FactionPlayerLoadout "{62AC9511E054C200}" {
    m_sLoadoutName "#AR-Editor_ContentBrowser_Filter_ROLE_RIFLEMAN_Name"
-   m_sLoadoutResource "{CAAACF93FF038EFC}Prefabs/Factions/Character_STALKER_Player.et"
+   m_sLoadoutResource "{CAAACF93FF038EFC}Prefabs/Factions/PLAYER/Character_STALKER_Player.et"
    m_sLoadoutImage "{6601A3AE17EA976D}UI/Textures/EditorPreviews/Characters/INDFOR/FIA/Character_FIA_Rifleman.edds"
    m_sAffiliatedFaction "FACTION_STALKER"
   }

@@ -32,47 +32,37 @@ SCR_GameModeEditor SCR_ArmstGameMode1 : "{B563F305A997ACAE}Prefabs/MP/Modes/Edit
   EPF_PersistenceManagerComponent "{658301C3AC02188D}" {
    components {
     EPF_BasicRespawnSystemComponent "{658301C36354B154}" {
-     m_SpawnLogic SCR_MenuSpawnLogic "{6626FD8A2DCE874D}" {
-      m_sForcedFaction "FACTION_STALKER"
-     }
+     m_CreateCharacter 1
     }
    }
    m_pConnectionInfo EDF_JsonFileDbConnectionInfo "{658301C3451DE3D2}" {
     m_sDatabaseName "ArmAUkraineDeadEveronDataBase"
    }
   }
- }
- coords 7199.908 129.426 4997.902
- {
-  SCR_FactionManager {
-   ID "657A845BEA97811E"
-   Factions {
-    SCR_Faction "{616AFAF5BBCF187E}" {
-     m_bIsPlayable 0
+  SCR_GameModeSFManager "{662E8465332A5E6D}" {
+   m_aTaskTypesAvailable {
+    SCR_ScenarioFrameworkTaskType "{662E84653BB40D04}" {
+     m_eTypeOfTask DEFAULT
     }
-    SCR_Faction "{63029BDDD854782D}" {
-     m_bIsPlayable 0
-    }
-    SCR_Faction "{6592C1054A3284FA}" {
-     m_bIsPlayable 0
-    }
-    SCR_Faction "{65B12C1FBA667A8E}" {
-     m_bIsPlayable 0
-    }
-    SCR_Faction "{6592C1055289779F}" {
-     m_bIsPlayable 0
+    SCR_ScenarioFrameworkTaskType "{662E846175A2B7D7}" {
+     m_eTypeOfTask CLEAR_AREA
     }
    }
   }
-  SCR_BaseTaskManager : "{87208DAD6F3C0DE2}Prefabs/MP/Managers/Tasks/TaskManager_Editor.et" {
-   coords -9.945 3.763 5.548
+ }
+ coords 7199.908 129.426 4997.902
+ {
+  SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+   coords 0 0 0
+  }
+  SCR_BaseTaskManager : "{1AC69CD7907FB4F8}Prefabs/Systems/ScenarioFramework/Tasks/TaskManager.et" {
+   coords 0 0 0
   }
   SCR_LoadoutManager : "{B54D08AEA74A5354}Prefabs/MP/Managers/Loadouts/LoadoutManager_Editor.et" {
    coords -9.945 3.763 5.548
   }
  }
 }
-SCR_SpawnPoint : "{1AF86343064137A2}Prefabs/MP/Spawning/SpawnPoint_Faction_STALKER.et" {
- coords 7208.369 118.655 4993.136
- angleY 0
+SCR_SpawnPoint : "{2D88EAB83A52AE0E}Prefabs/MP/Spawning/SpawnPoint_STALKER.et" {
+ coords 7210.896 117.731 5000.238
 }

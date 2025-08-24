@@ -10141,10 +10141,6 @@ $grp Tree : "{0CA0547EB03759E1}Prefabs/Vegetation/Bush/b_rubus_idaeus_1s.et" {
   angleZ 3.578
  }
 }
-GenericEntity Backpack_RPG_Gunner_5DA11622B0862823 : "{0D39750E5695B9D8}Prefabs/Items/Equipment/Backpacks/Backpack_RPG_Gunner.et" {
- coords 9917.196 20.811 1510.766
- angleY 81.9
-}
 StaticModelEntity : "{0D3E53CF82073840}Prefabs/Structures/BuildingParts/Doors/DoorSet_TinWall_01_Gate.et" {
  coords 6307.602 0.419 5249.874
  angleY -189.6
@@ -10153,18 +10149,38 @@ $grp StaticModelEntity : "{0DF531BD85B4FD8B}Prefabs/Compositions/Misc/SubComposi
  {
   coords 7480.917 7.523 6699.903
   angleY -22.296
+  {
+   GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DF17F0 {
+    ID "58C28EA057FD7F3F"
+   }
+  }
  }
  {
   coords 5104.613 54.265 5459.476
   angleY 156.353
+  {
+   GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DFD05B {
+    ID "58C28EA057FD7F3F"
+   }
+  }
  }
  {
   coords 5264.323 64.262 5324.27
   angleY 120.358
+  {
+   GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DF9DEE {
+    ID "58C28EA057FD7F3F"
+   }
+  }
  }
  {
   coords 2665.943 94.339 5400.264
   angleY -144.257
+  {
+   GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DE62C7 {
+    ID "58C28EA057FD7F3F"
+   }
+  }
  }
 }
 $grp SCR_DestructibleBuildingEntity : "{0E1B7B383F318A66}Prefabs/Structures/Industrial/Containers/FuelTanks/FuelTank_03/FuelTank_03_orange.et" {
@@ -20389,10 +20405,6 @@ $grp SCR_DestructibleEntity : "{2F8BA23B88A4FB07}Prefabs/Props/Furniture/Sunshad
   angleZ 0.101
  }
 }
-SCR_DestructibleEntity : "{2FC3C5B5F7361B87}Prefabs/Structures/Walls/Concrete/ConcreteWall_02/WW2_ConcreteWall_02_V1_2m.et" {
- coords 6987.865 1.943 5085.282
- angleY -47.063
-}
 GenericEntity : "{2FE7AA0EBA71CDFB}Prefabs/Structures/Signs/Large/SignLarge_01_MilitaryBase.et" {
  coords 5220.587 28.815 10211.815
  angleY 74.4
@@ -25755,10 +25767,6 @@ $grp GenericEntity : "{345566D2C7965C4A}Prefabs/Structures/BuildingParts/Windows
   angleY -137.304
   angleZ 90
  }
- {
-  coords 6988.774 105.582 5086.736
-  angleY -45
- }
 }
 StaticModelEntity : "{3470888EF6DE7B29}Prefabs/Compositions/Misc/SubCompositions/Tent_Medical_Cluttered_USSR_02.et" {
  coords 2230.256 134.992 5616.332
@@ -28427,10 +28435,6 @@ GenericEntity : "{41A0ECE98B6961D6}Prefabs/Structures/BuildingParts/Signs/SignRo
  angleY -175.3
  scale 0.5
 }
-GenericEntity Backpack_Kolobok_5DA11622B084D95B : "{41A9C55B61F375F0}Prefabs/Items/Equipment/Backpacks/Backpack_Kolobok.et" {
- coords 4886.645 28.594 11929.065
- angleY -141.5
-}
 SCR_JunctionPowerPole : "{423EDC5895441FD2}Prefabs/Structures/Infrastructure/Power/Powerlines/PowerLine_EHV_01/PowerLine_EHV_01_junction.et" {
  coords 5771.448 -2.328 7190.306
  angleX -73.1
@@ -29504,29 +29508,6 @@ $grp GenericEntity : "{47E258BBC8968F11}Prefabs/Props/Industrial/GasTank_01_rust
 SCR_DestructibleBuildingEntity : "{48023B0C1DCC8F0D}Prefabs/Structures/Infrastructure/Naval/Piers/PierWooden_01_10m.et" {
  coords 4544.112 50.301 6109.395
  angleY -132.9
-}
-$grp GenericEntity : "{4805E67E2AE30F8D}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_M5.et" {
- Backpack_Medical_M5_5DA11622B084D121 {
-  coords 10152.197 3.307 1558.476
- }
- Backpack_Medical_M5_5DA11622B084D171 {
-  coords 10161.411 3.326 1560.343
- }
- Backpack_Medical_M5_5DA11622B084D0B0 {
-  coords 10141.216 3.057 1514.34
- }
- Backpack_Medical_M5_5DA11622B084D0FC {
-  coords 10156.062 3.053 1509.802
-  angleY -84.6
- }
- Backpack_Medical_M5_5DA11622B084D027 {
-  coords 10161.525 3.119 1532.82
-  angleY 103.2
- }
- Backpack_Medical_M5_5DA11622B084D063 {
-  coords 10162.518 3.105 1537.017
-  angleY 103.2
- }
 }
 $grp SCR_DestructibleBuildingEntity : "{4840DB0BB7999FE2}Prefabs/Structures/Industrial/Large Redbarn.et" {
  {
@@ -34129,9 +34110,6 @@ $grp GenericEntity : "{5BD7E085DFB4DB35}Prefabs/Compositions/Misc/SubComposition
 Tree : "{5C594649DBDD5EAE}Prefabs/Vegetation/Tree/t_betula_pendula/t_betula_pendula_2s.et" {
  coords 7201.573 0.002 2431.365
 }
-GenericEntity Backpack_ALICE_Medium_assembled_5DA11622B09A4D42 : "{5C5C6EE05EE2FF1A}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium_assembled.et" {
- coords 4886.015 28.594 11929.688
-}
 $grp StaticModelEntity : "{5C9F32A26A42876F}Prefabs/Structures/Infrastructure/Towers/AntennaVOR_01/AntennaVOR_01.et" {
  {
   coords 4672.207 18.507 10345.896
@@ -37398,9 +37376,10 @@ $grp GenericEntity : "{645A92146ECBA8F1}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GenericEntity Grenade_RGD5_660B2D6134C6F187 : "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" {
- coords 4825.024 83.131 4426.806
- angleX 3.901
+ coords 4825.561 83.072 4426.195
+ angleX 3.911
  angleY 43.182
+ angleZ 3.658
 }
 GenericEntity : "{6475CD495DE1C931}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V3.et" {
  coords 10724.008 0.774 4084.938
@@ -40597,6 +40576,9 @@ StaticModelEntity : "{6DEC3A82BA35F108}Prefabs/Compositions/Misc/SubCompositions
   GenericEntity {
    ID "5A5344E194A9CBF8"
    coords 0.002 -13.758 -9.894
+  }
+  GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DE277C {
+   ID "58C28EA038167BE7"
   }
  }
 }
@@ -46092,40 +46074,6 @@ $grp GenericEntity : "{7A63E9272B714EC7}Prefabs/Props/Civilian/AshtrayStreet_01.
   coords 5546.438 106.731 5613.328
   angleX 0.05
   angleZ -0.043
- }
-}
-$grp GenericEntity : "{7AC107CA7AFC9B59}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet.et" {
- Backpack_Medical_Soviet_5DA11622B0924023 {
-  coords 4887.01 28.595 11918.286
-  angleY -163.6
- }
- Backpack_Medical_Soviet_5DA11622B092404A {
-  coords 10149.17 3.328 1558.596
-  angleY 110.1
- }
- Backpack_Medical_Soviet_5DA11622B0925F83 {
-  coords 10157.042 3.347 1558.859
-  angleY 49.7
- }
- Backpack_Medical_Soviet_5DA11622B0925FC0 {
-  coords 10167.238 3.343 1555.475
-  angleY 110.1
- }
- Backpack_Medical_Soviet_5DA11622B0925F00 {
-  coords 10137.913 3.063 1515.141
-  angleY 110.2
- }
- Backpack_Medical_Soviet_5DA11622B0925F42 {
-  coords 10144.604 3.058 1508.396
-  angleY 110.2
- }
- Backpack_Medical_Soviet_5DA11622B0925E82 {
-  coords 10152.758 3.059 1511.568
-  angleY 110.2
- }
- Backpack_Medical_Soviet_5DA11622B0925ECF {
-  coords 10157.781 3.125 1533.242
-  angleY 103.2
  }
 }
 GenericEntity : "{7AC52EA221868331}Prefabs/Props/Furniture/BenchChurch_02/BenchChurch_02_short_simple.et" {
@@ -65021,24 +64969,45 @@ $grp GenericEntity : "{9D9312AA9984A5CE}Prefabs/Props/Garbage/Cardboard/Cardboar
   angleZ -1.307
  }
 }
-GenericEntity : "{9DCC685B0943A9E3}Prefabs/Structures/BuildingParts/Doors/Door_Bars_A_LEFT_EXT_ST_B.et" {
- components {
-  DoorComponent "{221C667A9F7D4B69}" {
-   Enabled 0
+$grp GenericEntity : "{9DCC685B0943A9E3}Prefabs/Structures/BuildingParts/Doors/Door_Bars_A_LEFT_EXT_ST_B.et" {
+ {
+  components {
+   DoorComponent "{221C667A9F7D4B69}" {
+    Enabled 0
+   }
+   NavmeshCustomLinkComponent "{559E7AC91AFA25BA}" {
+    Enabled 0
+   }
+   SCR_AISmartActionComponent "{5890ED6117CBB20D}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{F32B667C3C823800}" {
+    Enabled 0
+   }
   }
-  NavmeshCustomLinkComponent "{559E7AC91AFA25BA}" {
-   Enabled 0
-  }
-  SCR_AISmartActionComponent "{5890ED6117CBB20D}" {
-   Enabled 0
-  }
-  ActionsManagerComponent "{F32B667C3C823800}" {
-   Enabled 0
-  }
+  Flags 1027
+  coords 6988.492 102.698 5088.114
+  angleY 42.196
  }
- Flags 1027
- coords 6988.513 102.698 5086.038
- angleY -47.555
+ {
+  components {
+   DoorComponent "{221C667A9F7D4B69}" {
+    Enabled 0
+   }
+   NavmeshCustomLinkComponent "{559E7AC91AFA25BA}" {
+    Enabled 0
+   }
+   SCR_AISmartActionComponent "{5890ED6117CBB20D}" {
+    Enabled 0
+   }
+   ActionsManagerComponent "{F32B667C3C823800}" {
+    Enabled 0
+   }
+  }
+  Flags 1027
+  coords 6986.059 102.802 5090.371
+  angleY 42.196
+ }
 }
 $grp GenericEntity : "{9DD476816836FFED}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V5_covered.et" {
  {
@@ -79898,6 +79867,18 @@ $grp GenericEntity : "{CC66836BF4E211F9}Prefabs/Props/Military/Camps/Duckboard_0
   coords 7228.236 118.492 5007.101
   angleY 81.811
  }
+ {
+  components {
+   Hierarchy "{569C80D17E11BF7D}" {
+    Enabled 1
+   }
+  }
+  coords 7210.662 127.063 5009.666
+  angleX -1.081
+  angleY -24.778
+  angleZ 1.563
+  scale 0.8
+ }
 }
 $grp Tree : "{CC86FA58287C61C8}Prefabs/Vegetation/Vegetables/PumpkinCrop_01_Line.et" {
  {
@@ -86944,6 +86925,11 @@ StaticModelEntity : "{DA822ADE75D09EB0}Prefabs/Compositions/Misc/SubCompositions
  angleX -0.33
  angleY 45.47
  angleZ -0.126
+ {
+  GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DEE2E5 {
+   ID "58C28EA0D528BDCF"
+  }
+ }
 }
 $grp GenericEntity : "{DA861447E6D426AE}Prefabs/Props/Industrial/Repair/VehicleGarbage_01_pile_small.et" {
  {
@@ -91183,38 +91169,83 @@ $grp StaticModelEntity : "{E8697D4489516AE0}Prefabs/Compositions/Misc/SubComposi
  {
   coords 5091.947 54.359 5453.584
   angleY 154.957
+  {
+   GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DEAADF {
+    ID "58C28EA05836199B"
+   }
+  }
  }
  {
   coords 5029.116 174.012 7084.401
   angleY 37.587
+  {
+   GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DD7861 {
+    ID "58C28EA05836199B"
+   }
+  }
  }
  {
   coords 5039.525 174.061 7076.387
   angleY 37.587
+  {
+   GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DD495C {
+    ID "58C28EA05836199B"
+   }
+  }
  }
  {
   coords 5048.499 174.267 7069.479
   angleY 37.587
+  {
+   GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DD27FC {
+    ID "58C28EA05836199B"
+   }
+  }
  }
  {
   coords 7901.75 256.76 4011.988
   angleY -138.028
+  {
+   GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DDF6BA {
+    ID "58C28EA05836199B"
+   }
+  }
  }
  {
   coords 2210.809 135.51 5577.235
   angleY -5.413
+  {
+   GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DDB9BD {
+    ID "58C28EA05836199B"
+   }
+  }
  }
  {
   coords 2189.917 135.788 5577.215
   angleY 19.687
+  {
+   GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DD8940 {
+    ID "58C28EA05836199B"
+   }
+  }
  }
  {
   coords 2258.131 134.185 5590.731
   angleY -43.246
+  {
+   GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DC5DD9 {
+    ID "58C28EA05836199B"
+   }
+  }
  }
  {
   coords 2267.716 133.464 5607.268
   angleY -100.35
+  {
+   GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208EA1DC2B3D {
+    ID "58C28EA05836199B"
+   }
+  }
  }
 }
 $grp GenericEntity : "{E86E2C320BF1F524}Prefabs/Props/Military/Sandbags/Sandbag_01_bunker_base.et" {
@@ -91279,10 +91310,6 @@ SCR_DestructibleBuildingEntity : "{E8C14F26268A4D6D}Prefabs/Structures/Services/
    scale 0.78
   }
  }
-}
-GenericEntity Backpack_Medical_Soviet_NoCross_02_660B2D6134D4CB01 : "{E90F2EB67A9CF49A}Prefabs/Items/Equipment/Backpacks/Backpack_Medical_Soviet_NoCross_02.et" {
- coords 7018.062 98.563 8390.889
- angleY -159.786
 }
 $grp Tree : "{E917C0F068623E43}Prefabs/Vegetation/Plant/p_arctium_lappa_0s.et" {
  {
@@ -96768,12 +96795,6 @@ $grp SCR_PowerPole : "{F2441CDA323B4393}Prefabs/Structures/Infrastructure/Power/
   angleZ 29.1
  }
 }
-GenericEntity Binoculars_B12_660B2D6134D493B6 : "{F2539FA5706E51E4}Prefabs/Items/Equipment/Binoculars/Binoculars_B12/Binoculars_B12.et" {
- coords 7213.75 119.552 4988.473
- angleX 4.306
- angleY 0.028
- angleZ -1.79
-}
 $grp SCR_DestructibleEntity : "{F2581B5CA3C08544}Prefabs/Structures/Walls/Crashbarrier/CrashBarrier_01/CrashBarrier_01_End2.et" {
  {
   coords 9760.834 0.791 1568.567
@@ -102185,9 +102206,6 @@ GenericEntity : "{FD016719F98775F9}Prefabs/Props/Industrial/CargoContainers/Carg
  coords 6314.077 -2.067 4146.762
  angleY -47.4
  angleZ 10
-}
-GenericEntity Backpack_M70_Swiss_5DA11622B163EDFB : "{FDA7B6630DB87991}Prefabs/Items/Equipment/Backpacks/Backpack_M70_Swiss.et" {
- coords 4787.022 170.672 6989.473
 }
 GenericEntity : "{FDC0177889A04B65}Prefabs/Structures/BuildingParts/Eletrical/ElectricCabinetInterior_03/Dst/ElectricCabinetInterior_03_dst.et" {
  coords 9156.558 2.125 5367.521
