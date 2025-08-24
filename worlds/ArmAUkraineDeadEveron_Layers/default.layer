@@ -32490,15 +32490,6 @@ $grp GameEntity : "{50E6A3845C9F20FD}Prefabs/Props/Military/Camps/LanternMilitar
   angleY -0.028
   angleZ 1.79
  }
- {
-  components {
-   SCR_BaseInteractiveLightComponent "{5876E7CF88610C12}" {
-    m_eInitialLightState LIT
-   }
-  }
-  coords 7222.366 119.754 4991.696
-  angleY 176.62
- }
 }
 SCR_DestructibleEntity : "{510AAC7765BE2F0B}Prefabs/Structures/Walls/Wooden/WoodenFence_04/WoodenFence_04_4m_Pole.et" {
  coords 5734.041 0.685 7198.474
@@ -37376,10 +37367,10 @@ $grp GenericEntity : "{645A92146ECBA8F1}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GenericEntity Grenade_RGD5_660B2D6134C6F187 : "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" {
- coords 4825.561 83.072 4426.195
- angleX 3.911
+ coords 4825.946 83.017 4425.74
+ angleX 5.865
  angleY 43.182
- angleZ 3.658
+ angleZ 5.477
 }
 GenericEntity : "{6475CD495DE1C931}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V3.et" {
  coords 10724.008 0.774 4084.938
@@ -38555,18 +38546,11 @@ $grp GenericEntity : "{654B33C808C4D93E}Prefabs/Props/Wrecks/M151A2_wreck_static
   angleY -7.2
  }
 }
-$grp GameEntity : "{6597847D2AC253F5}Prefabs/Props/Military/Generators/GeneratorMilitary_USSR_01/GeneratorMilitary_USSR_01.et" {
- {
-  coords 4910.961 36.004 9096.673
-  angleX 1.209
-  angleY 117.796
-  angleZ -0.374
- }
- {
-  coords 7222.678 118.843 4991.135
-  angleY -13.185
-  angleZ -1.409
- }
+GameEntity : "{6597847D2AC253F5}Prefabs/Props/Military/Generators/GeneratorMilitary_USSR_01/GeneratorMilitary_USSR_01.et" {
+ coords 4910.961 36.004 9096.673
+ angleX 1.209
+ angleY 117.796
+ angleZ -0.374
 }
 GenericEntity : "{65CD3EE14677E3AA}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V1.et" {
  coords 8405.695 12.97 792.885
@@ -61395,17 +61379,9 @@ $grp DecalEntity : "{925553528D276E6D}Prefabs/Decals/Asphalt/Decal_Asphalt_Crack
   scale 6
  }
 }
-$grp GenericEntity : "{92BE346D5E0BD792}Prefabs/Props/Military/Fuel/MobileWaterTank_USSR_01_fuel.et" {
- {
-  coords 4953.593 2.162 3871.229
-  angleX -1.808
- }
- {
-  coords 7216.675 118.659 4991.166
-  angleX -0.892
-  angleY 36.954
-  angleZ 0.83
- }
+GenericEntity : "{92BE346D5E0BD792}Prefabs/Props/Military/Fuel/MobileWaterTank_USSR_01_fuel.et" {
+ coords 4953.593 2.162 3871.229
+ angleX -1.808
 }
 $grp Tree : "{93312BADF8D221EC}Prefabs/Vegetation/Tree/t_picea_abies/t_picea_abies_2d.et" {
  {
@@ -69509,7 +69485,7 @@ $grp GenericEntity : "{ACC3989741367DF1}Prefabs/Vegetation/Tree/Debris/T_trunk_d
  }
 }
 StaticModelEntity : "{ACEB4878584F65E5}Prefabs/Structures/Debris/Debris_HouseVillage/Debris_HouseVillage_01_Pile_V1.et" {
- coords 6998.728 102.279 5088.248
+ coords 7001.593 102.4 5084.179
 }
 GenericEntity : "{ADAACE11802260CF}Prefabs/Structures/BuildingParts/Doors/Door_AircraftShelter_E_01/Door_AircraftShelter_E_01_Main_Left_EXT_COV_B.et" {
  components {
@@ -86441,10 +86417,6 @@ $grp GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
   angleX -0.005
  }
  {
-  coords 7234.87 118.914 4990.303
-  angleX -4.467
- }
- {
   coords 5741.484 225.487 7229.437
   angleX 2.622
   angleY -0.397
@@ -86535,6 +86507,15 @@ $grp GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
   angleX -1.405
   angleY -32.487
   angleZ -1.213
+ }
+ {
+  components {
+   SCR_FireplaceComponent "{5876E7F288BF5C8E}" {
+    m_eInitialLightState OFF
+   }
+  }
+  coords 7234.272 118.889 4990.617
+  angleX -4.467
  }
 }
 $grp GenericEntity : "{D99955DFCF7D3962}Prefabs/Props/Wrecks/CannonWreck_01.et" {
