@@ -35,25 +35,20 @@ CURRENCY_BUY_SELL = (
 )
 
 POSTMAN_BUY_SELL = (
-    # Ammo.
-    Item.AMMO_12GA_SHELL,
-    # Consumnables.
-    Item.CANTEEN_EMPTY,
-    Item.CONSERVA_THROW,
     # Weapons.
-    Item.REMINGTON_870,
-    Item.DOUBLE_BARREL_SHOTGUN,
+    Item.PM,
     Item.DOUBLE_BARREL_SAWN_OFF,
-    # Apparel.
-    Item.GASMASK_GP5,
-    Item.GORKA_GREEN,
-    Item.GORKA_BROWN,
-    Item.GORKA_DARKBROWN,
-    Item.GORKA_CAMO_DARK,
-    # Equipment.
-    Item.COMPASS,
-    Item.FLASHLIGHT,
-    Item.MAP,
+    Item.DOUBLE_BARREL_SHOTGUN,
+    Item.REMINGTON_870,
+    # Ammo.
+    Item.AMMO_PM_9x18,
+    Item.AMMO_12GA_SHELL,
+    # Medicine.
+    Item.MEDKIT_AI2,
+    Item.MORPHINE,
+    Item.BANDAGE,
+    Item.TOURNIQUET,
+    Item.SALINE_BAG,
 )
 
 
@@ -68,8 +63,34 @@ class Shop(Enum):
 
     POSTMAN = ShopConfig(
         name="Postman",
-        buy_items=POSTMAN_BUY_SELL + (Item.WALLET,),
-        sell_items=POSTMAN_BUY_SELL + (Item.FLOPPY,),
+        buy_items=(Item.WALLET,)
+        + POSTMAN_BUY_SELL
+        + (
+            # Containers.
+            Item.CANTEEN_EMPTY,
+            Item.CONSERVA_THROW,
+            # Apparel.
+            Item.GASMASK_GP5,
+            Item.GORKA_GREEN,
+            Item.GORKA_BROWN,
+            Item.GORKA_DARKBROWN,
+            Item.GORKA_CAMO_DARK,
+            # Equipment.
+            Item.COMPASS,
+            Item.FLASHLIGHT,
+            Item.MAP,
+        ),
+        sell_items=POSTMAN_BUY_SELL
+        + (
+            Item.FLOPPY,
+            Item.FLASH,
+            Item.DOCS_1,
+            Item.DOCS_2,
+            Item.DOCS_3,
+            Item.DOCS_4,
+            Item.DOCS_5,
+            Item.DOCS_SECRETS,
+        ),
         sell_multiplier=0.3,
     )
 
