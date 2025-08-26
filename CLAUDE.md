@@ -56,7 +56,16 @@ The mod relies heavily on external framework mods:
 
 ### Configuration System
 
-**Shop Configuration Structure:**
+**Shop Configuration Generation:**
+Shop configurations are generated from Python code in `src/economy/` using a simple, declarative system.
+
+**Python Shop Generation System:**
+- `src/economy/enums.py` - Shop and Item enums with prefab paths
+- `src/economy/prices.py` - Declarative shop configuration using NamedTuples
+- `src/economy/generator.py` - Generates .conf files from Python configuration
+- `generate_shop_configs.py` - Main script to regenerate all shop files
+
+**Shop Configuration Structure (Generated):**
 ```
 ADM_ShopConfig {
   m_Merchandise {
@@ -68,6 +77,28 @@ ADM_ShopConfig {
   }
 }
 ```
+
+**Python Configuration Format:**
+```python
+ShopConfig(
+    shop=Shop.POSTMAN,
+    buy_config=((Item.WALLET, 0),),  # Free wallets
+    sell_config=(),  # Nothing to sell
+    buy_multiplier=1.0,   # Normal prices
+    sell_multiplier=0.7   # Sell for 70% of buy price
+)
+```
+
+**Supported Payment Types:**
+- `int` - Currency payment (e.g., `500` UAK)
+- `ItemTrade(item, count)` - Item-for-item trade (e.g., `ItemTrade(Item.CANTEEN_EMPTY, 1)`)
+- `None` - Item cannot be bought/sold
+
+**Multipliers:**
+- `buy_multiplier` - Affects currency prices when buying (default: 1.0)
+- `sell_multiplier` - Affects currency prices when selling (default: 1.0)
+- ItemTrade quantities are NOT affected by multipliers
+- Final prices are rounded up using `math.ceil()`
 
 **Mission Configuration** - Located in `Missions/ArmAUkraineDeadEveron.conf`
 - Defines world reference, player count, time acceleration settings
@@ -81,6 +112,18 @@ ADM_ShopConfig {
 **Player Controller** - Modified DefaultPlayerControllerMP_Factions with shop integration
 
 ## Development Notes
+
+**Shop Configuration Workflow:**
+1. Add new items to `src/economy/enums.py` with correct prefab paths
+2. Update shop inventories in `src/economy/prices.py` using NamedTuple format
+3. Run `python generate_shop_configs.py` to regenerate all .conf files
+4. Import updated .conf files into Arma Reforger Workbench
+
+**Python Code Conventions:**
+- Use absolute imports: `from src.economy.enums import Item, Shop`
+- Keep NamedTuple structures simple and declarative
+- Avoid magic strings - use enums for all item and shop references
+- Price multipliers only affect integer currency payments, not ItemTrade
 
 **Persistence Requirements:**
 - Custom components require EPF_ComponentSaveData implementation for persistence

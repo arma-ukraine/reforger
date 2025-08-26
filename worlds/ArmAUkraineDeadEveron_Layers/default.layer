@@ -37367,10 +37367,9 @@ $grp GenericEntity : "{645A92146ECBA8F1}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GenericEntity Grenade_RGD5_660B2D6134C6F187 : "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" {
- coords 4825.946 83.017 4425.74
- angleX 5.865
+ coords 4825.993 83.012 4425.682
+ angleX 5.795
  angleY 43.182
- angleZ 5.477
 }
 GenericEntity : "{6475CD495DE1C931}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V3.et" {
  coords 10724.008 0.774 4084.938
@@ -79019,15 +79018,6 @@ SCR_DestructibleBuildingEntity : "{CA9129DFC0B9A501}Prefabs/Structures/Agricultu
    coords -0.002 0 0
   }
  }
-}
-SCR_ChimeraCharacter Character_STALKER_Player_6626FD9CB7995131 : "{CAAACF93FF038EFC}Prefabs/Factions/PLAYER/Character_STALKER_Player.et" {
- components {
-  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
-   m_bAutoRegister ALWAYS
-  }
- }
- coords 6994.894 102.698 5097.749
- angleY 122
 }
 $grp GenericEntity : "{CAD13AC8DAFEB0E8}Prefabs/Props/Military/CargoContainers/CargoContainer_01_20ft_USSR_supplies.et" {
  {

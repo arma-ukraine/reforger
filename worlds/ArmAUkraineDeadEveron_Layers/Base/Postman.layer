@@ -55,6 +55,15 @@ GenericEntity : "{B53B98CEA2D72735}Prefabs/Props/Military/Compositions/FIA/Arsen
  coords 6993.966 102.687 5096.119
  angleY 37.511
 }
+SCR_ChimeraCharacter Character_STALKER_Player_6626FD9CB7995131 : "{CAAACF93FF038EFC}Prefabs/Factions/PLAYER/Character_STALKER_Player.et" {
+ components {
+  SCR_EditableCharacterComponent "{520EA1D2F659C85C}" {
+   m_bAutoRegister ALWAYS
+  }
+ }
+ coords 6994.894 102.698 5097.749
+ angleY 122
+}
 $grp GenericEntity : "{F542F974956C255F}Prefabs/Props/Military/Compositions/CIV/ArsenalBox_CIV.et" {
  {
   components {
