@@ -51,6 +51,17 @@ POSTMAN_BUY_SELL = (
     Item.SALINE_BAG,
 )
 
+POSTMAN_INTEL_BUY_SELL = (
+    Item.FLOPPY,
+    Item.FLASH,
+    Item.DOCS_1,
+    Item.DOCS_2,
+    Item.DOCS_3,
+    Item.DOCS_4,
+    Item.DOCS_5,
+    Item.DOCS_SECRETS,
+)
+
 
 class Shop(Enum):
     """Shop configurations with direct ShopConfig instances"""
@@ -80,18 +91,15 @@ class Shop(Enum):
             Item.FLASHLIGHT,
             Item.MAP,
         ),
-        sell_items=POSTMAN_BUY_SELL
-        + (
-            Item.FLOPPY,
-            Item.FLASH,
-            Item.DOCS_1,
-            Item.DOCS_2,
-            Item.DOCS_3,
-            Item.DOCS_4,
-            Item.DOCS_5,
-            Item.DOCS_SECRETS,
-        ),
+        sell_items=POSTMAN_BUY_SELL,
         sell_multiplier=0.3,
+    )
+
+    POSTMAN_INTEL = ShopConfig(
+        name="PostmanIntel",
+        buy_items=POSTMAN_INTEL_BUY_SELL,
+        sell_items=POSTMAN_INTEL_BUY_SELL,
+        buy_multiplier=5,
     )
 
     WATER = ShopConfig(

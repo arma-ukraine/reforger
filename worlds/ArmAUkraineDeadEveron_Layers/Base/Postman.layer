@@ -1,30 +1,58 @@
-GenericEntity : "{04EEB10214E177B3}Prefabs/Props/Civilian/Notebook_01_Single_MarbleBlack.et" {
- components {
-  ADM_ShopComponent "{6630AA9859A70C93}" {
-   m_ShopName "Розмінник"
-   m_ShopConfig "{AC2C7AB34279EAC6}configs/Shops/Currency.conf"
-  }
-  ActionsManagerComponent "{6630AA9847489D38}" {
-   ActionContexts {
-    UserActionContext "{6630AA983E4977C0}" {
-     ContextName "Shop"
-     Position PointInfo "{6630AA988F5A904E}" {
+$grp GenericEntity : "{04EEB10214E177B3}Prefabs/Props/Civilian/Notebook_01_Single_MarbleBlack.et" {
+ {
+  components {
+   ADM_ShopComponent "{6630AA9859A70C93}" {
+    m_ShopName "Exchange"
+    m_ShopConfig "{AC2C7AB34279EAC6}configs/Shops/Currency.conf"
+   }
+   ActionsManagerComponent "{6630AA9847489D38}" {
+    ActionContexts {
+     UserActionContext "{6630AA983E4977C0}" {
+      ContextName "Shop"
+      Position PointInfo "{6630AA988F5A904E}" {
+      }
+      Radius 1
      }
-     Radius 1
+    }
+    additionalActions {
+     ADM_ShopAction "{6630AA98705D3378}" {
+      ParentContextList {
+       "Shop"
+      }
+     }
     }
    }
-   additionalActions {
-    ADM_ShopAction "{6630AA98705D3378}" {
-     ParentContextList {
-      "Shop"
-     }
-     ActionTitle "Розмінник"
-    }
-   }
   }
+  coords 6984.538 103.605 5085.416
+  angleY -53.302
  }
- coords 6984.538 103.605 5085.416
- angleY -53.302
+ {
+  components {
+   ADM_ShopComponent "{6630AA9859A70C93}" {
+    m_ShopName "Intel"
+    m_ShopConfig "{1971D4EC842F7A63}configs/Shops/PostmanIntel.conf"
+   }
+   ActionsManagerComponent "{6630AA9847489D38}" {
+    ActionContexts {
+     UserActionContext "{6630AA983E4977C0}" {
+      ContextName "Shop"
+      Position PointInfo "{6630AA988F5A904E}" {
+      }
+      Radius 1
+     }
+    }
+    additionalActions {
+     ADM_ShopAction "{6636D8A6D859BF1C}" {
+      ParentContextList {
+       "Shop"
+      }
+     }
+    }
+   }
+  }
+  coords 6983.989 103.107 5082.357
+  angleY -165.727
+ }
 }
 GenericEntity : "{403E2B0BE16D6CC9}Prefabs/ItemShop_Base.et" {
  components {

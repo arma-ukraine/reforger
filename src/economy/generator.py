@@ -5,7 +5,7 @@ Simple generator to convert shop configurations to .conf files.
 import math
 import uuid
 from pathlib import Path
-from typing import List, Optional, Union, NamedTuple
+from typing import List, NamedTuple, Optional, Union
 
 from src.economy.items import Item
 from src.economy.recipes import Recipe
@@ -14,6 +14,7 @@ from src.economy.shops import Shop, ShopConfig
 
 class ItemRequirement(NamedTuple):
     """Item requirement for crafting"""
+
     item: Item
     quantity: int
 
@@ -109,7 +110,6 @@ class ShopGenerator:
         lines.append("  }")
         return "\n".join(lines)
 
-
     def generate_crafting_config(
         self, recipe: Recipe, crafting_fee: int = 0
     ) -> List[Union[int, ItemRequirement]]:
@@ -120,13 +120,14 @@ class ShopGenerator:
 
         # Return actual item requirements
         components: List[Union[int, ItemRequirement]] = [
-            ItemRequirement(comp_item, quantity) for comp_item, quantity in recipe.components
+            ItemRequirement(comp_item, quantity)
+            for comp_item, quantity in recipe.components
         ]
-        
+
         # Add crafting fee if specified
         if crafting_fee > 0:
             components.append(crafting_fee)
-            
+
         return components
 
     def generate_shop_config(self, shop_config: ShopConfig) -> str:
@@ -136,24 +137,29 @@ class ShopGenerator:
         # Get all items that appear in the shop, preserving order
         all_items = []
         seen = set()
-        
+
         # Add buy_items first (preserves order from tuples)
         for item in shop_config.buy_items:
             if item not in seen:
                 all_items.append(item)
                 seen.add(item)
-        
+
         # Add sell_items next (preserves order from tuples)
         for item in shop_config.sell_items:
             if item not in seen:
                 all_items.append(item)
                 seen.add(item)
-        
+
         # Add recipe result items last (preserves order from tuples)
         for recipe in shop_config.craft_recipes:
             if recipe.result_item not in seen:
                 all_items.append(recipe.result_item)
                 seen.add(recipe.result_item)
+
+        # Validate that shop has buyable items
+        has_buyable_items = bool(shop_config.buy_items or shop_config.craft_recipes)
+        if not has_buyable_items:
+            raise ValueError(f"Shop '{shop_config.name}' must have at least one buyable item (buy_items) or craft recipe")
 
         for item in all_items:
             # Check if it's a regular buy/sell item
@@ -197,7 +203,7 @@ class ShopGenerator:
         for shop in Shop:
             shop_config = shop.value
             config_content = self.generate_shop_config(shop_config)
-            file_path = output_dir / f"{shop_config.name.title()}.conf"
+            file_path = output_dir / f"{shop_config.name}.conf"
 
             with open(file_path, "w", encoding="utf-8") as f:
                 f.write(config_content)

@@ -5,7 +5,16 @@ Simple enums for shops and items.
 from enum import Enum
 from typing import NamedTuple
 
-# Recipes are now defined in recipes.py module
+BASE_FOOD_WATER_CONTAINER_PRICE = 300
+BASE_FILLED_CONTAINER_PROFIT = 100
+BASE_MEDKIT_PRICE = 2000
+BASE_WEAPON_PRICE = 800
+BASE_AMMO_PRICE = 2
+BASE_ARMOR_PRICE = 3500
+BASE_GASMASK_PRICE = 2000
+BASE_EQUIPMENT_PRICE = 1000
+BASE_INTEL_PRICE = 1000
+BASE_MUTANT_PART_PRICE = 200
 
 
 class ItemDefinition(NamedTuple):
@@ -42,136 +51,158 @@ class Item(Enum):
 
     # MARK: Mutant parts
     MUT_BOAR = ItemDefinition(
-        "{5DDC31EAA3B77A02}Prefabs/Items/Mut_parts/armst_itm_mut_boar.et", 100
+        "{5DDC31EAA3B77A02}Prefabs/Items/Mut_parts/armst_itm_mut_boar.et",
+        BASE_MUTANT_PART_PRICE,
     )
 
     # MARK: Containers
     CANTEEN_EMPTY = ItemDefinition(
-        "{654D80AC7C1E0F80}Prefabs/Items/Food/armst_itm_food_canteen_empty.et", 300
+        "{654D80AC7C1E0F80}Prefabs/Items/Food/armst_itm_food_canteen_empty.et",
+        BASE_FOOD_WATER_CONTAINER_PRICE,
     )
     CONSERVA_THROW = ItemDefinition(
-        "{16230D52F5022FAC}Prefabs/Items/bolts/armst_throw_conserva.et", 150
+        "{16230D52F5022FAC}Prefabs/Items/bolts/armst_throw_conserva.et",
+        int(CANTEEN_EMPTY.base_price / 2),
     )
 
     # MARK: Consumnables.
     CANTEEN_WATER = ItemDefinition(
         "{52D3FE1E430900D3}Prefabs/Items/Food/armst_itm_food_canteen_water.et",
-        100,
+        CANTEEN_EMPTY.base_price + BASE_FILLED_CONTAINER_PROFIT,
     )
     TUSHONKA = ItemDefinition(
         "{1472B9856B26B931}Prefabs/Items/Food/armst_itm_food_tushonka_1.et",
-        200,
+        CONSERVA_THROW.base_price
+        + (MUT_BOAR.base_price * 2)
+        + BASE_FILLED_CONTAINER_PROFIT,
     )
     MEDKIT_AI2 = ItemDefinition(
         "{CB67A30D05AA4F29}Prefabs/Items/Medicine/armst_itm_medkit_ai2.et",
-        750,
+        BASE_MEDKIT_PRICE,
     )
     MORPHINE = ItemDefinition(
         "{0D9A5DCF89AE7AA9}Prefabs/Items/Medicine/MorphineInjection_01/MorphineInjection_01.et",
-        750,
+        int(MEDKIT_AI2.base_price * 0.75),
     )
     BANDAGE = ItemDefinition(
         "{A81F501D3EF6F38E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_US_01.et",
-        500,
+        int(MEDKIT_AI2.base_price / 2),
     )
     TOURNIQUET = ItemDefinition(
         "{D70216B1B2889129}Prefabs/Items/Medicine/Tourniquet_01/Tourniquet_US_01.et",
-        500,
+        int(MEDKIT_AI2.base_price / 2),
     )
     SALINE_BAG = ItemDefinition(
-        "{00E36F41CA310E2A}Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01.et", 1000
+        "{00E36F41CA310E2A}Prefabs/Items/Medicine/SalineBag_01/SalineBag_US_01.et",
+        MEDKIT_AI2.base_price,
     )
 
     # MARK: Weapons
-    PM = ItemDefinition("{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/armst_PM.et", 800)
+    PM = ItemDefinition(
+        "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/armst_PM.et", BASE_WEAPON_PRICE
+    )
     DOUBLE_BARREL_SAWN_OFF = ItemDefinition(
         "{E7A3BA1F06C057FF}Prefabs/Weapons/Shotguns/Double Barrel/BC_Shotgun_Double_Barrel_Sawn_Off.et",
-        1500,
+        PM.base_price * 2,
     )
     DOUBLE_BARREL_SHOTGUN = ItemDefinition(
         "{3C4FB3D9D54B46DF}Prefabs/Weapons/Shotguns/Double Barrel/BC_Shotgun_Double_Barrel_760mm.et",
-        3000,
+        DOUBLE_BARREL_SAWN_OFF.base_price * 2,
     )
     REMINGTON_870 = ItemDefinition(
         "{458A4E8CD3590D92}Prefabs/Weapons/Shotguns/Remington 870/BC_Shotgun_Remington_870.et",
-        20000,
+        DOUBLE_BARREL_SHOTGUN.base_price * 5,
     )
 
     # MARK: Ammo
     AMMO_12GA_SHELL = ItemDefinition(
-        "{B0DFDF7AAA9C5D39}Prefabs/Weapons/Magazines/BC_Shell_12ga_Buckshot.et", 25
+        "{B0DFDF7AAA9C5D39}Prefabs/Weapons/Magazines/BC_Shell_12ga_Buckshot.et",
+        12 * BASE_AMMO_PRICE,
     )
     AMMO_PM_9x18 = ItemDefinition(
         "{8B853CDD11BA916E}Prefabs/Weapons/Magazines/Magazine_9x18_PM_8rnd_Ball.et",
-        8 * 2,
+        8 * BASE_AMMO_PRICE,
     )
 
     # MARK: Armor
     SOVIET_JACKET = ItemDefinition(
         "{F5C7F3A66723915A}Prefabs/New_Equipment/Jackets/armst_jacket_soviet_army.et",
-        3500,
+        BASE_ARMOR_PRICE,
     )
     GORKA_GREEN = ItemDefinition(
         "{20491CABD61C4846}Prefabs/New_Equipment/Jackets/gorka/armst_jacket_gorka_green.et",
-        8000,
+        int(SOVIET_JACKET.base_price * 2.2),
     )
     GORKA_BROWN = ItemDefinition(
         "{21D031F8E0C0A646}Prefabs/New_Equipment/Jackets/gorka/armst_jacket_gorka_brown.et",
-        8000,
+        GORKA_GREEN.base_price,
     )
     GORKA_DARKBROWN = ItemDefinition(
         "{924D262DBDCB4950}Prefabs/New_Equipment/Jackets/gorka/armst_jacket_gorka_darkbrown.et",
-        8000,
+        GORKA_GREEN.base_price,
     )
     GORKA_CAMO_DARK = ItemDefinition(
         "{7F934FAC7B4676A5}Prefabs/New_Equipment/Jackets/gorka/camo/armst_jacket_gorka_camo_dark.et",
-        8000,
+        GORKA_GREEN.base_price,
     )
 
     # MARK: GasMasks
     GASMASK_GP5 = ItemDefinition(
         "{D7B25AAE6F51908A}Prefabs/New_Equipment/Gasmasks/armst_gasmask_gp5.et",
-        2000,
+        BASE_GASMASK_PRICE,
     )
 
     # MARK: Equipment
     WALLET = ItemDefinition("{B0E67230AEEE2DF3}Prefabs/Items/Wallet.et", 0)  # Free
     COMPASS = ItemDefinition(
-        "{61D4F80E49BF9B12}Prefabs/Items/Equipment/Compass/Compass_SY183.et", 500
+        "{61D4F80E49BF9B12}Prefabs/Items/Equipment/Compass/Compass_SY183.et",
+        BASE_EQUIPMENT_PRICE,
     )
     FLASHLIGHT = ItemDefinition(
         "{3A421547BC29F679}Prefabs/Items/Equipment/Flashlights/Flashlight_MX991/Flashlight_MX991.et",
-        500,
+        BASE_EQUIPMENT_PRICE,
     )
     MAP = ItemDefinition(
-        "{922F95F91943F69A}Prefabs/Items/Equipment/Maps/PaperMap_01_folded_US.et", 500
+        "{922F95F91943F69A}Prefabs/Items/Equipment/Maps/PaperMap_01_folded_US.et",
+        BASE_EQUIPMENT_PRICE,
     )
 
     # MARK: Misc
     FLOPPY = ItemDefinition(
-        "{866D3B6301B1AA4E}Prefabs/Items/Electronics/armst_itm_floppy.et", 3000
+        "{866D3B6301B1AA4E}Prefabs/Items/Electronics/armst_itm_floppy.et",
+        BASE_INTEL_PRICE,
     )
     FLASH = ItemDefinition(
-        "{A93E6BD6C9A7F748}Prefabs/Items/Electronics/armst_itm_flash.et", 4000
+        "{A93E6BD6C9A7F748}Prefabs/Items/Electronics/armst_itm_flash.et",
+        int(FLOPPY.base_price * 1.2),
     )
     DOCS_1 = ItemDefinition(
-        "{BAFDB21966A26568}Prefabs/Items/Others/Documents/armst_itm_docs.et", 5000
+        "{BAFDB21966A26568}Prefabs/Items/Others/Documents/armst_itm_docs.et",
+        int(FLASH.base_price * 1.5),
     )
     DOCS_2 = ItemDefinition(
-        "{AFB860AD776F046E}Prefabs/Items/Others/Documents/armst_itm_docs_2.et", 5000
+        "{AFB860AD776F046E}Prefabs/Items/Others/Documents/armst_itm_docs_2.et",
+        DOCS_1.base_price,
     )
     DOCS_3 = ItemDefinition(
-        "{1369209D87219FEC}Prefabs/Items/Others/Documents/armst_itm_docs_3.et", 5000
+        "{1369209D87219FEC}Prefabs/Items/Others/Documents/armst_itm_docs_3.et",
+        DOCS_1.base_price,
     )
     DOCS_4 = ItemDefinition(
-        "{2E5D05A5F24D16DB}Prefabs/Items/Others/Documents/armst_itm_docs_4.et", 5000
+        "{2E5D05A5F24D16DB}Prefabs/Items/Others/Documents/armst_itm_docs_4.et",
+        DOCS_1.base_price,
     )
     DOCS_5 = ItemDefinition(
-        "{CBC1495CFEA881B0}Prefabs/Items/Others/Documents/armst_itm_docs_5.et", 5000
+        "{CBC1495CFEA881B0}Prefabs/Items/Others/Documents/armst_itm_docs_5.et",
+        DOCS_1.base_price,
     )
     DOCS_SECRETS = ItemDefinition(
         "{F91FDAD0027E732D}Prefabs/Items/Others/Documents/armst_itm_docs_secrets.et",
-        10000,
+        DOCS_1.base_price * 2,
+    )
+    PAPERS_PERSONAL_US = ItemDefinition(
+        "{A735A93A8AD4077A}Prefabs/Props/PersonalBelongings/Papers/Papers_Personal_US.et",
+        1000,
     )
 
     @property
