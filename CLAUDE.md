@@ -24,10 +24,11 @@ This is an **Arma Reforger mod** called "ArmAUkraine Dead Everon" - a post-apoca
 - Uses EPF_ComponentSaveData for save/load operations
 
 **Shop System** (`configs/Shops/`)
-- Multiple shop configurations for different merchants (Currency.conf, Water.conf, Cooking.conf, Postman.conf)
-- Uses ADM_ShopConfig structure with merchandise, buy/sell payments
-- Supports both currency and item-based transactions
+- Multiple shop configurations for different merchants (Currency.conf, Water.conf, Cooking.conf, Postman.conf, PostmanIntel.conf)
+- Uses ADM_ShopConfig structure with merchandise, buy/sell payments, and crafting recipes
+- Supports both currency-based transactions and crafting stations
 - Requires ADM_PlayerShopManager component on player controller
+- PostmanIntel shop specializes in intelligence items with higher prices
 
 **Prefab Cleanup** (`Scripts/Game/AUA_DeletePrefabsOnStart.c`)
 - Server-side component for removing specified prefabs at mission start
@@ -37,15 +38,40 @@ This is an **Arma Reforger mod** called "ArmAUkraine Dead Everon" - a post-apoca
 ### File Structure
 
 **Scripts/Game/** - EnforceScript (.c) source files
+- `Currency/` - Currency system and save data components
+- `AUA_DeletePrefabsOnStart.c` - Prefab cleanup component
+
 **Prefabs/** - Entity definitions (.et files) and associated metadata
+- `Anomals/TRIGGERS/` - Anomaly trigger systems 
+- `Characters/Core/` - Player controller with shop integration
+- `Compositions/Misc/CustomEntities/InteractionPoints/` - Storage and interaction systems
+- `Items/Moneys/` - UAK currency denominations
+- `Items/Wallet.et` - Currency storage item
+- `Props/` - Environmental objects
+- `Sounds/Environment/` - Ambient audio systems
+
 **configs/** - Configuration files (.conf) for various systems
-- `Factions/` - Faction definitions
-- `Shops/` - Shop merchant configurations  
+- `EntityCatalog/` - Item catalog configurations
+- `Factions/` - Faction definitions (ARMY, STALKER, US)
+- `Shops/` - Shop merchant configurations (Currency, Water, Cooking, Postman, PostmanIntel)
 - `Systems/` - Core system settings (garbage collection, etc.)
 - `NameTags/` - Name tag display configurations
+
 **Worlds/** - World/mission files and associated layer files
+- Multiple world configurations (ArmAUkraineDeadEveron.ent, GMTest.ent, ShopTest.ent)
+- Layer system for organized content placement (Environment/, Base/, SF/)
+
 **UI/** - User interface layouts and graphics
+- `PDA/` - PDA interface layouts
+- `layouts/Menus/` - Loading screens and main menu customization
+- Generated loading screen images and screenshots
+
 **Missions/** - Mission header configuration files
+**src/economy/** - Python-based shop configuration system
+- `items.py` - Item definitions with prefab paths and prices
+- `shops.py` - Shop configurations 
+- `recipes.py` - Crafting recipes
+- `generator.py` - Configuration file generator
 
 ### Key Dependencies
 
@@ -60,8 +86,9 @@ The mod relies heavily on external framework mods:
 Shop configurations are generated from Python code in `src/economy/` using a simple, declarative system.
 
 **Python Shop Generation System:**
-- `src/economy/enums.py` - Shop and Item enums with prefab paths
-- `src/economy/prices.py` - Declarative shop configuration using NamedTuples
+- `src/economy/items.py` - Item definitions with prefab paths and base prices using ItemDefinition NamedTuples
+- `src/economy/shops.py` - Shop configurations using ShopConfig NamedTuples with buy/sell items and crafting recipes
+- `src/economy/recipes.py` - Crafting recipe definitions using RecipeData NamedTuples
 - `src/economy/generator.py` - Generates .conf files from Python configuration
 - `generate_shop_configs.py` - Main script to regenerate all shop files
 
@@ -78,15 +105,31 @@ ADM_ShopConfig {
 }
 ```
 
-**Python Configuration Format:**
+**Current Python Configuration Format:**
+
+**Item Definition:**
 ```python
-ShopConfig(
-    shop=Shop.POSTMAN,
-    buy_config=((Item.WALLET, 0),),  # Free wallets
-    sell_config=(),  # Nothing to sell
-    buy_multiplier=1.0,   # Normal prices
-    sell_multiplier=0.7   # Sell for 70% of buy price
-)
+class Item(Enum):
+    WALLET = ItemDefinition("{B0E67230AEEE2DF3}Prefabs/Items/Wallet.et", 0)  # Free
+    MEDKIT_AI2 = ItemDefinition("{CB67A30D05AA4F29}Prefabs/Items/Medicine/armst_itm_medkit_ai2.et", 2000)
+```
+
+**Shop Configuration:**
+```python
+class Shop(Enum):
+    POSTMAN = ShopConfig(
+        name="Postman",
+        buy_items=(Item.WALLET, Item.MEDKIT_AI2),  # Items available for purchase
+        sell_items=(Item.MEDKIT_AI2,),  # Items accepted for selling
+        buy_multiplier=1.0,   # Normal buy prices
+        sell_multiplier=0.3,  # Sell for 30% of buy price
+    )
+```
+
+**Recipe Definition:**
+```python
+class Recipe(Enum):
+    FILL_CANTEEN = RecipeData(Item.CANTEEN_WATER, ((Item.CANTEEN_EMPTY, 1),))
 ```
 
 **Supported Payment Types:**
@@ -106,24 +149,34 @@ ShopConfig(
 
 ### Custom Entities
 
-**Money Items** - Various Russian UAK denominations (1, 5, 10, 50, 100, 500, 1000, 5000 UAK )
-**Storage Systems** - PersistentStorageBox for item storage
-**Anomaly Triggers** - Custom trigger systems for environmental hazards
-**Player Controller** - Modified DefaultPlayerControllerMP_Factions with shop integration
+**Money Items** - Various UAK denominations (1, 5, 10, 50, 100, 500, 1000, 5000 UAK) with custom prefabs
+**Storage Systems** - PersistentStorageBox for item storage with persistence
+**Anomaly Triggers** - Custom trigger systems for environmental hazards (ARMST_TRIGGER_ANOMAL, ARMST_TRIGGER_GROUPS)
+**Player Controller** - Modified DefaultPlayerControllerMP_Factions with shop integration and currency support
+**Intelligence Items** - Floppy disks, flash drives, and classified documents for trading
+**Mutant Parts** - Boar parts and other mutant materials for crafting
+**Medical Supplies** - AI-2 medkits, morphine, bandages, tourniquets, saline bags
+**Food & Water** - Canteens (empty/filled), tushonka canned food, throwable cans
+**Weapons & Ammo** - PM handgun, various shotguns (double barrel, Remington 870), ammunition
+**Equipment** - Gas masks (GP5), tactical clothing (Gorka suits), compasses, flashlights, maps
+**Ambient Audio** - Custom ambient sound prefab for Everon atmosphere
 
 ## Development Notes
 
 **Shop Configuration Workflow:**
-1. Add new items to `src/economy/enums.py` with correct prefab paths
-2. Update shop inventories in `src/economy/prices.py` using NamedTuple format
-3. Run `python generate_shop_configs.py` to regenerate all .conf files
-4. Import updated .conf files into Arma Reforger Workbench
+1. Add new items to `src/economy/items.py` with correct prefab paths and base prices using ItemDefinition
+2. Add crafting recipes to `src/economy/recipes.py` if needed using RecipeData
+3. Update shop configurations in `src/economy/shops.py` using ShopConfig format
+4. Run `python generate_shop_configs.py` to regenerate all .conf files
+5. Import updated .conf files into Arma Reforger Workbench
 
 **Python Code Conventions:**
-- Use absolute imports: `from src.economy.enums import Item, Shop`
+- Use absolute imports: `from src.economy.items import Item` and `from src.economy.shops import Shop`
 - Keep NamedTuple structures simple and declarative
 - Avoid magic strings - use enums for all item and shop references
-- Price multipliers only affect integer currency payments, not ItemTrade
+- Each item has a base_price used for currency calculations with multipliers
+- Crafting recipes define components needed and result item produced
+- Price multipliers affect final currency costs but not item quantities in recipes
 
 **Persistence Requirements:**
 - Custom components require EPF_ComponentSaveData implementation for persistence
