@@ -29,6 +29,10 @@ PerceptionManager PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/Perc
 }
 SCR_GameModeEditor SCR_ArmstGameMode1 : "{B563F305A997ACAE}Prefabs/MP/Modes/Editor/SCR_ArmstGameMode.et" {
  components {
+  SignalsManagerComponent "{663A79559F6E317D}" {
+  }
+  SCR_CommunicationSoundComponent "{663A79558E94F3B0}" {
+  }
   EPF_PersistenceManagerComponent "{658301C3AC02188D}" {
    components {
     EPF_BasicRespawnSystemComponent "{658301C36354B154}" {
@@ -54,6 +58,7 @@ SCR_GameModeEditor SCR_ArmstGameMode1 : "{B563F305A997ACAE}Prefabs/MP/Modes/Edit
  {
   SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
    coords 0 0 0
+   m_bCanChangeFactionsPlayable 0
   }
   SCR_BaseTaskManager : "{1AC69CD7907FB4F8}Prefabs/Systems/ScenarioFramework/Tasks/TaskManager.et" {
    coords 0 0 0
@@ -63,6 +68,39 @@ SCR_GameModeEditor SCR_ArmstGameMode1 : "{B563F305A997ACAE}Prefabs/MP/Modes/Edit
   }
  }
 }
-SCR_SpawnPoint : "{2D88EAB83A52AE0E}Prefabs/MP/Spawning/SpawnPoint_STALKER.et" {
- coords 7210.896 117.731 5000.238
+$grp EPF_SpawnPoint {
+ {
+  coords 7206.257 118.601 4989.672
+  angleY 21
+ }
+ {
+  coords 7210.093 127.117 5010.632
+  angleY 155
+ }
+ {
+  coords 7215.65 127.051 5019.618
+  angleY 113.204
+ }
+ {
+  coords 7220.5 127.066 5017.525
+  angleY -164.14
+ }
+ {
+  coords 7198.297 119.656 5008.251
+  angleY 133.108
+ }
+}
+SCR_SpawnPoint SpawnPoint : "{2D88EAB83A52AE0E}Prefabs/MP/Spawning/SpawnPoint_STALKER.et" {
+ components {
+  SCR_MapDescriptorComponent "{54C659A97C47BDE2}" {
+   DisplayName "ВІДСІЧ"
+   VisibleOnMap 1
+   UnitType Infantry
+  }
+ }
+ coords 7208.009 118.839 4999.733
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "ВІДСІЧ"
+ }
+ m_bUseNearbySpawnPositions 1
 }
