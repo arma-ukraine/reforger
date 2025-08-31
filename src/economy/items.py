@@ -5,16 +5,17 @@ Simple enums for shops and items.
 from enum import Enum
 from typing import NamedTuple
 
-BASE_FOOD_WATER_CONTAINER_PRICE = 300
-BASE_FILLED_CONTAINER_PROFIT = 100
-BASE_MEDKIT_PRICE = 2000
-BASE_WEAPON_PRICE = 800
 BASE_AMMO_PRICE = 2
 BASE_ARMOR_PRICE = 3500
-BASE_GASMASK_PRICE = 2000
+BASE_BACKPACK_PRICE = 5000
 BASE_EQUIPMENT_PRICE = 1000
+BASE_FILLED_CONTAINER_PROFIT = 100
+BASE_FOOD_WATER_CONTAINER_PRICE = 300
+BASE_GASMASK_PRICE = 2000
 BASE_INTEL_PRICE = 1000
+BASE_MEDKIT_PRICE = 2000
 BASE_MUTANT_PART_PRICE = 200
+BASE_WEAPON_PRICE = 800
 
 
 class ItemDefinition(NamedTuple):
@@ -133,6 +134,16 @@ class Item(Enum):
     GASMASK_GP5 = ItemDefinition(
         "{D7B25AAE6F51908A}Prefabs/New_Equipment/Gasmasks/armst_gasmask_gp5.et",
         BASE_GASMASK_PRICE,
+    )
+
+    # MARK: Backpacks
+    BACKPACK_RUKZAK = ItemDefinition(
+        "{DF7ECE4FEB0F0B69}Prefabs/New_Equipment/backpack/armst_backpack_rukzak.et",
+        BASE_BACKPACK_PRICE,
+    )
+    BACKPACK_KOLOBOK = ItemDefinition(
+        "{FA1A1C2700C3306D}Prefabs/New_Equipment/backpack/armst_backpack_kolobok.et",
+        BASE_BACKPACK_PRICE * 3,
     )
 
     # MARK: Equipment

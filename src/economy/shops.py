@@ -85,8 +85,11 @@ class Shop(Enum):
             # Containers.
             Item.CANTEEN_EMPTY,
             Item.CONSERVA_THROW,
-            # Apparel.
+            # Gasmasks.
             Item.GASMASK_GP5,
+            # Backpacks.
+            Item.BACKPACK_RUKZAK,
+            Item.BACKPACK_KOLOBOK,
             # Equipment.
             Item.COMPASS,
             Item.FLASHLIGHT,
