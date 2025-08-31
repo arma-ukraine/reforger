@@ -8,8 +8,9 @@ GenericEntity ZEL_Storage_Base_663AEBAC9AE3CE0F : "{64D4F1BCB3403343}Prefabs/Pro
 GenericEntity : "{F542F974956C255F}Prefabs/Props/Military/Compositions/CIV/ArsenalBox_CIV.et" {
  components {
   SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-   m_eSupportedArsenalItemTypes 2031614
-   m_eArsenalSaveType IN_ARSENAL_ITEMS_ONLY
+   m_eSupportedArsenalItemTypes 552064
+   m_eSupportedArsenalItemModes 34
+   m_eArsenalSaveType SAVING_DISABLED
   }
  }
  coords 7228.262 119.503 5008.083
