@@ -58,7 +58,7 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/Systems/ScenarioFramewo
      m_SpawnLogic SCR_AutoSpawnLogic "{663E73250C30E120}" {
       m_sForcedFaction "FACTION_STALKER"
      }
-     m_StartingLootConfigs {
+     m_StartingLootFACTION_STALKER {
       "{EE697D7413777D3B}configs/STARTING/stalker_starting.conf"
      }
      m_CreateCharacter 1
