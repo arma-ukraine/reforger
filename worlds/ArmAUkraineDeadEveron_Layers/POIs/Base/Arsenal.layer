@@ -1,0 +1,17 @@
+GenericEntity : "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbarages.et" {
+ coords 7231.37 119.5 4986.001
+}
+GenericEntity ZEL_Storage_Base_663AEBAC9AE3CE0F : "{64D4F1BCB3403343}Prefabs/Props/ZEL_Storage_Base.et" {
+ coords 7228.864 118.587 5006.664
+ angleY -96.589
+}
+GenericEntity : "{F542F974956C255F}Prefabs/Props/Military/Compositions/CIV/ArsenalBox_CIV.et" {
+ components {
+  SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+   m_eSupportedArsenalItemTypes 2031614
+   m_eArsenalSaveType IN_ARSENAL_ITEMS_ONLY
+  }
+ }
+ coords 7228.262 119.503 5008.083
+ angleY -141.902
+}

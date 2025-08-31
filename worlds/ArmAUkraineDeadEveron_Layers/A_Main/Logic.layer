@@ -1,0 +1,195 @@
+SCR_AIWorld SCR_AIWorld : "{E0A05C76552E7F58}Prefabs/AI/SCR_AIWorld.et" {
+ components {
+  NavmeshWorldComponent "{5584F30E67F617AD}" {
+   NavmeshSettings NavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60B8A297F9E52831}" {
+     NavmeshFile "{3024FA0FDA16163B}Saves/nav soldier.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5584F30EEFEE1223}" {
+   NavmeshSettings ChimeraNavmeshWorld "{50FC63BEBE3973C5}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{60B8A297F3B4EE8A}" {
+     NavmeshFile "{E6A3FD07D8F5EA89}Saves/nav btr.nmn"
+    }
+   }
+  }
+  NavmeshWorldComponent "{5C8C9B750D124A63}" {
+   NavmeshSettings NavmeshWorld "{5C8C9B750B60C6E2}" {
+    NavmeshFilesConfig BaseNavmeshFilesConfig "{5C90BD0EC793647D}" {
+     NavmeshFile "{90A6BD069F84E1D9}Saves/lowres.nmn"
+    }
+   }
+  }
+ }
+ coords 7107.999 105.345 6272.226
+ {
+  CommentEntity {
+   coords 0.001 0.185 0
+   m_Comment "SCR_AIWorld: "\
+   "Configure navigation mesh"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+ }
+}
+$grp PerceptionManager : "{028DAEAD63E056BE}Prefabs/World/Game/PerceptionManager.et" {
+ PerceptionManager {
+  coords 4897.826 28.594 11880.024
+ }
+ PerceptionManager {
+  coords 7107.999 104.896 6277.226
+ }
+}
+SCR_FactionManager FactionManager_Editor1 : "{4A188E44289B9A50}Prefabs/MP/Managers/Factions/FactionManager_Editor.et" {
+ coords 7111.238 104.895 6270.204
+}
+RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.et" {
+ coords 7107.999 104.974 6276.226
+}
+SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/Systems/ScenarioFramework/GameModeSF.et" {
+ components {
+  ARMST_PDA_LIFE_GamemodeComponent "{658B4389DA54155D}" {
+   m_EnableAutoMessages 1
+   m_sPdaLifeMessages {
+    "{EA3FED0C68C339CF}UI/PDA/pda_life/PDA_LIFE_Messages.conf"
+   }
+   m_sPdaDeathMessages {
+    "{B6AFC1A2384E6A51}UI/PDA/pda_life/PDA_DEATH_Messages.conf"
+   }
+   m_sPdaHeliMessages {
+    "{51D30E85AFC577F5}UI/PDA/pda_life/PDA_HELI_Messages.conf"
+   }
+   m_sPdaSurgeStartMessages {
+    "{1AB91387DF077D4A}UI/PDA/pda_life/PDA_SURGE_START_Messages.conf"
+   }
+   m_sPdaSurgeEndMessages {
+    "{A83A686100F32862}UI/PDA/pda_life/PDA_SURGE_END_Messages.conf"
+   }
+  }
+  EPF_PersistenceManagerComponent "{658301C3AC02188D}" {
+   components {
+    EPF_BasicRespawnSystemComponent "{658301C36354B154}" {
+     m_SpawnLogic SCR_AutoSpawnLogic "{663E73250C30E120}" {
+      m_sForcedFaction "FACTION_STALKER"
+     }
+     m_StartingLootConfigs {
+      "{EE697D7413777D3B}configs/STARTING/stalker_starting.conf"
+     }
+     m_CreateCharacter 1
+     m_rDefaultPrefab "{BBCD96EFBDB923E4}Prefabs/Factions/PLAYER/Character_STALKER_Player_Save.et"
+    }
+    EPF_PersistentDoorStateManagerComponent "{663C816C4E45CAC8}" {
+    }
+   }
+   m_pConnectionInfo EDF_JsonFileDbConnectionInfo "{658301C3451DE3D2}" {
+    m_sDatabaseName "ArmAUkraineDeadEveronDataBase"
+   }
+  }
+  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
+   m_sConfigPath "{09F7AAA14A642683}configs/NameTags/NametagFriendlies.conf"
+  }
+  SCR_PerceivedFactionManagerComponent "{61AA7E6E0C6A76F9}" {
+   Enabled 0
+  }
+  SCR_ReconnectComponent "{5A02809D5E8ABE42}" {
+   Enabled 0
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   Enabled 0
+   components {
+    SCR_FreeSpawnHandlerComponent "{5CD2860C681CE021}" {
+     Enabled 0
+    }
+    SCR_PossessSpawnHandlerComponent "{5CD2D12697D089D4}" {
+     Enabled 0
+    }
+    SCR_SpawnPointSpawnHandlerComponent "{5CD2D126957998DF}" {
+     Enabled 0
+    }
+   }
+   m_SpawnLogic SCR_AutoSpawnLogic "{5D36888CC966608A}" {
+    m_sForcedFaction "FACTION_STALKER"
+   }
+  }
+  SCR_SupportStationManagerComponent "{5B0AB3A852FCBF7E}" {
+   Enabled 0
+  }
+  SCR_VotingManagerComponent "{5650BB6B6089393A}" {
+   Enabled 0
+  }
+ }
+ coords 7107.999 105.438 6271.226
+ m_bAutoPlayerRespawn 0
+ m_aDisabledResourceTypes {
+  0
+ }
+ {
+  SCR_EditorSettingsEntity EditorSettings {
+   coords 91.91 23.988 -1273.324
+   m_bIsUnlimitedEditorLegal 1
+  }
+ }
+}
+ScriptedChatEntity ScriptedChatEntity : "{F69BC912AC8236F9}Prefabs/MP/ScriptedChatEntity.et" {
+ coords 7107.999 104.81 6278.226
+}
+SCR_BaseTaskManager TaskManager : "{1AC69CD7907FB4F8}Prefabs/Systems/ScenarioFramework/Tasks/TaskManager.et" {
+ coords 7107.999 105.25 6273.226
+ {
+  CommentEntity {
+   coords 0.001 0.053 0
+   m_Comment "TaskManager: "\
+   "Needed for task generation"
+   m_Color 0 0 0
+   m_FaceCamera 1
+   m_TextBackground 1
+   m_BackgroundColor 1 0.6 0
+   m_BackgroundTransparency 0
+  }
+ }
+}
+SCR_SpawnPoint SpawnPoint : "{2D88EAB83A52AE0E}Prefabs/MP/Spawning/SpawnPoint_STALKER.et" {
+ components {
+  SCR_MapDescriptorComponent "{54C659A97C47BDE2}" {
+   DisplayName "ВІДСІЧ"
+   VisibleOnMap 1
+   UnitType Infantry
+  }
+ }
+ coords 7208.009 118.839 4999.733
+ m_Info SCR_UIInfo "{56B4CC4ECACA2C37}" {
+  Name "ВІДСІЧ"
+ }
+ m_bUseNearbySpawnPositions 1
+ {
+  $grp EPF_SpawnPoint {
+   {
+    coords -1.752 -0.238 -10.061
+    angleY 21
+   }
+   {
+    coords 2.084 8.278 10.899
+    angleY 155
+   }
+   {
+    coords 7.642 8.212 19.885
+    angleY 113.204
+   }
+   {
+    coords 12.492 8.226 17.792
+    angleY -164.14
+   }
+   {
+    coords -9.711 0.817 8.518
+    angleY 133.108
+   }
+  }
+ }
+}
+SCR_LoadoutManager : "{B54D08AEA74A5354}Prefabs/MP/Managers/Loadouts/LoadoutManager_Editor.et" {
+ coords 7189.963 133.189 5003.449
+}

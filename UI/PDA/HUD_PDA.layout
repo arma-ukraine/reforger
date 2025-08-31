@@ -18,18 +18,6 @@ FrameWidgetClass {
     }
    }
   }
-  ButtonWidgetClass "{65B4655D249434F9}" {
-   Prefab "{65B4655D249434F9}"
-   "Is Visible" 0
-  }
-  ButtonWidgetClass "{65B4655EB0C610B7}" {
-   Prefab "{65B4655EB0C610B7}"
-   "Is Visible" 0
-  }
-  ButtonWidgetClass "{65B4655E45B8DFA2}" {
-   Prefab "{65B4655E45B8DFA2}"
-   "Is Visible" 0
-  }
   ButtonWidgetClass "{65B4655E0E99A195}" {
    Prefab "{65B4655E0E99A195}"
    "Is Visible" 0

@@ -1,7 +1,0 @@
-GenericEntity : "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbarages.et" {
- coords 7231.37 119.5 4986.001
-}
-GenericEntity AmmoBoxArsenal_Equipment_USSR_Apparel_662D208FEFDF2E2D : "{759115303A582527}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/PersistentStorageBox.et" {
- coords 7228.721 118.587 5004.319
- angleY -111
-}

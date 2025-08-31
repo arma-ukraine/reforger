@@ -1,0 +1,232 @@
+GenericEntity SlotLootBody2 : "{4B812B160299C4EB}Prefabs/Systems/ScenarioFramework/Components/SlotLootBody.et" {
+ coords 7057.939 116.697 5454.664
+}
+GenericEntity SlotLootFood2 : "{64B24CA7B667317C}Prefabs/Systems/ScenarioFramework/Components/SlotLootFood.et" {
+ coords 7062.678 116.697 5458.253
+}
+ARMST_TRIGGER_SPAWN : "{762B4CCA245C6ECD}Prefabs/Anomals/TRIGGERS/ARMST_TRIGGER_ANOMAL.et" {
+ coords 6902.75 98.667 5189.609
+ SphereRadius 85
+ m_ObjectPrefab "{E696A918826666EB}Prefabs/Anomals/Studen/ARMST_STUDEN.et"
+ m_ObjectPrefab2 "{E696A918826666EB}Prefabs/Anomals/Studen/ARMST_STUDEN.et"
+ m_ObjectPrefab3 "{E696A918826666EB}Prefabs/Anomals/Studen/ARMST_STUDEN.et"
+ m_SpawnCount 20
+ m_CenterBias 0.6
+}
+GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/Systems/ScenarioFramework/Components/Area.et" {
+ components {
+  SCR_ScenarioFrameworkArea "{59E8CDC50969206E}" {
+   m_bShowDebugShapesInWorkbench 1
+  }
+ }
+ coords 6962.534 136.882 5289.792
+ {
+  $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/Systems/ScenarioFramework/Components/Layer.et" {
+   Layer3 {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_SpawnChildren RANDOM_MULTIPLE
+      m_iRandomPercent 50
+     }
+    }
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/Systems/ScenarioFramework/Components/Slot.et" {
+      Slot20 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
+        }
+       }
+       coords 56.874 -26.538 -40.748
+      }
+      Slot24 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
+        }
+       }
+       coords -143.076 -37.752 11.362
+      }
+      Slot25 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
+        }
+       }
+       coords -211.925 -52.15 -185.072
+      }
+     }
+    }
+   }
+   Layer4 {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_SpawnChildren RANDOM_MULTIPLE
+      m_iRandomPercent 30
+     }
+    }
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{8D43830F02C3F114}Prefabs/Systems/ScenarioFramework/Components/SlotAI.et" {
+      SlotAI1 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{A19A9FB7AB6FDD60}Prefabs/Groups/BANDITS/Group_BANDIT_Location_3.et"
+        }
+       }
+       coords 103.816 -21.426 60.788
+      }
+      SlotAI3 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{BB9E94F7D878AE66}Prefabs/Groups/BANDITS/Group_BANDIT_Location.et"
+        }
+       }
+       coords 95.51 -21.419 49.178
+      }
+      SlotAI4 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{BB9E94F7D878AE66}Prefabs/Groups/BANDITS/Group_BANDIT_Location.et"
+        }
+       }
+       coords 100.57 -21.42 63.281
+      }
+      SlotAI5 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{BB9E94F7D878AE66}Prefabs/Groups/BANDITS/Group_BANDIT_Location.et"
+        }
+       }
+       coords 83.045 -21.283 80.839
+      }
+      SlotAI6 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{BB9E94F7D878AE66}Prefabs/Groups/BANDITS/Group_BANDIT_Location.et"
+        }
+       }
+       coords 75.961 -21.381 74.546
+      }
+      SlotAI7 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{A19A9FB7AB6FDD60}Prefabs/Groups/BANDITS/Group_BANDIT_Location_3.et"
+        }
+       }
+       coords 98.114 -20.185 168.338
+      }
+      SlotAI8 {
+       components {
+        SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+         m_sObjectToSpawn "{BB9E94F7D878AE66}Prefabs/Groups/BANDITS/Group_BANDIT_Location.et"
+        }
+       }
+       coords 126.061 -20.357 165.199
+      }
+     }
+    }
+   }
+   Layer5 {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_SpawnChildren RANDOM_MULTIPLE
+      m_iRandomPercent 50
+     }
+    }
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{2713E5A535E4D8B2}Prefabs/Systems/ScenarioFramework/Components/SlotLootTools.et" {
+      SlotLootTools1 {
+       coords 104.399 -20.516 57.08
+      }
+      SlotLootTools2 {
+       coords 105.769 -21.419 55.611
+      }
+     }
+     $grp GenericEntity : "{2AFF843291C4D093}Prefabs/Systems/ScenarioFramework/Components/SlotLootClothes.et" {
+      SlotLootClothes1 {
+       coords 84.061 -20.921 50.768
+      }
+      SlotLootClothes2 {
+       coords 86.348 -20.856 53.011
+      }
+      SlotLootClothes3 {
+       coords 90.791 -21.538 55.693
+      }
+      SlotLootClothes4 {
+       coords 97.883 -21.419 59.656
+      }
+      SlotLootClothes6 {
+       coords 99.746 -21.419 62.71
+      }
+      SlotLootClothes7 {
+       coords 103.81 -21.419 57.638
+      }
+      SlotLootClothes8 {
+       coords 104.101 -21.419 54.975
+      }
+      SlotLootClothes9 {
+       coords 102.335 -21.419 53.619
+      }
+      SlotLootClothes10 {
+       coords 98.467 -19.864 50.202
+      }
+      SlotLootClothes11 {
+       coords 89.745 -21.419 41.243
+      }
+     }
+     GenericEntity SlotLootBody1 : "{4B812B160299C4EB}Prefabs/Systems/ScenarioFramework/Components/SlotLootBody.et" {
+      coords 82.492 -21.283 82.663
+     }
+     $grp GenericEntity : "{64B24CA7B667317C}Prefabs/Systems/ScenarioFramework/Components/SlotLootFood.et" {
+      SlotLootFood1 {
+       coords 91.608 -21.45 46.081
+      }
+      SlotLootFood3 {
+       coords 88.647 -21.419 43.045
+      }
+      SlotLootFood4 {
+       coords 88.038 -21.419 51.075
+      }
+      SlotLootFood5 {
+       coords 89.972 -20.927 56.364
+      }
+      SlotLootFood6 {
+       coords 95.507 -20.922 61.095
+      }
+     }
+     $grp GenericEntity : "{79E1E12E12C64B25}Prefabs/Systems/ScenarioFramework/Components/SlotLootGarbage.et" {
+      SlotLootGarbage1 {
+       coords 126.618 -20.288 162.497
+      }
+      SlotLootGarbage2 {
+       coords 121.798 -20.397 161.724
+      }
+     }
+     $grp GenericEntity : "{E0A52B444AB7FC7C}Prefabs/Systems/ScenarioFramework/Components/SlotLootMedicine.et" {
+      SlotLootMedicine1 {
+       coords 99.306 -21.419 65.636
+      }
+      SlotLootMedicine2 {
+       coords 104.603 -21.419 65.874
+      }
+      SlotLootMedicine4 {
+       coords 103.882 -20.516 57.518
+      }
+      SlotLootMedicine5 {
+       coords 74.779 -21.381 75.546
+      }
+     }
+    }
+   }
+  }
+ }
+}
+GenericEntity SlotLootMedicine3 : "{E0A52B444AB7FC7C}Prefabs/Systems/ScenarioFramework/Components/SlotLootMedicine.et" {
+ coords 7056.525 116.697 5455.745
+}
+GenericEntity : "{F735B78996552E25}Prefabs/Props/LOOT_BOX/Hidden/Loot_garbarages_hidden.et" {
+ coords 6984.035 103.088 5082.381
+}

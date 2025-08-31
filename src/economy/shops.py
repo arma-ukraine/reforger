@@ -92,7 +92,7 @@ class Shop(Enum):
             Item.MAP,
         ),
         sell_items=POSTMAN_BUY_SELL,
-        sell_multiplier=0.3,
+        sell_multiplier=0.2,
     )
 
     POSTMAN_INTEL = ShopConfig(

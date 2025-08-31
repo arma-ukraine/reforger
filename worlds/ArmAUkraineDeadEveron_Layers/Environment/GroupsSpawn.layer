@@ -41,30 +41,6 @@ $grp ARMST_TRIGGER_GROUPSPAWN : "{2ED7F83D6D572F31}Prefabs/Anomals/TRIGGERS/ARMS
   m_SpawnChance 100
  }
  {
-  coords 7059.573 115.463 5344.915
-  SphereRadius 200
-  m_GroupPrefab1 "{9CAEBA8FDE035457}Prefabs/Groups/BANDITS/Group_BANDIT_Location_4.et"
-  m_GroupPrefab2 "{9CAEBA8FDE035457}Prefabs/Groups/BANDITS/Group_BANDIT_Location_4.et"
-  m_GroupPrefab3 "{9CAEBA8FDE035457}Prefabs/Groups/BANDITS/Group_BANDIT_Location_4.et"
-  m_SpawnChance 100
- }
- {
-  coords 6852.841 100.209 5249.011
-  SphereRadius 200
-  m_GroupPrefab1 "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
-  m_GroupPrefab2 "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
-  m_GroupPrefab3 "{FBC6409B6650A30A}Prefabs/Monsters/Groups/Group_Zombie_RANDOM.et"
-  m_SpawnChance 100
- }
- {
-  coords 6816.34 99.194 5328.734
-  SphereRadius 200
-  m_GroupPrefab1 "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
-  m_GroupPrefab2 "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
-  m_GroupPrefab3 "{FBC6409B6650A30A}Prefabs/Monsters/Groups/Group_Zombie_RANDOM.et"
-  m_SpawnChance 100
- }
- {
   coords 6396.133 116.885 5189.876
   SphereRadius 200
   m_GroupPrefab1 "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
@@ -159,15 +135,6 @@ $grp ARMST_TRIGGER_GROUPSPAWN : "{2ED7F83D6D572F31}Prefabs/Anomals/TRIGGERS/ARMS
   m_GroupPrefab1 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
   m_GroupPrefab2 "{37507C3B93F524F8}Prefabs/Groups/ARMY/Group_ARMY_Location_4x_squad.et"
   m_GroupPrefab3 "{D0A3CEDDA09430C4}Prefabs/Groups/ARMY/Group_ARMY_Location_6x_squad.et"
-  m_SpawnChance 100
- }
- {
-  coords 7018.837 110.344 5247.083
-  SphereRadius 200
-  PeriodicQueries 0
-  m_GroupPrefab1 "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
-  m_GroupPrefab2 "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
-  m_GroupPrefab3 "{96985C4430551982}Prefabs/Monsters/Groups/Group_Boar_RANDOM.et"
   m_SpawnChance 100
  }
 }

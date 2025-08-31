@@ -9983,10 +9983,6 @@ $grp GenericEntity : "{0BB4B21E4F560431}Prefabs/Props/Furniture/Chest_01.et" {
   angleY -100.2
  }
  {
-  coords 7229.938 123.199 5005.085
-  angleY -97.5
- }
- {
   coords 5548.605 106.737 5617.637
   angleX -0.036
   angleY -179.4
@@ -26682,12 +26678,6 @@ $grp GenericEntity : "{37303CD6D6B5B42D}Prefabs/Compositions/Misc/SubComposition
   coords 4821.837 168.89 6940.897
  }
  {
-  coords 7208.442 118.759 4996.741
-  angleX 1.788
-  angleY 0.056
-  angleZ 1.791
- }
- {
   coords 6343.239 85.928 5628.216
   angleX -3.569
   angleY -0.168
@@ -33174,10 +33164,6 @@ $grp GenericEntity : "{530C3C02C09C6B68}Prefabs/Props/Furniture/CabinetMetal_01_
   angleY 57.062
   angleZ 10.624
  }
- {
-  coords 7230.088 123.196 5004.187
-  angleY -91.5
- }
 }
 SCR_DestructibleBuildingEntity : "{5312C1597A2D08C6}Prefabs/Structures/Communcation Towers/Green Mountain Tower.et" {
  coords 7711.558 339.31 3073.672
@@ -37367,8 +37353,8 @@ $grp GenericEntity : "{645A92146ECBA8F1}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GenericEntity Grenade_RGD5_660B2D6134C6F187 : "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" {
- coords 4825.993 83.012 4425.682
- angleX 5.795
+ coords 4826.251 82.964 4425.368
+ angleX 5.218
  angleY 43.182
 }
 GenericEntity : "{6475CD495DE1C931}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V3.et" {
@@ -59373,10 +59359,6 @@ $grp GenericEntity : "{8A996ED0D652F5B1}Prefabs/Structures/Military/Camps/Shelte
   angleZ 1.81
  }
 }
-GenericEntity : "{8AC23039E7EC0375}Prefabs/Props/Furniture/TowelRack_01.et" {
- coords 7228.342 124.393 5001.16
- angleY -7.4
-}
 $grp GenericEntity : "{8AD76C341BFCF8C5}Prefabs/Props/Commercial/Posters/PostersGround_01_Eden_V1.et" {
  {
   coords 7441.374 137.247 4725.2
@@ -60515,7 +60497,7 @@ $grp LightEntity : "{8CAD466D49510CDF}Prefabs/Structures/Infrastructure/Lamps/La
   LV 15.09
  }
 }
-$grp SCR_DestructibleEntity : "{8D01E253FD83E46F}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_white.et" {
+$grp GenericEntity : "{8D01E253FD83E46F}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_white.et" {
  {
   coords 9721.347 10.887 1517.977
   angleX 3.103
@@ -61381,6 +61363,9 @@ $grp DecalEntity : "{925553528D276E6D}Prefabs/Decals/Asphalt/Decal_Asphalt_Crack
 GenericEntity : "{92BE346D5E0BD792}Prefabs/Props/Military/Fuel/MobileWaterTank_USSR_01_fuel.et" {
  coords 4953.593 2.162 3871.229
  angleX -1.808
+}
+GameEntity : "{92D3F8A8AE82E3E5}Prefabs/Method/Structures_int/Camps/Fireplace_Loiters_01.et" {
+ coords 7206.362 118.849 4995.881
 }
 $grp Tree : "{93312BADF8D221EC}Prefabs/Vegetation/Tree/t_picea_abies/t_picea_abies_2d.et" {
  {
@@ -74642,20 +74627,6 @@ GenericEntity : "{BCB896AAC01879BB}Prefabs/Structures/BuildingParts/Doors/DoorSe
  {
   GenericEntity {
    ID "568C83951A8094F3"
-   components {
-    DoorComponent "{221C667A9F7D4B69}" {
-     Enabled 0
-    }
-    NavmeshCustomLinkComponent "{559E7AC91AFA25BA}" {
-     Enabled 0
-    }
-    SCR_AISmartActionComponent "{5890ED6117CBB20D}" {
-     Enabled 0
-    }
-    ActionsManagerComponent "{F32B667C3C823800}" {
-     Enabled 0
-    }
-   }
   }
  }
 }
@@ -79845,6 +79816,30 @@ $grp GenericEntity : "{CC66836BF4E211F9}Prefabs/Props/Military/Camps/Duckboard_0
   angleZ 1.563
   scale 0.8
  }
+ {
+  components {
+   Hierarchy "{569C80D17E11BF7D}" {
+    Enabled 1
+   }
+  }
+  coords 7223.856 123.178 5002.174
+  angleX -1.425
+  angleY -10.878
+  angleZ 1.257
+  scale 0.8
+ }
+ {
+  components {
+   Hierarchy "{569C80D17E11BF7D}" {
+    Enabled 1
+   }
+  }
+  coords 7223.31 123.152 5005.106
+  angleX 0.65
+  angleY -10.833
+  angleZ -1.012
+  scale 0.8
+ }
 }
 $grp Tree : "{CC86FA58287C61C8}Prefabs/Vegetation/Vegetables/PumpkinCrop_01_Line.et" {
  {
@@ -83979,7 +83974,7 @@ $grp SCR_DestructibleBuildingEntity : "{D0947E26A8A39ECF}Prefabs/Structures/Fore
 GenericEntity : "{D0B44EB8DBEDDA97}Prefabs/Props/Civilian/Bucket_02.et" {
  coords 4440.796 31.821 10731.842
 }
-$grp SCR_DestructibleEntity : "{D0E01CBC080D4F84}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_red.et" {
+$grp GenericEntity : "{D0E01CBC080D4F84}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_red.et" {
  {
   coords 5550.902 106.741 5621.866
   angleX -0.013
@@ -86395,12 +86390,6 @@ $grp GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
   coords 10654.867 186.966 2474.51
   angleY 79.2
   scale 0.48
- }
- {
-  coords 7213.563 118.532 4992.052
-  angleX 0.895
-  angleY 0.014
-  scale 1.5
  }
  {
   coords 7212.969 127.089 5006.367
@@ -100273,10 +100262,6 @@ $grp GenericEntity : "{F76340CCD79DCC5A}Prefabs/Props/Civilian/RadioSmall_01_red
   angleY 14
   angleZ -0.002
  }
-}
-GenericEntity : "{F77F7F847CC6455F}Prefabs/Props/Furniture/Bookshelf_01/Bookshelf_01.et" {
- coords 7230.239 123.18 5003.772
- angleY -97
 }
 SCR_DestructibleBuildingEntity : "{F78C674F187E0DA5}Prefabs/Structures/Infrastructure/Naval/Cranes/HarborCrane_01_turret_multicolour.et" {
  coords 4924.411 -13.649 11729.063

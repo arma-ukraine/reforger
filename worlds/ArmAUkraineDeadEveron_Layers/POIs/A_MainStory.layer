@@ -1,0 +1,244 @@
+GenericEntity : "{09ABA1834ED3C03A}Prefabs/Props/LOOT_BOX/clothes/Loot_clothes_upper_2_red.et" {
+ coords 6830.821 73.579 4832.031
+ angleY -27.831
+}
+$grp GenericEntity : "{13F428D2770E8D28}Prefabs/Props/LOOT_BOX/Loot_randomize_clothes.et" {
+ {
+  coords 6833.246 72.511 4836.086
+  angleY 0
+ }
+ {
+  coords 6788.264 70.397 4859.078
+  angleY 0
+ }
+ {
+  coords 6856.394 78.443 4783.34
+  angleY 0
+ }
+ {
+  coords 6808.491 71.293 4845.104
+  angleY 0
+ }
+ {
+  coords 6832.979 74.84 4815.835
+  angleY 0
+ }
+}
+$grp GenericEntity : "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbarages.et" {
+ {
+  coords 6831.982 72.557 4838.25
+  angleY 0
+ }
+ {
+  coords 6827.975 72.485 4842.084
+  angleY 0
+ }
+ {
+  coords 6816.16 72.054 4830.299
+  angleY 0
+ }
+ {
+  coords 6795.692 70.543 4836.412
+  angleY 0
+ }
+ {
+  coords 6797.085 70.701 4837.956
+  angleY 0
+ }
+ {
+  coords 6795.583 70.71 4841.074
+  angleY 0
+ }
+ {
+  coords 6798.334 70.619 4854.341
+  angleY 0
+ }
+ {
+  coords 6798.212 70.195 4866.642
+  angleY 0
+ }
+ {
+  coords 6787.704 70.022 4860.856
+  angleY 0
+ }
+ {
+  coords 6775.257 68.402 4826.917
+  angleY 0
+ }
+ {
+  coords 6762.73 67.227 4827.278
+  angleY 0
+ }
+ {
+  coords 6768.232 67.62 4829.899
+  angleY 0
+ }
+ {
+  coords 6794.038 70.23 4820.695
+  angleY 0
+ }
+ {
+  coords 6823.512 72.637 4810.136
+  angleY 0
+ }
+ {
+  coords 6850.897 74.449 4788.365
+  angleY 0
+ }
+ {
+  coords 6844.526 74.793 4774.201
+  angleY 0
+ }
+ {
+  coords 6844.87 75.146 4766.628
+  angleY 0
+ }
+ {
+  coords 6844.174 75.092 4767.303
+  angleY 0
+ }
+ {
+  coords 6846.321 75.298 4763.94
+  angleY 0
+ }
+ {
+  coords 6846.415 75.263 4765.198
+  angleY 0
+ }
+ {
+  coords 6871.408 77.513 4749.592
+  angleY 0
+ }
+ {
+  coords 6835.902 72.934 4818.012
+  angleY 0
+ }
+ {
+  coords 6825.208 72.771 4815.533
+  angleY 0
+ }
+}
+GenericEntity : "{3A4C8E2F5B6EBAAC}Prefabs/Props/LOOT_BOX/Loot_randomize_army.et" {
+ coords 6850.141 79.203 4766.406
+ angleX -7.619
+}
+GenericEntity : "{5965DC4BB61ADF94}Prefabs/Props/LOOT_BOX/clothes/Loot_clothes_upper_white.et" {
+ coords 6831.07 73.554 4832.181
+ angleY -38.707
+}
+GenericEntity ZEL_Storage_Base_663AEBAEF67C2 : "{64D4F1BCB3403343}Prefabs/Props/ZEL_Storage_Base.et" {
+ coords 6829.986 72.485 4831.793
+ angleY -40.51
+}
+$grp GenericEntity : "{860A452E9D25FCB6}Prefabs/Props/LOOT_BOX/Loot_randomize_food.et" {
+ {
+  coords 6829.916 72.485 4836.824
+  angleY 0
+ }
+ {
+  coords 6832.996 72.486 4834.617
+  angleY 0
+ }
+ {
+  coords 6834.113 72.537 4835.501
+  angleY 0
+ }
+ {
+  coords 6798.839 70.592 4855.305
+  angleY 0
+ }
+ {
+  coords 6822.869 72.563 4810.382
+  angleY 0
+ }
+ {
+  coords 6847.889 76.132 4761.618
+  angleY 0
+ }
+ {
+  coords 6849.196 76.558 4760.591
+  angleY 0
+ }
+ {
+  coords 6855.934 78.48 4782.253
+  angleY 0
+ }
+ {
+  coords 6854.41 78.336 4782.886
+  angleY 47.52
+ }
+ {
+  coords 6855.398 78.35 4783.68
+  angleY 0
+ }
+ {
+  coords 6807.723 71.303 4844.019
+  angleY 0
+ }
+ {
+  coords 6808.924 71.327 4844.461
+  angleY 59.388
+ }
+ {
+  coords 6833.867 74.848 4816.334
+  angleY 0
+ }
+ {
+  coords 6833.311 74.911 4814.277
+  angleY 0
+ }
+}
+$grp GenericEntity : "{91D86FC384A72660}Prefabs/Props/LOOT_BOX/Loot_randomize_medicine.et" {
+ {
+  coords 6853.994 78.258 4784.486
+ }
+ {
+  coords 6853.223 78.227 4783.781
+ }
+ {
+  coords 6806.469 71.093 4848.498
+ }
+}
+GameEntity : "{92D3F8A8AE82E3E5}Prefabs/Method/Structures_int/Camps/Fireplace_Loiters_01.et" {
+ coords 6830.274 72.838 4816.88
+ angleX -2.223
+ angleY 0.034
+ angleZ -1.725
+}
+GenericEntity : "{976D293D7CEBB8F7}Prefabs/Props/LOOT_BOX/clothes/Loot_clothes_upper_green.et" {
+ coords 6831.305 73.564 4832.376
+ angleY -44.347
+}
+GenericEntity : "{BC78C382910BABBF}Prefabs/Props/LOOT_BOX/backpacks/Loot_random_backpack.et" {
+ coords 6811.758 71.783 4834.586
+}
+$grp GenericEntity : "{E2719E0AE25171C3}Prefabs/Props/LOOT_BOX/Loot_randomize_clothes2.et" {
+ {
+  coords 6806.279 71.054 4849.545
+ }
+ {
+  coords 6807.227 71.058 4850.358
+  angleY 61.362
+ }
+}
+GameEntity : "{EE5C0DF8F62CE5E6}Prefabs/Method/Props/Camps/Fireplace_Loiters_02.et" {
+ coords 6808.275 71.236 4846.472
+}
+$grp GenericEntity : "{FA7EB973926021A8}Prefabs/Props/LOOT_BOX/Loot_randomize_tools.et" {
+ {
+  coords 6831.012 72.549 4837.061
+  angleY 0
+ }
+ {
+  coords 6819.898 71.953 4835.622
+  angleY 0
+ }
+ {
+  coords 6773.604 69.17 4827.779
+  angleY 0
+ }
+ {
+  coords 6804.47 72.127 4840.761
+  angleY 0
+ }
+}

@@ -1,0 +1,223 @@
+GenericEntity Area1 : "{C72F956E4AC6A6E7}Prefabs/Systems/ScenarioFramework/Components/Area.et" {
+ coords 7362.851 122.312 5184.188
+ {
+  $grp GenericEntity : "{5F9FFF4BF027B3A3}Prefabs/Systems/ScenarioFramework/Components/Layer.et" {
+   Layer1 {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_SpawnChildren RANDOM_ONE
+     }
+    }
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/Systems/ScenarioFramework/Components/Slot.et" {
+      Slot2 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{FBC6409B6650A30A}Prefabs/Monsters/Groups/Group_Zombie_RANDOM.et"
+        }
+       }
+       coords 0 0 0
+      }
+      Slot22 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{58251EDC277CE499}622120A5448725E3/Prefabs/Groups/Group_Zombies_USSR.et"
+        }
+       }
+       coords -7.065 3.874 1.618
+      }
+      Slot21 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{67E76BA71804B965}622120A5448725E3/Prefabs/Groups/Group_Zombies_CIV.et"
+        }
+       }
+       coords -7.065 3.874 1.617
+      }
+     }
+    }
+   }
+   Layer2 {
+    components {
+     SCR_ScenarioFrameworkLayerBase "{5A2283EA2A0B4B14}" {
+      m_SpawnChildren RANDOM_MULTIPLE
+      m_iRandomPercent 20
+     }
+    }
+    coords 0 0 0
+    {
+     $grp GenericEntity : "{AA01691FDC4E9167}Prefabs/Systems/ScenarioFramework/Components/Slot.et" {
+      Slot1 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{13F428D2770E8D28}Prefabs/Props/LOOT_BOX/Loot_randomize_clothes.et"
+        }
+       }
+       coords -5.152 1.208 1.864
+      }
+      Slot10 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{91D86FC384A72660}Prefabs/Props/LOOT_BOX/Loot_randomize_medicine.et"
+        }
+       }
+       coords 5.497 0.177 -2.66
+      }
+      Slot11 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{91D86FC384A72660}Prefabs/Props/LOOT_BOX/Loot_randomize_medicine.et"
+        }
+       }
+       coords 4.826 0.716 -4.383
+      }
+      Slot12 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{FA7EB973926021A8}Prefabs/Props/LOOT_BOX/Loot_randomize_tools.et"
+        }
+       }
+       coords -6.826 0.122 3.68
+      }
+      Slot13 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{FA7EB973926021A8}Prefabs/Props/LOOT_BOX/Loot_randomize_tools.et"
+        }
+       }
+       coords -9.875 0.008 12.438
+      }
+      Slot14 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbarages.et"
+        }
+       }
+       coords -9.13 0.008 13.353
+      }
+      Slot15 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbarages.et"
+        }
+       }
+       coords -21.116 0.025 6.509
+      }
+      Slot16 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbarages.et"
+        }
+       }
+       coords -8.012 0 0.139
+      }
+      Slot17 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbarages.et"
+        }
+       }
+       coords -1.219 0.008 7.655
+      }
+      Slot18 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbarages.et"
+        }
+       }
+       coords -1.124 0 11.046
+      }
+      Slot19 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbarages.et"
+        }
+       }
+       coords 7.964 -0.224 3.813
+      }
+      Slot3 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{13F428D2770E8D28}Prefabs/Props/LOOT_BOX/Loot_randomize_clothes.et"
+        }
+       }
+       coords 4.826 0.672 -9.73
+      }
+      Slot4 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{13F428D2770E8D28}Prefabs/Props/LOOT_BOX/Loot_randomize_clothes.et"
+        }
+       }
+       coords 6.829 0.177 -11.305
+      }
+      Slot5 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{13F428D2770E8D28}Prefabs/Props/LOOT_BOX/Loot_randomize_clothes.et"
+        }
+       }
+       coords 14.017 0.177 -2.998
+      }
+      Slot6 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{860A452E9D25FCB6}Prefabs/Props/LOOT_BOX/Loot_randomize_food.et"
+        }
+       }
+       coords 15.18 1.022 -0.955
+      }
+      Slot7 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{860A452E9D25FCB6}Prefabs/Props/LOOT_BOX/Loot_randomize_food.et"
+        }
+       }
+       coords 11.993 0.966 -0.289
+      }
+      Slot8 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{860A452E9D25FCB6}Prefabs/Props/LOOT_BOX/Loot_randomize_food.et"
+        }
+       }
+       coords 12.194 0.177 2.33
+      }
+      Slot9 {
+       components {
+        SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+         m_sObjectToSpawn "{860A452E9D25FCB6}Prefabs/Props/LOOT_BOX/Loot_randomize_food.et"
+        }
+       }
+       coords 6.361 0.177 -1.207
+      }
+     }
+    }
+   }
+  }
+  GenericEntity LayerTaskClearArea1 : "{CDC0845AD90BA073}Prefabs/Systems/ScenarioFramework/Components/LayerTaskClearArea.et" {
+   components {
+    SCR_ScenarioFrameworkLayerTaskClearArea "{5A6513F46D132331}" {
+     m_sFactionKey "FACTION_STALKER"
+    }
+   }
+   coords 0 0 0
+   {
+    GenericEntity SlotClearArea1 : "{E53456990A756229}Prefabs/Systems/ScenarioFramework/Components/SlotClearArea.et" {
+     components {
+      SCR_ScenarioFrameworkSlotClearArea "{5A633AF525D5B972}" {
+       m_aPlugins {
+        SCR_ScenarioFrameworkPluginTrigger "{5A633AF5368D26A3}" {
+         m_fAreaRadius 30
+         m_sActivatedByThisFaction "FACTION_STALKER"
+        }
+       }
+      }
+     }
+     coords 0.754 -0.051 2.841
+    }
+   }
+  }
+ }
+}

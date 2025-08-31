@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{759115303A582527}Prefabs/Compositions/Misc/CustomEntities/InteractionPoints/AmmoBoxArsenal_Equipment_USSR_Apparel.et"
+ Name "{E0A52B444AB7FC7C}Prefabs/Systems/ScenarioFramework/Components/SlotLootMedicine.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }
