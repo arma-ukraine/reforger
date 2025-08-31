@@ -36,6 +36,7 @@ CURRENCY_BUY_SELL = (
 
 POSTMAN_BUY_SELL = (
     # Weapons.
+    Item.BAYONET,
     Item.PM,
     Item.DOUBLE_BARREL_SAWN_OFF,
     Item.DOUBLE_BARREL_SHOTGUN,
@@ -49,6 +50,12 @@ POSTMAN_BUY_SELL = (
     Item.BANDAGE,
     Item.TOURNIQUET,
     Item.SALINE_BAG,
+    # Equipment
+    Item.MAP,
+    Item.FLASHLIGHT,
+    Item.COMPASS,
+    Item.PDA,
+    Item.ATMOS,
 )
 
 POSTMAN_INTEL_BUY_SELL = (

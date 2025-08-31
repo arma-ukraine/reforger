@@ -99,6 +99,10 @@ class Item(Enum):
     )
 
     # MARK: Weapons
+    BAYONET = ItemDefinition(
+        "{558117556F3880A8}Prefabs/Weapons/Attachments/Bayonets/Bayonet_M9.et",
+        BASE_WEAPON_PRICE,
+    )
     PM = ItemDefinition(
         "{C0F7DD85A86B2900}Prefabs/Weapons/Handguns/armst_PM.et", BASE_WEAPON_PRICE
     )
@@ -142,7 +146,15 @@ class Item(Enum):
     )
     MAP = ItemDefinition(
         "{922F95F91943F69A}Prefabs/Items/Equipment/Maps/PaperMap_01_folded_US.et",
-        BASE_EQUIPMENT_PRICE,
+        int(BASE_EQUIPMENT_PRICE / 2),
+    )
+    PDA = ItemDefinition(
+        "{6E2790C4C516701B}Prefabs/Items/devices/armst_itm_pda.et",
+        BASE_EQUIPMENT_PRICE * 2,
+    )
+    ATMOS = ItemDefinition(
+        "{33C169417F310F0D}Prefabs/Items/devices/armst_itm_atmos.et",
+        BASE_EQUIPMENT_PRICE * 2,
     )
 
     # MARK: Misc
