@@ -68,24 +68,19 @@ class Shop(Enum):
 
     CURRENCY = ShopConfig(
         name="Currency",
-        buy_items=CURRENCY_BUY_SELL,
+        buy_items=(Item.WALLET,) + CURRENCY_BUY_SELL,
         sell_items=CURRENCY_BUY_SELL,
     )
 
     POSTMAN = ShopConfig(
         name="Postman",
-        buy_items=(Item.WALLET,)
-        + POSTMAN_BUY_SELL
+        buy_items=POSTMAN_BUY_SELL
         + (
             # Containers.
             Item.CANTEEN_EMPTY,
             Item.CONSERVA_THROW,
             # Apparel.
             Item.GASMASK_GP5,
-            Item.GORKA_GREEN,
-            Item.GORKA_BROWN,
-            Item.GORKA_DARKBROWN,
-            Item.GORKA_CAMO_DARK,
             # Equipment.
             Item.COMPASS,
             Item.FLASHLIGHT,

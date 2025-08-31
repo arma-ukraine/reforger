@@ -1,7 +1,7 @@
 # Notes
 
 * [Reforger Shop System](https://github.com/ekudmada/Reforger-Shop-System) "Purchase" button does nothing:
- - If you have your own player controller prefab you must add the ADM_PlayerShopManager component to it. This controls communicating to the server to request purchasing. The project overrides the DefaultPlayerControllerMP prefab to achieve this.
+ - If you have your own player controller prefab you must add the ADM_PlayerShopManager component to it. This controls communicating to the server to request purchasing. The project overrides the DefaultPlayerControllerMP prefab to achieve this. Player controller is specified in the GameMode object properties.
 
 * In order to save data for the custom component on a prefab you need to:
  - https://github.com/Arkensor/EnfusionPersistenceFramework/blob/armareforger/docs/custom-component.md

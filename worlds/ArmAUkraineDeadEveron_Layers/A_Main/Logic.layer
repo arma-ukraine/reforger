@@ -52,24 +52,6 @@ RadioManagerEntity RadioManager : "{B8E09FAB91C4ECCD}Prefabs/Radio/RadioManager.
 }
 SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/Systems/ScenarioFramework/GameModeSF.et" {
  components {
-  ARMST_PDA_LIFE_GamemodeComponent "{658B4389DA54155D}" {
-   m_EnableAutoMessages 1
-   m_sPdaLifeMessages {
-    "{EA3FED0C68C339CF}UI/PDA/pda_life/PDA_LIFE_Messages.conf"
-   }
-   m_sPdaDeathMessages {
-    "{B6AFC1A2384E6A51}UI/PDA/pda_life/PDA_DEATH_Messages.conf"
-   }
-   m_sPdaHeliMessages {
-    "{51D30E85AFC577F5}UI/PDA/pda_life/PDA_HELI_Messages.conf"
-   }
-   m_sPdaSurgeStartMessages {
-    "{1AB91387DF077D4A}UI/PDA/pda_life/PDA_SURGE_START_Messages.conf"
-   }
-   m_sPdaSurgeEndMessages {
-    "{A83A686100F32862}UI/PDA/pda_life/PDA_SURGE_END_Messages.conf"
-   }
-  }
   EPF_PersistenceManagerComponent "{658301C3AC02188D}" {
    components {
     EPF_BasicRespawnSystemComponent "{658301C36354B154}" {
@@ -123,6 +105,7 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/Systems/ScenarioFramewo
   }
  }
  coords 7107.999 105.438 6271.226
+ PlayerControllerPrefab "{CD2B8EF361478649}Prefabs/Characters/Core/DefaultPlayerControllerMP_ScenarioFramework.et"
  m_bAutoPlayerRespawn 0
  m_aDisabledResourceTypes {
   0

@@ -124,28 +124,6 @@ class Item(Enum):
         8 * BASE_AMMO_PRICE,
     )
 
-    # MARK: Armor
-    SOVIET_JACKET = ItemDefinition(
-        "{F5C7F3A66723915A}Prefabs/New_Equipment/Jackets/armst_jacket_soviet_army.et",
-        BASE_ARMOR_PRICE,
-    )
-    GORKA_GREEN = ItemDefinition(
-        "{20491CABD61C4846}Prefabs/New_Equipment/Jackets/gorka/armst_jacket_gorka_green.et",
-        int(SOVIET_JACKET.base_price * 2.2),
-    )
-    GORKA_BROWN = ItemDefinition(
-        "{21D031F8E0C0A646}Prefabs/New_Equipment/Jackets/gorka/armst_jacket_gorka_brown.et",
-        GORKA_GREEN.base_price,
-    )
-    GORKA_DARKBROWN = ItemDefinition(
-        "{924D262DBDCB4950}Prefabs/New_Equipment/Jackets/gorka/armst_jacket_gorka_darkbrown.et",
-        GORKA_GREEN.base_price,
-    )
-    GORKA_CAMO_DARK = ItemDefinition(
-        "{7F934FAC7B4676A5}Prefabs/New_Equipment/Jackets/gorka/camo/armst_jacket_gorka_camo_dark.et",
-        GORKA_GREEN.base_price,
-    )
-
     # MARK: GasMasks
     GASMASK_GP5 = ItemDefinition(
         "{D7B25AAE6F51908A}Prefabs/New_Equipment/Gasmasks/armst_gasmask_gp5.et",
