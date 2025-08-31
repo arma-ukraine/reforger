@@ -53,7 +53,6 @@ POSTMAN_BUY_SELL = (
 
 POSTMAN_INTEL_BUY_SELL = (
     Item.FLOPPY,
-    Item.FLASH,
     Item.DOCS_1,
     Item.DOCS_2,
     Item.DOCS_3,

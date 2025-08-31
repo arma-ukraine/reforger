@@ -24,6 +24,7 @@ class ItemDefinition(NamedTuple):
 
 class Item(Enum):
     # MARK: Currency
+    WALLET = ItemDefinition("{B0E67230AEEE2DF3}Prefabs/Items/Wallet.et", 0)  # Free
     UAK_1 = ItemDefinition(
         "{1475B3B154A8441C}Prefabs/Items/Moneys/armst_itm_money_1rub.et", 1
     )
@@ -131,7 +132,6 @@ class Item(Enum):
     )
 
     # MARK: Equipment
-    WALLET = ItemDefinition("{B0E67230AEEE2DF3}Prefabs/Items/Wallet.et", 0)  # Free
     COMPASS = ItemDefinition(
         "{61D4F80E49BF9B12}Prefabs/Items/Equipment/Compass/Compass_SY183.et",
         BASE_EQUIPMENT_PRICE,
@@ -150,13 +150,13 @@ class Item(Enum):
         "{866D3B6301B1AA4E}Prefabs/Items/Electronics/armst_itm_floppy.et",
         BASE_INTEL_PRICE,
     )
-    FLASH = ItemDefinition(
+    FLASH_EMPTY = ItemDefinition(
         "{A93E6BD6C9A7F748}Prefabs/Items/Electronics/armst_itm_flash.et",
         int(FLOPPY.base_price * 1.2),
     )
     DOCS_1 = ItemDefinition(
         "{BAFDB21966A26568}Prefabs/Items/Others/Documents/armst_itm_docs.et",
-        int(FLASH.base_price * 1.5),
+        int(FLASH_EMPTY.base_price * 1.5),
     )
     DOCS_2 = ItemDefinition(
         "{AFB860AD776F046E}Prefabs/Items/Others/Documents/armst_itm_docs_2.et",
