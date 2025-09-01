@@ -37353,10 +37353,9 @@ $grp GenericEntity : "{645A92146ECBA8F1}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GenericEntity Grenade_RGD5_660B2D6134C6F187 : "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" {
- coords 4826.304 82.952 4425.307
- angleX 5.248
+ coords 4826.326 82.951 4425.28
+ angleX 5.218
  angleY 43.182
- angleZ 6.129
 }
 GenericEntity : "{6475CD495DE1C931}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V3.et" {
  coords 10724.008 0.774 4084.938
@@ -76592,8 +76591,8 @@ $grp GenericEntity : "{C529E6E1AE272891}Prefabs/Compositions/Misc/SubComposition
   {
    GenericEntity {
     ID "570283CDB3C7BEA2"
-    coords 0.053 0.994 0.036
-    angleY 225.983
+    coords -21.466 5.148 6.065
+    angleY 122.607
    }
   }
  }
