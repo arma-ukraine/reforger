@@ -56,7 +56,7 @@ GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
      UIInfo SCR_ActionUIInfo "{66426989AC91819A}" {
       Name "Відпочити"
      }
-     Duration 20
+     Duration 5
      "Sort Priority" 1
     }
     AUA_CookAction "{6642698AD6FA04A0}" {
