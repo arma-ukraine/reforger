@@ -38,28 +38,44 @@ GenericEntity : "{B6370564C0BBAD45}Prefabs/Props/Military/Fuel/MobileWaterTank_F
  coords 7218.116 118.659 4991.982
  angleY 44.093
 }
-GenericEntity : "{F1C5AA461DC6ECCE}Prefabs/Props/Civilian/PotOld_01.et" {
+GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
  components {
-  ADM_ShopComponent "{6630AA96FAE81AD8}" {
+  ADM_ShopComponent "{6642698A0C4F59C0}" {
+   m_ShopName "Готівля"
    m_ShopConfig "{F06650956BB0108C}configs/Shops/Cooking.conf"
   }
-  ActionsManagerComponent "{6630AA96E8CF1BDA}" {
-   ActionContexts {
-    UserActionContext "{6630AA96EBC17636}" {
-     ContextName "Shop"
-     Position PointInfo "{6630AA96EE34F8F7}" {
-     }
-    }
-   }
+  SCR_FireplaceComponent "{5876E7F288BF5C8E}" {
+   m_eInitialLightState OFF
+  }
+  ActionsManagerComponent "{5876E7F5CCE95371}" {
    additionalActions {
-    ADM_ShopAction "{6630AA9692BA793F}" {
+    AUA_RestUserAction "{66426989F0D5891D}" {
      ParentContextList {
-      "Shop"
+      "fireplace"
      }
-     ActionTitle "Готівля"
+     UIInfo SCR_ActionUIInfo "{66426989AC91819A}" {
+      Name "Відпочити"
+     }
+     Duration 10
+     "Sort Priority" 1
+    }
+    ADM_ShopAction "{6642698AD6FA04A0}" {
+     ParentContextList {
+      "fireplace"
+     }
+     UIInfo SCR_ActionUIInfo "{6642698AD99C56BC}" {
+      Name "Готувати"
+     }
+     "Sort Priority" 2
     }
    }
   }
+ }
+ coords 7234.272 118.889 4990.617
+ angleX -4.467
+}
+GenericEntity : "{F1C5AA461DC6ECCE}Prefabs/Props/Civilian/PotOld_01.et" {
+ components {
   RplComponent "{5624A88DC2D9928D}" {
    Enabled 1
   }

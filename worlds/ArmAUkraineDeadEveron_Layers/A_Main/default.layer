@@ -37353,9 +37353,10 @@ $grp GenericEntity : "{645A92146ECBA8F1}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GenericEntity Grenade_RGD5_660B2D6134C6F187 : "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" {
- coords 4826.326 82.951 4425.28
- angleX 5.218
+ coords 4826.375 82.939 4425.222
+ angleX 5.258
  angleY 43.182
+ angleZ 6.126
 }
 GenericEntity : "{6475CD495DE1C931}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V3.et" {
  coords 10724.008 0.774 4084.938
@@ -86478,15 +86479,6 @@ $grp GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
   angleX -1.405
   angleY -32.487
   angleZ -1.213
- }
- {
-  components {
-   SCR_FireplaceComponent "{5876E7F288BF5C8E}" {
-    m_eInitialLightState OFF
-   }
-  }
-  coords 7234.272 118.889 4990.617
-  angleX -4.467
  }
 }
 $grp GenericEntity : "{D99955DFCF7D3962}Prefabs/Props/Wrecks/CannonWreck_01.et" {

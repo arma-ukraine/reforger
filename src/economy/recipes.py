@@ -20,7 +20,7 @@ class Recipe(Enum):
 
     FILL_CANTEEN = RecipeData(Item.CANTEEN_WATER, ((Item.CANTEEN_EMPTY, 1),))
     PRESERVE_MEAT = RecipeData(
-        Item.TUSHONKA, ((Item.MUT_BOAR, 1), (Item.CONSERVA_THROW, 1))
+        Item.TUSHONKA, ((Item.MUT_BOAR, 2), (Item.CONSERVA_THROW, 1))
     )
 
     @property
