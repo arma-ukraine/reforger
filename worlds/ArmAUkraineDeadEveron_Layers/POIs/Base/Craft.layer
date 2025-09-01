@@ -56,15 +56,12 @@ GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
      UIInfo SCR_ActionUIInfo "{66426989AC91819A}" {
       Name "Відпочити"
      }
-     Duration 10
+     Duration 20
      "Sort Priority" 1
     }
-    ADM_ShopAction "{6642698AD6FA04A0}" {
+    AUA_CookAction "{6642698AD6FA04A0}" {
      ParentContextList {
       "fireplace"
-     }
-     UIInfo SCR_ActionUIInfo "{6642698AD99C56BC}" {
-      Name "Готувати"
      }
      "Sort Priority" 2
     }
