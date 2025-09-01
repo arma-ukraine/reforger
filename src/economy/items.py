@@ -169,6 +169,10 @@ class Item(Enum):
     )
 
     # MARK: Misc
+    PAPERS_PERSONAL_US = ItemDefinition(
+        "{A735A93A8AD4077A}Prefabs/Props/PersonalBelongings/Papers/Papers_Personal_US.et",
+        1000,
+    )
     FLOPPY = ItemDefinition(
         "{866D3B6301B1AA4E}Prefabs/Items/Electronics/armst_itm_floppy.et",
         BASE_INTEL_PRICE,
@@ -201,9 +205,9 @@ class Item(Enum):
         "{F91FDAD0027E732D}Prefabs/Items/Others/Documents/armst_itm_docs_secrets.et",
         DOCS_1.base_price * 2,
     )
-    PAPERS_PERSONAL_US = ItemDefinition(
-        "{A735A93A8AD4077A}Prefabs/Props/PersonalBelongings/Papers/Papers_Personal_US.et",
-        1000,
+    HDD = ItemDefinition(
+        "{CB5DFD80DA966328}Prefabs/Items/Electronics/armst_itm_hdd.et",
+        BASE_INTEL_PRICE * 2,
     )
 
     @property

@@ -66,6 +66,7 @@ POSTMAN_INTEL_BUY_SELL = (
     Item.DOCS_4,
     Item.DOCS_5,
     Item.DOCS_SECRETS,
+    Item.HDD,
 )
 
 
