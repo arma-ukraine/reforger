@@ -7949,9 +7949,6 @@ $grp GenericEntity : "{0958E6B949501D00}Prefabs/Props/Military/Generators/Genera
   coords 4872.623 28.594 11921.573
  }
 }
-GenericEntity : "{09990A01FAB36C84}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/USSR/EquipmentBoxStack_USSR_01_V2.et" {
- coords 7229.896 118.585 5004.625
-}
 GenericEntity : "{09A11DF56E4DC7D6}Prefabs/Structures/BuildingParts/Cultural/PaintingCalvary_01/PaintingCalvary_01_v08.et" {
  coords 1281.348 37.811 6033.123
  angleX -20.566
@@ -29253,10 +29250,6 @@ $grp GenericEntity : "{453433739A2A5851}Prefabs/Props/Military/AmmoBoxes/Equipme
   coords 4528.646 16.156 10596.408
   angleY -72.1
  }
- {
-  coords 7226.495 118.59 5007.438
-  angleY -28.954
- }
 }
 GenericEntity : "{4549BE7A1D414EDA}Prefabs/Props/Furniture/PlantRoom_01.et" {
  coords 7224.346 127.081 5001.297
@@ -37353,7 +37346,7 @@ $grp GenericEntity : "{645A92146ECBA8F1}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GenericEntity Grenade_RGD5_660B2D6134C6F187 : "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" {
- coords 4826.375 82.939 4425.222
+ coords 4826.401 82.934 4425.191
  angleX 5.258
  angleY 43.182
  angleZ 6.126
@@ -38765,9 +38758,6 @@ $grp GenericEntity : "{6B68854FD47B936F}Prefabs/Props/Military/Training/Obstacle
   angleY 90
  }
 }
-GenericEntity : "{6B961D615D79D6B6}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V3.et" {
- coords 7229.85 118.587 5003.399
-}
 $grp GenericEntity : "{6BDDFE9FA1D4B2F0}Prefabs/Props/Wrecks/UAZ469_wreck.et" {
  {
   coords 4796.435 166.556 7048.997
@@ -39337,12 +39327,6 @@ $grp GenericEntity : "{6C57BFFFA642C60C}Prefabs/Compositions/Misc/SubComposition
   angleX -1.168
   angleY -157.71
   angleZ 0.489
- }
- {
-  coords 7229.886 118.484 5006.849
-  angleX 0.706
-  angleY -101.113
-  angleZ -1.051
  }
  {
   coords 9187.125 2.124 5380.91
@@ -52330,12 +52314,6 @@ $grp Tree : "{80C2B17EB509D6CF}Prefabs/Vegetation/Plant/p_echium_vulgare_0s.et" 
  {
   coords 7231.527 0 5003.302
   angleY 156.8
- }
- {
-  coords 7228.738 0 5007.861
-  angleX 0.533
-  angleY -110.111
-  angleZ -1.148
  }
  {
   coords 7193.967 0 4997.924
@@ -83355,14 +83333,6 @@ $grp GenericEntity : "{CEA239D9E1899899}Prefabs/Props/Garbage/Tires/TirePile_01_
   angleZ 1.904
  }
 }
-$grp GenericEntity : "{CEA6C2073B3DB240}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/FIA/EquipmentBoxStack_FIA_01_V1.et" {
- {
-  coords 7225.019 119.508 5007.318
- }
- {
-  coords 7225.056 118.623 5007.324
- }
-}
 SCR_DestructibleBuildingEntity : "{CEB1F71D46592F3C}Prefabs/Structures/Airport/Hangar_01/Hangar_01.et" {
  components {
   BaseSlotComponent "{51126271F283C584}" {
@@ -89244,9 +89214,6 @@ $grp GenericEntity : "{E24A324BDAA2EEE3}Prefabs/Props/Industrial/BarrelMetal_01_
   angleY 0.014
   angleZ 0.895
  }
-}
-GenericEntity : "{E25E6578ED58CEF3}Prefabs/Props/Military/AmmoBoxes/EquipmentBoxStack/US/EquipmentBoxStack_US_01_V1.et" {
- coords 7228.235 118.618 5008.004
 }
 $grp StaticModelEntity : "{E2971F2C529A6F83}Prefabs/Structures/Walls/Concrete/SilageWall_01/SilageWall_01_5m_M1.et" {
  {

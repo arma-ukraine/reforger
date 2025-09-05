@@ -114,8 +114,22 @@ GenericEntity : "{511C041EFC7BAE60}Prefabs/Props/Arsenal/ArsenalBox_STALKEr.et" 
  angleY -52.815
 }
 GenericEntity ZEL_Storage_Base_663AEBAEF67C9878 : "{64D4F1BCB3403343}Prefabs/Props/ZEL_Storage_Base.et" {
- coords 6989.985 102.698 5086.15
- angleY -136.54
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{54F28786FA027CCE}Assets/Structures/BuildingsParts/Mail/Mailbox_01.xob"
+  }
+  ActionsManagerComponent "{646266F9B4C5A21D}" {
+   ActionContexts {
+    UserActionContext "{64626AA154484B2A}" {
+     Position PointInfo "{508AC2ABEAC4A0F5}" {
+      Offset -0.0075 0.2095 0.0917
+     }
+    }
+   }
+  }
+ }
+ coords 6993.349 103.539 5088.648
+ angleY 131.932
 }
 GenericEntity : "{AD59EDEAA26CE792}Prefabs/Props/Military/Compositions/USSR/ArsenalBox_USSR.et" {
  coords 6993.536 103.57 5095.414
@@ -133,6 +147,16 @@ SCR_ChimeraCharacter Character_STALKER_Player_6626FD9CB7995131 : "{CAAACF93FF038
  }
  coords 6994.894 102.698 5097.749
  angleY 122
+}
+$grp GenericEntity : "{D8ABE2DE630F577E}Prefabs/Compositions/Misc/SubCompositions/CrateStacked_01.et" {
+ {
+  coords 6994.993 102.207 5089.593
+  angleY 41.152
+ }
+ {
+  coords 7210.948 118.719 5019.788
+  angleY 73.754
+ }
 }
 GenericEntity : "{F542F974956C255F}Prefabs/Props/Military/Compositions/CIV/ArsenalBox_CIV.et" {
  coords 6993.104 103.557 5095.71
