@@ -1,12 +1,12 @@
-// ADM_CurrencySaveData.c
+// AUA_ADM_CurrencySaveData.c
 [EPF_ComponentSaveDataType(ADM_CurrencyComponent), BaseContainerProps()]
-class ADM_CurrencySaveDataClass : EPF_ComponentSaveDataClass
+class AUA_ADM_CurrencySaveDataClass : EPF_ComponentSaveDataClass
 {
     // You can add more properties or settings if needed
 };
 
 [EDF_DbName.Automatic()]
-class ADM_CurrencySaveData : EPF_ComponentSaveData
+class AUA_ADM_CurrencySaveData : EPF_ComponentSaveData
 {
     int m_iCurrencyValue;  // The currency value we want to persist
 
@@ -29,7 +29,7 @@ class ADM_CurrencySaveData : EPF_ComponentSaveData
     // Compare if the save data is the same (useful for checking if the value has changed)
     override bool Equals(notnull EPF_ComponentSaveData other)
     {
-        ADM_CurrencySaveData otherData = ADM_CurrencySaveData.Cast(other);
+        AUA_ADM_CurrencySaveData otherData = AUA_ADM_CurrencySaveData.Cast(other);
         return m_iCurrencyValue == otherData.m_iCurrencyValue;
     }
 };

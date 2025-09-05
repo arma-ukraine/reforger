@@ -7,7 +7,7 @@ GenericEntity {
   EPF_PersistenceComponent "{66309D307A0FDEBC}" {
    m_pSaveData EPF_ItemSaveDataClass "{66309D306128D2F7}" {
     m_aComponents {
-     ADM_CurrencySaveDataClass "{6630AA9F5F0918FF}" {
+     AUA_ADM_CurrencySaveDataClass "{664A978973B4B4DC}" {
      }
     }
    }
