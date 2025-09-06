@@ -12,7 +12,7 @@ $grp GenericEntity : "{13F428D2770E8D28}Prefabs/Props/LOOT_BOX/Loot_randomize_cl
   angleY 0
  }
  {
-  coords 6856.394 78.443 4783.34
+  coords 6853.542 78.275 4783.203
   angleY 0
  }
  {
@@ -22,6 +22,48 @@ $grp GenericEntity : "{13F428D2770E8D28}Prefabs/Props/LOOT_BOX/Loot_randomize_cl
  {
   coords 6832.979 74.84 4815.835
   angleY 0
+ }
+}
+$grp ARMST_RADIATIONSEntity : "{1A22BD0AEAC9F5B6}Prefabs/Anomals/Radiation/ARMST_RADIATIONS.et" {
+ {
+  coords 6807.686 72.389 4829.402
+  SphereRadius 5
+  DrawShape 0
+ }
+ {
+  coords 6795.573 72.027 4817.772
+  SphereRadius 5
+  DrawShape 0
+ }
+ {
+  coords 6820.333 74.197 4812.241
+  SphereRadius 5
+  DrawShape 0
+ }
+ {
+  coords 6777.206 69.651 4824.744
+  SphereRadius 5
+  DrawShape 0
+ }
+ {
+  coords 6771.546 68.732 4828.358
+  SphereRadius 5
+  DrawShape 0
+ }
+ {
+  coords 6765.705 67.627 4830.655
+  SphereRadius 5
+  DrawShape 0
+ }
+ {
+  coords 6788.973 71.825 4864.127
+  SphereRadius 5
+  DrawShape 0
+ }
+ {
+  coords 6873.605 79.005 4748.74
+  SphereRadius 5
+  DrawShape 0
  }
 }
 $grp GenericEntity : "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_garbarages.et" {
@@ -118,6 +160,20 @@ $grp GenericEntity : "{1CE252AD28BD0C6F}Prefabs/Props/LOOT_BOX/Loot_randomize_ga
   angleY 0
  }
 }
+GenericEntity : "{350AFA8CB574F70B}PrefabsEditable/Auto/Compositions/Misc/SubCompositions/E_Sandbag_MG_USSR_02_PKM.et" {
+ coords 6848.285 79.2 4767.222
+ angleY 102.92
+ {
+  GenericEntity {
+   ID "5C5AC612652E574F"
+   {
+    GameEntity Tripod_6T5_PKM_664C738ED8ECFB45 {
+     ID "59A297CB53D15C0E"
+    }
+   }
+  }
+ }
+}
 GenericEntity : "{3A4C8E2F5B6EBAAC}Prefabs/Props/LOOT_BOX/Loot_randomize_army.et" {
  coords 6850.141 79.203 4766.406
  angleX -7.619
@@ -126,9 +182,37 @@ GenericEntity : "{5965DC4BB61ADF94}Prefabs/Props/LOOT_BOX/clothes/Loot_clothes_u
  coords 6831.07 73.554 4832.181
  angleY -38.707
 }
+$grp GenericEntity : "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" {
+ Grenade_RGD5_664C738DD956B173 {
+  coords 6829.827 72.538 4832.116
+  angleY 43.647
+ }
+ Grenade_RGD5_664C738DDA46BDFD {
+  coords 6829.76 72.538 4832.198
+  angleY 43.647
+ }
+ Grenade_RGD5_664C738DDB1B9A76 {
+  coords 6829.908 72.538 4832.289
+  angleY 43.647
+ }
+}
 GenericEntity ZEL_Storage_Base_663AEBAEF67C2 : "{64D4F1BCB3403343}Prefabs/Props/ZEL_Storage_Base.et" {
  coords 6829.986 72.485 4831.793
  angleY -40.51
+}
+GenericEntity : "{7A40BF128BB47EFD}Prefabs/Compositions/Slotted/SlotFlatSmall/MachineGunNest_S_USSR_01.et" {
+ coords 6850.997 74.829 4778.97
+ angleY 142
+ {
+  GenericEntity {
+   ID "5CCCBEDC9EB8023A"
+   {
+    Turret Tripod_6T5_PKM_664C738E97105B1E {
+     ID "5CC6B4BEF18D0296"
+    }
+   }
+  }
+ }
 }
 $grp GenericEntity : "{860A452E9D25FCB6}Prefabs/Props/LOOT_BOX/Loot_randomize_food.et" {
  {
@@ -160,7 +244,7 @@ $grp GenericEntity : "{860A452E9D25FCB6}Prefabs/Props/LOOT_BOX/Loot_randomize_fo
   angleY 0
  }
  {
-  coords 6855.934 78.48 4782.253
+  coords 6853.196 78.16 4785.085
   angleY 0
  }
  {
@@ -168,7 +252,7 @@ $grp GenericEntity : "{860A452E9D25FCB6}Prefabs/Props/LOOT_BOX/Loot_randomize_fo
   angleY 47.52
  }
  {
-  coords 6855.398 78.35 4783.68
+  coords 6854.648 78.287 4784.566
   angleY 0
  }
  {
@@ -209,8 +293,98 @@ GenericEntity : "{976D293D7CEBB8F7}Prefabs/Props/LOOT_BOX/clothes/Loot_clothes_u
  coords 6831.305 73.564 4832.376
  angleY -44.347
 }
+$grp ParticleEffectEntity : "{98176AEB295150D9}Prefabs/Anomals/Glasses/ARMST_GLASSES.et" {
+ {
+  coords 6834.152 72.603 4837.933
+ }
+ {
+  coords 6825.385 72.828 4836.361
+ }
+}
+GenericEntity : "{A9CF5E8C5D91C476}Prefabs/Compositions/Misc/SubCompositions/Decorations/Barrel_Group_Crate_01.et" {
+ coords 6849.829 75.246 4772.298
+}
+GenericEntity : "{AA1E1DD1D69055EC}Prefabs/Props/Military/MilitaryCrates/CrateStack_01/CrateStack_01_green.et" {
+ coords 6850.513 75.211 4771.238
+ angleY 56.556
+}
+$grp GenericEntity : "{BBB50A815A2F916B}Prefabs/Weapons/Magazines/Magazine_545x39_AK_30rnd_Ball.et" {
+ Magazine_545x39_AK_30rnd_Ball_664C738D264686D9 {
+  coords 6829.573 72.485 4831.452
+  angleZ -88.101
+ }
+ Magazine_545x39_AK_30rnd_Ball_664C738D264686D2 {
+  coords 6829.506 72.485 4831.582
+  angleX -1.841
+  angleY 104.154
+  angleZ -90.464
+ }
+}
 GenericEntity : "{BC78C382910BABBF}Prefabs/Props/LOOT_BOX/backpacks/Loot_random_backpack.et" {
  coords 6811.758 71.783 4834.586
+}
+GenericEntity armst_AKS74U_664C738D0D34BD7C : "{BFEA719491610A45}Prefabs/Weapons/Rifles/armst_AKS74U.et" {
+ coords 6829.705 72.779 4831.24
+ angleX 77.841
+ angleY -180
+ angleZ 180
+}
+$grp GenericEntity : "{CA96DF808C7F2269}Prefabs/Weapons/Magazines/Magazine_762x54_B30_Mosin_Nagant.et" {
+ Magazine_762x54_B30_Mosin_Nagant_664C738D13BAFF52 {
+  coords 6830.633 72.485 4832.347
+ }
+ Magazine_762x54_B30_Mosin_Nagant_664C738D15FB63EF {
+  coords 6830.524 72.485 4832.301
+  angleY 28.223
+ }
+ Magazine_762x54_B30_Mosin_Nagant_664C738D18845A1B {
+  coords 6830.83 72.485 4832.302
+  angleY -33.386
+ }
+ Magazine_762x54_B30_Mosin_Nagant_664C738D1991C0C0 {
+  coords 6830.626 72.485 4832.013
+  angleY 49.403
+ }
+ Magazine_762x54_B30_Mosin_Nagant_664C738D1AE6C742 {
+  coords 6830.401 72.485 4832.281
+  angleY -33.776
+ }
+ Magazine_762x54_B30_Mosin_Nagant_664C738D1BFEC7AE {
+  coords 6830.747 72.485 4832.581
+  angleY 44.086
+ }
+ Magazine_762x54_B30_Mosin_Nagant_664C738D1CD65FF0 {
+  coords 6831.015 72.485 4832.21
+  angleY -50.736
+ }
+ Magazine_762x54_B30_Mosin_Nagant_664C738D1D3A4C6B {
+  coords 6830.711 72.485 4832.278
+  angleY -36.515
+ }
+ Magazine_762x54_B30_Mosin_Nagant_664C738D1E21915A {
+  coords 6831.227 72.485 4832.36
+ }
+ Magazine_762x54_B30_Mosin_Nagant_664C738D1F3B9666 {
+  coords 6830.789 72.485 4832.083
+  angleY -24.89
+ }
+ Magazine_762x54_B30_Mosin_Nagant_664C738D01DE2B76 {
+  coords 6830.515 72.485 4832.297
+  angleY -19.428
+ }
+ Magazine_762x54_B30_Mosin_Nagant_664C738D0225A9FE {
+  coords 6830.698 72.485 4832.229
+  angleY -34.388
+ }
+}
+GenericEntity : "{CB6D914A907F4378}Prefabs/Props/Furniture/WashingMachine_01.et" {
+ coords 6819.154 73.457 4829.745
+ angleY -119.15
+ angleZ 77.145
+}
+GenericEntity armst_backpack_rukzak_664C738DFD12DFC4 : "{DF7ECE4FEB0F0B69}Prefabs/New_Equipment/backpack/armst_backpack_rukzak.et" {
+ coords 6830.91 72.485 4832.282
+ angleY -79.867
 }
 $grp GenericEntity : "{E2719E0AE25171C3}Prefabs/Props/LOOT_BOX/Loot_randomize_clothes2.et" {
  {
@@ -223,6 +397,18 @@ $grp GenericEntity : "{E2719E0AE25171C3}Prefabs/Props/LOOT_BOX/Loot_randomize_cl
 }
 GameEntity : "{EE5C0DF8F62CE5E6}Prefabs/Method/Props/Camps/Fireplace_Loiters_02.et" {
  coords 6808.275 71.236 4846.472
+}
+GenericEntity armst_Mosin_664C738D4D4BF6BC : "{EF0F94B9829A0935}Prefabs/Weapons/Rifles/armst_Mosin.et" {
+ coords 6830.441 72.783 4831.953
+ angleX 78.94
+ angleY 180
+ angleZ -180
+}
+GenericEntity : "{F49E9F098C6069AD}Prefabs/Props/Furniture/Toilet_01.et" {
+ coords 6818.897 73.943 4830.607
+ angleX -13.657
+ angleY 142.026
+ angleZ -92.953
 }
 $grp GenericEntity : "{FA7EB973926021A8}Prefabs/Props/LOOT_BOX/Loot_randomize_tools.et" {
  {

@@ -37346,10 +37346,10 @@ $grp GenericEntity : "{645A92146ECBA8F1}Prefabs/Structures/BuildingParts/Eletric
  }
 }
 GenericEntity Grenade_RGD5_660B2D6134C6F187 : "{645C73791ECA1698}Prefabs/Weapons/Grenades/Grenade_RGD5.et" {
- coords 4826.401 82.934 4425.191
- angleX 5.258
+ coords 4826.427 82.929 4425.16
+ angleX 5.208
  angleY 43.182
- angleZ 6.126
+ angleZ 6.088
 }
 GenericEntity : "{6475CD495DE1C931}Prefabs/Structures/BuildingParts/Eletrical/CabinetElectricalLargeSet_01/CabinetElectricalLargeSet_01_V3.et" {
  coords 10724.008 0.774 4084.938
@@ -60476,7 +60476,7 @@ $grp LightEntity : "{8CAD466D49510CDF}Prefabs/Structures/Infrastructure/Lamps/La
   LV 15.09
  }
 }
-$grp GenericEntity : "{8D01E253FD83E46F}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_white.et" {
+$grp SCR_DestructibleEntity : "{8D01E253FD83E46F}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_white.et" {
  {
   coords 9721.347 10.887 1517.977
   angleX 3.103
@@ -83937,7 +83937,7 @@ $grp SCR_DestructibleBuildingEntity : "{D0947E26A8A39ECF}Prefabs/Structures/Fore
 GenericEntity : "{D0B44EB8DBEDDA97}Prefabs/Props/Civilian/Bucket_02.et" {
  coords 4440.796 31.821 10731.842
 }
-$grp GenericEntity : "{D0E01CBC080D4F84}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_red.et" {
+$grp SCR_DestructibleEntity : "{D0E01CBC080D4F84}Prefabs/Props/Furniture/ChairRecreation_01/ChairRecreation_01_red.et" {
  {
   coords 5550.902 106.741 5621.866
   angleX -0.013

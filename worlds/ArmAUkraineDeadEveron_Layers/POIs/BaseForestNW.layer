@@ -205,6 +205,14 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/Systems/ScenarioFramework/Compo
        coords 121.798 -20.397 161.724
       }
      }
+     GenericEntity SlotAI9 : "{8D43830F02C3F114}Prefabs/Systems/ScenarioFramework/Components/SlotAI.et" {
+      components {
+       SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+        m_sObjectToSpawn "{BB9E94F7D878AE66}Prefabs/Groups/BANDITS/Group_BANDIT_Location.et"
+       }
+      }
+      coords 95.188 -17.598 51.777
+     }
      $grp GenericEntity : "{E0A52B444AB7FC7C}Prefabs/Systems/ScenarioFramework/Components/SlotLootMedicine.et" {
       SlotLootMedicine1 {
        coords 99.306 -21.419 65.636
@@ -219,6 +227,29 @@ GenericEntity Area2 : "{C72F956E4AC6A6E7}Prefabs/Systems/ScenarioFramework/Compo
        coords 74.779 -21.381 75.546
       }
      }
+    }
+   }
+  }
+  GenericEntity LayerTaskClearArea3 : "{CDC0845AD90BA073}Prefabs/Systems/ScenarioFramework/Components/LayerTaskClearArea.et" {
+   components {
+    SCR_ScenarioFrameworkLayerTaskClearArea "{5A6513F46D132331}" {
+     m_sFactionKey "FACTION_STALKER"
+    }
+   }
+   coords 90.173 -20.328 58.704
+   {
+    GenericEntity SlotClearArea3 : "{E53456990A756229}Prefabs/Systems/ScenarioFramework/Components/SlotClearArea.et" {
+     components {
+      SCR_ScenarioFrameworkSlotClearArea "{5A633AF525D5B972}" {
+       m_aPlugins {
+        SCR_ScenarioFrameworkPluginTrigger "{5A633AF5368D26A3}" {
+         m_fAreaRadius 30
+         m_sActivatedByThisFaction "FACTION_STALKER"
+        }
+       }
+      }
+     }
+     coords 0.754 -0.051 2.841
     }
    }
   }
