@@ -1,0 +1,15 @@
+SCR_FactionManager : "{A242612865F2A48E}Prefabs/MP/Managers/Factions/FactionManager_Base.et" {
+ ID "56B2B4776E6E4499"
+ Factions {
+  SCR_Faction "{665A5B878FEEEB76}" {
+   FactionKey "VIDSICH"
+   m_bIsPlayable 0
+   m_bShowInWelcomeScreenIfNonPlayable 0
+   m_bIsMilitary 0
+   m_aEntityCatalogs {
+    SCR_EntityCatalog "{665A5B8424F6345A}" : "{C8E0B673B9FB18FE}configs/EntityCatalog/VIDSICH/InventoryItems_EntityCatalog_VIDSICH.conf" {
+    }
+   }
+  }
+ }
+}

@@ -75,7 +75,7 @@ class Shop(Enum):
 
     CURRENCY = ShopConfig(
         name="Currency",
-        buy_items=(Item.WALLET,) + CURRENCY_BUY_SELL,
+        buy_items=CURRENCY_BUY_SELL,
         sell_items=CURRENCY_BUY_SELL,
     )
 

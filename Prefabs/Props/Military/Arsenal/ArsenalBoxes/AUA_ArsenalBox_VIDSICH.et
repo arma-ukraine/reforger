@@ -1,0 +1,27 @@
+GenericEntity : "{54986385A6AF77B2}Prefabs/Props/Military/Arsenal/ArsenalBoxes/ArsenalBox_Base.et" {
+ ID "56F2C6D6F7C6DAFA"
+ components {
+  SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+   m_eArsenalSaveType IN_ARSENAL_ITEMS_ONLY
+  }
+  SCR_FactionAffiliationComponent "{5A50E7655452A21D}" {
+   "faction affiliation" "VIDSICH"
+  }
+  SCR_ResourceComponent "{5D7D07D2F7A252D2}" {
+   m_aContainers {
+    SCR_ResourceContainerVirtual "{665A5B863F620320}" {
+     m_eResourceRights SELF
+     m_eStorageType STORED
+     m_fResourceValueCurrent 5000
+     m_fResourceValueMax 1000000000
+    }
+   }
+   m_aGenerators {
+    SCR_ResourceGeneratorServicePoint "{5E5ECCF59701966C}" {
+     m_eResourceRights SELF
+     m_fResourceMultiplier 0.1
+    }
+   }
+  }
+ }
+}

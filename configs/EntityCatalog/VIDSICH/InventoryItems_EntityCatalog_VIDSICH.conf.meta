@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{9D7E5804BB2E9B28}Configs/EntityCatalog/CIV/InventoryItems_EntityCatalog_CIV.conf"
+ Name "{C8E0B673B9FB18FE}configs/EntityCatalog/VIDSICH/InventoryItems_EntityCatalog_CIV.conf"
  Configurations {
   CONFResourceClass PC {
   }
