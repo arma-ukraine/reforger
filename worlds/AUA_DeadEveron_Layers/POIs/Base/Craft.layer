@@ -19,18 +19,20 @@ GenericEntity : "{B6370564C0BBAD45}Prefabs/Props/Military/Fuel/MobileWaterTank_F
     UserActionContext "{6630AA9524E5E437}" {
      ContextName "Action"
      Position PointInfo "{6630AA95284D036E}" {
+      Offset 0 1.2659 0
      }
      Radius 2
     }
    }
    additionalActions {
-    AUA_FillCanteenUserAction "{665AA8DF06E5C5C4}" {
+    AUA_FillCanteenWithWaterUserAction "{665AA8DC35AEECCD}" {
      ParentContextList {
       "Action"
      }
-     UIInfo SCR_ActionUIInfo "{665AA8DF0F9751DE}" {
-      Name "Наповнити Флягу"
+     UIInfo SCR_ActionUIInfo "{665AA8DC39B51CD8}" {
+      Name "Набрати води у флягу"
      }
+     Duration 5
     }
    }
   }
