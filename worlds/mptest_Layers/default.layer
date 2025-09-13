@@ -40,24 +40,32 @@ SCR_GameModeEditor GameMode_Editor_Full : "{DA3986AF1B5032B7}Prefabs/MP/Modes/Ed
 GenericEntity Backpack_ALICE_Medium_665A5BBE6A264238 : "{06B68C58B72EAAC6}Prefabs/Items/Equipment/Backpacks/Backpack_ALICE_Medium.et" {
  coords 120.009 1 113.395
 }
-GenericEntity : "{D677932121CDB835}Prefabs/Props/Military/Arsenal/ArsenalBoxes/AUA_ArsenalBox_VIDSICH.et" {
- components {
-  SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-   m_OverwriteArsenalConfig SCR_ArsenalItemListConfig "{665A5B81917E1BDF}" : "{926766EE48554468}configs/ArsenalShops/AUA_SHOP_Currency.conf" {
-   }
-  }
-  SCR_ResourceComponent "{5D7D07D2F7A252D2}" {
-   m_aConsumers {
-    SCR_ResourceConsumerServicePoint "{5E5AE189C57A9FD7}" {
-     m_fSellMultiplier 0
+$grp GenericEntity : "{D677932121CDB835}Prefabs/Props/Military/Arsenal/ArsenalBoxes/AUA_ArsenalBox_VIDSICH.et" {
+ {
+  components {
+   SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
+    m_OverwriteArsenalConfig SCR_ArsenalItemListConfig "{665A5B81917E1BDF}" {
     }
    }
-   m_aGenerators {
-    SCR_ResourceGeneratorServicePoint "{5E5ECCF59701966C}" {
-     m_fResourceMultiplier 0.5
+   SCR_ResourceComponent "{5D7D07D2F7A252D2}" {
+    m_aConsumers {
+     SCR_ResourceConsumerServicePoint "{5E5AE189C57A9FD7}" {
+      m_fSellMultiplier 0
+     }
+    }
+    m_aGenerators {
+     SCR_ResourceGeneratorServicePoint "{5E5ECCF59701966C}" {
+      m_fResourceMultiplier 0.5
+     }
     }
    }
   }
+  coords 118.942 1 112.585
  }
- coords 118.942 1 112.585
+ {
+  coords 128.285 1 121.581
+ }
+}
+GenericEntity armst_backpack_alice_665AA3AE3FB1331B : "{D9D63EEF9891DDA2}Prefabs/New_Equipment/backpack/armst_backpack_alice.et" {
+ coords 127.192 1 120.684
 }

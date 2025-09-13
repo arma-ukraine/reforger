@@ -1,4 +1,4 @@
-class AUA_CookAction : ADM_ShopAction
+class AUA_CookUserAction : ScriptedUserAction
 {
 	protected SCR_FireplaceComponent m_FireplaceComponent;
 	

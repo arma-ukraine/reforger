@@ -1,9 +1,9 @@
 // Deletes specified prefabs once at mission start (server-side).
 // Attach to a server-authoritative entity (e.g. `SCR_BaseGameMode`).
 [ComponentEditorProps(category: "GameScripted/Custom", description: "Delete selected prefabs on mission start (server-only)")]
-class DeletePrefabOnStartClass : ScriptComponentClass {}
+class AUA_DeletePrefabOnStartClass : ScriptComponentClass {}
 
-class DeletePrefabOnStart : ScriptComponent
+class AUA_DeletePrefabOnStart : ScriptComponent
 {
     [Attribute("", UIWidgets.ResourceNamePicker, "Prefabs (.et) to delete on mission start", "et")]
     protected ref array<ResourceName> m_PrefabsToDelete;

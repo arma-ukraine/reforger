@@ -95,9 +95,6 @@ SCR_BaseGameMode GameModeSF : "{ECEEDB2D3737204B}Prefabs/Systems/ScenarioFramewo
  coords 7107.999 105.438 6271.226
  PlayerControllerPrefab "{CD2B8EF361478649}Prefabs/Characters/Core/DefaultPlayerControllerMP_ScenarioFramework.et"
  m_bAutoPlayerRespawn 0
- m_aDisabledResourceTypes {
-  0
- }
  {
   SCR_EditorSettingsEntity EditorSettings {
    coords 91.91 23.988 -1273.324

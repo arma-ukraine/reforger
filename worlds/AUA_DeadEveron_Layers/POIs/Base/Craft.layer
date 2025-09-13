@@ -11,25 +11,25 @@ GameEntity : "{6597847D2AC253F5}Prefabs/Props/Military/Generators/GeneratorMilit
 }
 GenericEntity : "{B6370564C0BBAD45}Prefabs/Props/Military/Fuel/MobileWaterTank_FIA_01_fuel.et" {
  components {
-  ADM_ShopComponent "{6630AA95399684CD}" {
-   m_ShopConfig "{85E80DC716816084}configs/Shops/Water.conf"
-  }
   SCR_DestructionMultiPhaseComponent "{61F2A96BAE15C474}" {
    Enabled 0
   }
   ActionsManagerComponent "{6630AA952082FA5A}" {
    ActionContexts {
     UserActionContext "{6630AA9524E5E437}" {
-     ContextName "Shop"
+     ContextName "Action"
      Position PointInfo "{6630AA95284D036E}" {
      }
      Radius 2
     }
    }
    additionalActions {
-    ADM_ShopAction "{6630AA9523D1A094}" {
+    AUA_FillCanteenUserAction "{665AA8DF06E5C5C4}" {
      ParentContextList {
-      "Shop"
+      "Action"
+     }
+     UIInfo SCR_ActionUIInfo "{665AA8DF0F9751DE}" {
+      Name "Наповнити Флягу"
      }
     }
    }
@@ -40,10 +40,6 @@ GenericEntity : "{B6370564C0BBAD45}Prefabs/Props/Military/Fuel/MobileWaterTank_F
 }
 GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
  components {
-  ADM_ShopComponent "{6642698A0C4F59C0}" {
-   m_ShopName "Готівля"
-   m_ShopConfig "{F06650956BB0108C}configs/Shops/Cooking.conf"
-  }
   SCR_FireplaceComponent "{5876E7F288BF5C8E}" {
    m_eInitialLightState OFF
   }
@@ -58,12 +54,6 @@ GameEntity : "{D9842C11742C00CF}Prefabs/Props/Civilian/Fireplace_01.et" {
      }
      Duration 5
      "Sort Priority" 1
-    }
-    AUA_CookAction "{6642698AD6FA04A0}" {
-     ParentContextList {
-      "fireplace"
-     }
-     "Sort Priority" 2
     }
    }
   }
