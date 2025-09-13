@@ -94,15 +94,14 @@ $grp GenericEntity : "{64D4F1BCB3403343}Prefabs/Props/ZEL_Storage_Base.et" {
  }
 }
 GenericEntity : "{D677932121CDB835}Prefabs/Props/Military/Arsenal/ArsenalBoxes/AUA_ArsenalBox_VIDSICH.et" {
- coords 7224.607 118.625 5007.29
- angleY -23.295
-}
-GenericEntity : "{F542F974956C255F}Prefabs/Props/Military/Compositions/CIV/ArsenalBox_CIV.et" {
  components {
-  SCR_ArsenalComponent "{56F2C6D1431AD9AF}" {
-   m_eArsenalSaveType IN_ARSENAL_ITEMS_ONLY
+  ActionsManagerComponent "{56F2C6D1431ADB12}" {
+   additionalActions {
+    SCR_SaveArsenalLoadout "{58EE8EA3E73F1F6A}" {
+    }
+   }
   }
  }
- coords 7224.835 118.627 5004.447
- angleY 23.925
+ coords 7224.607 118.625 5007.29
+ angleY -23.295
 }

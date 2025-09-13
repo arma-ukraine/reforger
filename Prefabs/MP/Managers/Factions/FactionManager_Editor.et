@@ -6,8 +6,11 @@ SCR_FactionManager : "{A242612865F2A48E}Prefabs/MP/Managers/Factions/FactionMana
    m_bIsPlayable 0
    m_bShowInWelcomeScreenIfNonPlayable 0
    m_bIsMilitary 0
+   m_aFriendlyFactionsIds {
+    "FACTION_STALKER"
+   }
    m_aEntityCatalogs {
-    SCR_EntityCatalog "{665A5B8424F6345A}" : "{C8E0B673B9FB18FE}configs/EntityCatalog/VIDSICH/InventoryItems_EntityCatalog_VIDSICH.conf" {
+    SCR_EntityCatalogMultiList "{665A5B8424F6345A}" : "{C8E0B673B9FB18FE}configs/EntityCatalog/VIDSICH/InventoryItems_EntityCatalog_VIDSICH.conf" {
     }
    }
   }
