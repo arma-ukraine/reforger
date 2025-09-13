@@ -12,7 +12,7 @@ GenericEntity : "{54986385A6AF77B2}Prefabs/Props/Military/Arsenal/ArsenalBoxes/A
     SCR_ResourceContainerVirtual "{665A5B863F620320}" {
      m_eResourceRights SELF
      m_eStorageType STORED
-     m_fResourceValueCurrent 5000
+     m_fResourceValueCurrent 0
      m_fResourceValueMax 1000000000
     }
    }
