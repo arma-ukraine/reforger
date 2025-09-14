@@ -66,8 +66,8 @@ class PriceValidator:
             assert supplies_match is not None
             indent = supplies_match.group(1)
             replacement = (
-                f"{indent}m_iMoneyPrice {money_price}\n"
-                f"{indent}m_iSuppliesPrice {supplies_price}"
+                f"\n{indent}m_iMoneyPrice {money_price}"
+                f"\n{indent}m_iSuppliesPrice {supplies_price}"
             )
             new_block = block_without_money.replace(supplies_line, replacement)
 
