@@ -1,0 +1,23 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.13.0
+    hooks:
+      - id: ruff-check
+        args: [--fix]
+      - id: ruff-format
+
+  - repo: https://github.com/RobertCraigie/pyright-python
+    rev: v1.1.405
+    hooks:
+      - id: pyright
+
+  - repo: local
+    hooks:
+      - id: validate-freedom-fighters-prices
+        name: Validate Freedom Fighters Prices
+        entry: python AUAFFPlusTweaks/validate_prices.py --fix
+        language: system
+        files: ^AUAFFPlusTweaks/Configs/Items/FreedomFighters\.conf$
+        pass_filenames: false
+        always_run: false
+        verbose: true

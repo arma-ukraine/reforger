@@ -2,5 +2,6 @@
 FreedomFighters.Contrib
 
 !.gitignore
+!.pre-commit-config.yaml
 
 *.pyc
