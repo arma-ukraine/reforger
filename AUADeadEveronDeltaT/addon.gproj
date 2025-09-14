@@ -1,0 +1,22 @@
+GameProject {
+ ID "ArmAUkraineDedEveronDeltaT"
+ GUID "6630F76C73A2532B"
+ TITLE "ArmAUkraine Ded Everon Delta-T"
+ Dependencies {
+  "58D0FB3206B6F859" "5D58A217A9611AFB" "622120A5448725E3"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

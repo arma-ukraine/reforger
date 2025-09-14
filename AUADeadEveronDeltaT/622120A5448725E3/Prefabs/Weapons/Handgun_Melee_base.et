@@ -1,0 +1,8 @@
+GenericEntity : "{EE7028E9DF49763A}Prefabs/Weapons/Core/Handgun_Base.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  SCR_MeleeWeaponProperties "{599EF119E0CBDE0E}" {
+   m_fDamage 3
+  }
+ }
+}

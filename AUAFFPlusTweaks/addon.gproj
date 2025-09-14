@@ -1,0 +1,8 @@
+GameProject {
+ ID "AUAFFTweaks"
+ GUID "665AD1CC40E3710F"
+ TITLE "AUA FF Tweaks"
+ Dependencies {
+  "58D0FB3206B6F859" "CAFEBABEF0CACC1A"
+ }
+}
