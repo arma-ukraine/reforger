@@ -38,6 +38,17 @@ Economy and difficulty tweaks for Freedom Fighters game mode.
 },
 ```
 
+### [ArmAUkraine Ded Everon Delta-T](https://reforger.armaplatform.com/workshop/6630F76C73A2532B)
+
+Звільнений у 1985 році Еверон виявився не просто землею, що пережила війну, а смертельною пасткою, понівеченою шрамами від безвідповідальних експериментів.
+
+```json
+{
+    "modId": "6630F76C73A2532B",
+    "name": "ArmAUkraine Ded Everon Delta-T"
+},
+```
+
 ## ACE
 
 ### [ACE All in One](https://reforger.armaplatform.com/workshop/60C4E0B49618CC62)
@@ -277,17 +288,6 @@ https://discord.gg/UHK2F3Jmnc
 {
     "modId": "664E0A097C173E83",
     "name": "Outlasted"
-},
-```
-
-### [ArmAUkraine Ded Everon Delta-T](https://reforger.armaplatform.com/workshop/6630F76C73A2532B)
-
-Звільнений у 1985 році Еверон виявився не просто землею, що пережила війну, а смертельною пасткою, понівеченою шрамами від безвідповідальних експериментів.
-
-```json
-{
-    "modId": "6630F76C73A2532B",
-    "name": "ArmAUkraine Ded Everon Delta-T"
 },
 ```
 
