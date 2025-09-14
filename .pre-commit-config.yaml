@@ -1,4 +1,12 @@
 repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        exclude: '(\.conf|\.conf\.meta|\.et|\.et\.meta|MODS.md)$'
+      - id: end-of-file-fixer
+        exclude: '(\.conf|\.conf\.meta|\.et|\.et\.meta|MODS.md)$'
+
   - repo: https://github.com/astral-sh/ruff-pre-commit
     rev: v0.13.0
     hooks:
@@ -6,18 +14,28 @@ repos:
         args: [--fix]
       - id: ruff-format
 
-  - repo: https://github.com/RobertCraigie/pyright-python
-    rev: v1.1.405
-    hooks:
-      - id: pyright
-
   - repo: local
     hooks:
+      - id: pyright-local
+        name: Pyright (local)
+        entry: uv run pyright
+        language: system
+        types: [python]
+
       - id: validate-freedom-fighters-prices
         name: Validate Freedom Fighters Prices
-        entry: python AUAFFPlusTweaks/validate_prices.py --fix
+        entry: uv run python AUAFFPlusTweaks/validate_prices.py --fix
         language: system
         files: ^AUAFFPlusTweaks/Configs/Items/FreedomFighters\.conf$
+        pass_filenames: false
+        always_run: false
+        verbose: true
+
+      - id: generate-mods-md
+        name: Generate MODS.md
+        entry: uv run python mods.py
+        language: system
+        files: ^mods\.py$
         pass_filenames: false
         always_run: false
         verbose: true

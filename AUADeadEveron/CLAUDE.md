@@ -42,7 +42,7 @@ This is an **Arma Reforger mod** called "ArmAUkraine Dead Everon" - a post-apoca
 - `AUA_DeletePrefabsOnStart.c` - Prefab cleanup component
 
 **Prefabs/** - Entity definitions (.et files) and associated metadata
-- `Anomals/TRIGGERS/` - Anomaly trigger systems 
+- `Anomals/TRIGGERS/` - Anomaly trigger systems
 - `Characters/Core/` - Player controller with shop integration
 - `Compositions/Misc/CustomEntities/InteractionPoints/` - Storage and interaction systems
 - `Items/Moneys/` - UAK currency denominations
@@ -69,7 +69,7 @@ This is an **Arma Reforger mod** called "ArmAUkraine Dead Everon" - a post-apoca
 **Missions/** - Mission header configuration files
 **src/economy/** - Python-based shop configuration system
 - `items.py` - Item definitions with prefab paths and prices
-- `shops.py` - Shop configurations 
+- `shops.py` - Shop configurations
 - `recipes.py` - Crafting recipes
 - `generator.py` - Configuration file generator
 
