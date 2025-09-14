@@ -196,7 +196,7 @@ Adds the ability to surrender and adds zip cuffs to arsenal, which can be used t
 },
 ```
 
-## Monsters
+## Монстри
 
 ### [Bacon Zombies](https://reforger.armaplatform.com/workshop/622120A5448725E3)
 
@@ -221,7 +221,18 @@ For feedback  Discord at @alienballien or mod showcase arma ds
 },
 ```
 
-## Gamemodes
+### [Zombie Hive](https://reforger.armaplatform.com/workshop/65F2F0F322747C37)
+
+A destructible, GM-placeable zombie spawner.
+
+```json
+{
+    "modId": "65F2F0F322747C37",
+    "name": "Zombie Hive"
+},
+```
+
+## Ігрові Режими
 
 ### [Freedom Fighters Plus](https://reforger.armaplatform.com/workshop/CAFEBABEF0CACC1A)
 
@@ -269,7 +280,18 @@ https://discord.gg/UHK2F3Jmnc
 },
 ```
 
-## Factions
+### [ArmAUkraine Ded Everon Delta-T](https://reforger.armaplatform.com/workshop/6630F76C73A2532B)
+
+Звільнений у 1985 році Еверон виявився не просто землею, що пережила війну, а смертельною пасткою, понівеченою шрамами від безвідповідальних експериментів.
+
+```json
+{
+    "modId": "6630F76C73A2532B",
+    "name": "ArmAUkraine Ded Everon Delta-T"
+},
+```
+
+## Фракції
 
 ### [AMF_VEHICULE01](https://reforger.armaplatform.com/workshop/65DB713038B8533C)
 
@@ -316,7 +338,7 @@ See https://forums.bohemia.net/forums/topic/239698-rhs-status-quo/ for more deta
 },
 ```
 
-## Weapons
+## Зброя
 
 ### [Big Chungus Shotguns](https://reforger.armaplatform.com/workshop/620E584B1D2C96A4)
 
@@ -351,7 +373,64 @@ Suppressors reupload. Requires compatible gun.
 },
 ```
 
-## Vehicles
+### [Big Chungus SMGs](https://reforger.armaplatform.com/workshop/60E6F54E174C53C5)
+
+Submachine gun pack.
+
+```json
+{
+    "modId": "60E6F54E174C53C5",
+    "name": "Big Chungus SMGs"
+},
+```
+
+### [Big Chungus LMGs](https://reforger.armaplatform.com/workshop/61344BDC155A5A28)
+
+Light machine guns.
+
+```json
+{
+    "modId": "61344BDC155A5A28",
+    "name": "Big Chungus LMGs"
+},
+```
+
+### [Big Chungus Launchers](https://reforger.armaplatform.com/workshop/6190F1B505C08562)
+
+M79 Grenade Launcher and 90mm M67 Recoilless Rifle
+
+```json
+{
+    "modId": "6190F1B505C08562",
+    "name": "Big Chungus Launchers"
+},
+```
+
+### [Big Chungus Rifles](https://reforger.armaplatform.com/workshop/62A711001B8FDEEA)
+
+Vietnam/WWII assault rifles
+
+```json
+{
+    "modId": "62A711001B8FDEEA",
+    "name": "Big Chungus Rifles"
+},
+```
+
+## Одяг
+
+### [VKNG_Clothing](https://reforger.armaplatform.com/workshop/655EE30F57F15220)
+
+Crye G4 Uniforms, Denim Jeans, and Vans DEFCON Tactical Shoes in various camo patterns.
+
+```json
+{
+    "modId": "655EE30F57F15220",
+    "name": "VKNG_Clothing"
+},
+```
+
+## Техніка
 
 ### [WZ Vehicles](https://reforger.armaplatform.com/workshop/617AC5E57EF1D9E3)
 
@@ -399,7 +478,49 @@ Game Master Enhanced (GME), formerly known as Odin's Game Master Additions, is a
 },
 ```
 
-## Gameplay and QoL
+### [Monster-King GM FX](https://reforger.armaplatform.com/workshop/5EB51D581C99E590)
+
+Monster-King GM FX
+by: Monster-King
+
+Updated for 1.2
+
+Contains many new sound effects for GMs to add immersion
+
+Seasonal sound effects as well as traditional
+
+https://discord.gg/monsterking
+
+```json
+{
+    "modId": "5EB51D581C99E590",
+    "name": "Monster-King GM FX"
+},
+```
+
+### [Disable Game Master Budgets](https://reforger.armaplatform.com/workshop/5F2944B7474F043F)
+
+Toggle GM budgets on and off (default on)
+
+```json
+{
+    "modId": "5F2944B7474F043F",
+    "name": "Disable Game Master Budgets"
+},
+```
+
+### [Sensitive Site Exploitation](https://reforger.armaplatform.com/workshop/65784C1E51244157)
+
+After you have eliminated the target, you need to collect sensitive information about the target area to prepare for future actions!
+
+```json
+{
+    "modId": "65784C1E51244157",
+    "name": "Sensitive Site Exploitation"
+},
+```
+
+## Ігролад і зручність
 
 ### [Map Drawing](https://reforger.armaplatform.com/workshop/656AC01634459D8D)
 
@@ -524,7 +645,18 @@ This mod adds military gestures, dance animations and idle motions with a radial
 },
 ```
 
-## Sound and Visuals
+### [Zeliks Persistent Storage](https://reforger.armaplatform.com/workshop/612556FA56F1B1FF)
+
+Persistent Storages Containers
+
+```json
+{
+    "modId": "612556FA56F1B1FF",
+    "name": "Zeliks Persistent Storage"
+},
+```
+
+## Звук та візуал
 
 ### [Atmospheric Weather Mod](https://reforger.armaplatform.com/workshop/64ED6553B8AF6B62)
 
@@ -574,7 +706,18 @@ Affects all effects of hits and explosions.
 },
 ```
 
-## Terrains
+### [Dark Echoes](https://reforger.armaplatform.com/workshop/658B25CD90247D38)
+
+Dark Echoes - a sinister soundscape for Arma Reforger
+
+```json
+{
+    "modId": "658B25CD90247D38",
+    "name": "Dark Echoes"
+},
+```
+
+## Карти
 
 ### [Operation Dingo](https://reforger.armaplatform.com/workshop/6489749415C9E6DE)
 
@@ -589,7 +732,18 @@ https://discord.gg/MJYebjxbWM
 },
 ```
 
-## Known Issues
+### [Dead Everon](https://reforger.armaplatform.com/workshop/5D58A217A9611AFB)
+
+Discover an apocalyptical version of Everon.
+
+```json
+{
+    "modId": "5D58A217A9611AFB",
+    "name": "Dead Everon"
+},
+```
+
+## Проблемні моди
 
 ### [BetterMuzzleFlashes 2.2](https://reforger.armaplatform.com/workshop/59674C21AA886D57)
 
