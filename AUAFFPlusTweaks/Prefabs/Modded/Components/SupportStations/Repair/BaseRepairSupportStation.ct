@@ -1,0 +1,3 @@
+SCR_RepairSupportStationComponent {
+ m_iSupplyCostDamageHealed 25
+}
