@@ -3,6 +3,20 @@ GameProject {
  GUID "665AD1CC40E3710F"
  TITLE "AUA FF Tweaks"
  Dependencies {
-  "58D0FB3206B6F859" "CAFEBABEF0CACC1A"
+  "58D0FB3206B6F859" "CAFEBEEFF0CACC1A"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
  }
 }

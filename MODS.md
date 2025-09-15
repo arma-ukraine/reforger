@@ -417,6 +417,19 @@ Vietnam/WWII assault rifles
 },
 ```
 
+### [RTG Launches](https://reforger.armaplatform.com/workshop/6528F296E88F783F)
+
+RPG-26
+RSHG-2
+RPG-18
+
+```json
+{
+    "modId": "6528F296E88F783F",
+    "name": "RTG Launches"
+},
+```
+
 ## Одяг
 
 ### [VKNG_Clothing](https://reforger.armaplatform.com/workshop/655EE30F57F15220)
@@ -440,6 +453,83 @@ A collection of vehicles from the West Zagoria Conflict server
 {
     "modId": "617AC5E57EF1D9E3",
     "name": "WZ Vehicles"
+},
+```
+
+### [M1 Abrams](https://reforger.armaplatform.com/workshop/5D1880C4AD410C14)
+
+Contains the M1A1 and M1A2 with both TUSK upgrade kits.
+
+```json
+{
+    "modId": "5D1880C4AD410C14",
+    "name": "M1 Abrams"
+},
+```
+
+### [T-72 Main Battle Tank](https://reforger.armaplatform.com/workshop/5E0AB16BEB16D6A4)
+
+Contains the T-72A and T-72B1.
+
+```json
+{
+    "modId": "5E0AB16BEB16D6A4",
+    "name": "T-72 Main Battle Tank"
+},
+```
+
+### [BMP-1 IFV](https://reforger.armaplatform.com/workshop/5E524E4FEECCA92B)
+
+Adds the BMP-1 and BMP-1P to USSR and FIA
+
+```json
+{
+    "modId": "5E524E4FEECCA92B",
+    "name": "BMP-1 IFV"
+},
+```
+
+### [M113 APC](https://reforger.armaplatform.com/workshop/5E5C154FEE1094BB)
+
+Adds the M113 and M113A3 to GM and Conflict.
+
+```json
+{
+    "modId": "5E5C154FEE1094BB",
+    "name": "M113 APC"
+},
+```
+
+### [Big Chungus Motorbike](https://reforger.armaplatform.com/workshop/61B84088181A8FA4)
+
+98cc motorcycle.
+
+```json
+{
+    "modId": "61B84088181A8FA4",
+    "name": "Big Chungus Motorbike"
+},
+```
+
+### [WCS_Mi-24V](https://reforger.armaplatform.com/workshop/628933A0D3A0D700)
+
+Introduces the Mi-24V helicopter, featuring both mobility and firepower, for use on the WCS Servers.
+
+```json
+{
+    "modId": "628933A0D3A0D700",
+    "name": "WCS_Mi-24V"
+},
+```
+
+### [FIA Mi-8](https://reforger.armaplatform.com/workshop/631D09484433EB0A)
+
+Adds in an FIA Mi-8 helicopter! (Vanilla too!)
+
+```json
+{
+    "modId": "631D09484433EB0A",
+    "name": "FIA Mi-8"
 },
 ```
 
@@ -656,6 +746,39 @@ Persistent Storages Containers
 },
 ```
 
+### [WCS_FlipPush](https://reforger.armaplatform.com/workshop/612851D73DF01668)
+
+Adds both a Flip and Push action context option to all vehicles.
+
+```json
+{
+    "modId": "612851D73DF01668",
+    "name": "WCS_FlipPush"
+},
+```
+
+### [WCS_Earplugs](https://reforger.armaplatform.com/workshop/612F512CD4CB21D5)
+
+Toggle game SFX volume with a keybind, switching between full and a set reduced level.
+
+```json
+{
+    "modId": "612F512CD4CB21D5",
+    "name": "WCS_Earplugs"
+},
+```
+
+### [Car Radio 4 All](https://reforger.armaplatform.com/workshop/621D3771875C1D3D)
+
+Car radio for all Vehicles with lore friendly model and proper interaction. Should work with all Vanilla and Vanilla modified vehicles that using Base model.
+
+```json
+{
+    "modId": "621D3771875C1D3D",
+    "name": "Car Radio 4 All"
+},
+```
+
 ## Звук та візуал
 
 ### [Atmospheric Weather Mod](https://reforger.armaplatform.com/workshop/64ED6553B8AF6B62)
@@ -717,6 +840,40 @@ Dark Echoes - a sinister soundscape for Arma Reforger
 },
 ```
 
+### [Environmental Ambience Mod](https://reforger.armaplatform.com/workshop/6528C95796EBEDE0)
+
+Increases environmental ambience around the player.
+
+```json
+{
+    "modId": "6528C95796EBEDE0",
+    "name": "Environmental Ambience Mod"
+},
+```
+
+### [Cold War Colour](https://reforger.armaplatform.com/workshop/65134A128837CAA7)
+
+Cold War Colour adds a new colour palette for Arma Reforger.
+Inspired by the Cold War overlay found in Arma Vision.
+
+```json
+{
+    "modId": "65134A128837CAA7",
+    "name": "Cold War Colour"
+},
+```
+
+### [ToH ReCharacters Man](https://reforger.armaplatform.com/workshop/596330D9AF34AF38)
+
+New friends in the list of characters by factions.
+
+```json
+{
+    "modId": "596330D9AF34AF38",
+    "name": "ToH ReCharacters Man"
+},
+```
+
 ## Карти
 
 ### [Operation Dingo](https://reforger.armaplatform.com/workshop/6489749415C9E6DE)
@@ -740,6 +897,30 @@ Discover an apocalyptical version of Everon.
 {
     "modId": "5D58A217A9611AFB",
     "name": "Dead Everon"
+},
+```
+
+## Системи та розробка
+
+### [Enfusion Database Framework](https://reforger.armaplatform.com/workshop/5D6EA74A94173EDF)
+
+A database framework to connect the Enfusion engine with SQL-, document- and local file databases.
+
+```json
+{
+    "modId": "5D6EA74A94173EDF",
+    "name": "Enfusion Database Framework"
+},
+```
+
+### [Enfusion Persistence Framework](https://reforger.armaplatform.com/workshop/5D6EBC81EB1842EF)
+
+A framework to save and load the world state in Enfusion engine powered games.
+
+```json
+{
+    "modId": "5D6EBC81EB1842EF",
+    "name": "Enfusion Persistence Framework"
 },
 ```
 
