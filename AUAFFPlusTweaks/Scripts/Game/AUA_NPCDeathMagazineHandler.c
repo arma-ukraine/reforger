@@ -29,8 +29,8 @@ class AUA_NPCDeathMagazineHandler : ScriptComponent
 			return;
 
 		// Check if this is NOT a player (skip players)
-		PlayerController playerController = GetGame().GetPlayerController();
-		if (playerController && playerController.GetControlledEntity() == character)
+		// Use SCR_CharacterHelper to check if this is a player
+		if (SCR_CharacterHelper.IsAPlayer(character))
 			return;
 
 		// Setup death monitoring - damage manager should be ready now
@@ -71,6 +71,11 @@ class AUA_NPCDeathMagazineHandler : ScriptComponent
 
 		ChimeraCharacter character = ChimeraCharacter.Cast(owner);
 		if (!character)
+			return;
+
+		// Double-check if this is NOT a player (skip players)
+		// Player might have taken control after initialization
+		if (SCR_CharacterHelper.IsAPlayer(character))
 			return;
 
 		// Process magazines and remove explosives
