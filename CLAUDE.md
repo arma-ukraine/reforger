@@ -15,3 +15,4 @@
 - Use pyright for typing.
 - Use ruff for formatting and linting.
 - Do not use type: ignore or t.Any unless there is no way around.
+- Logging text must contain script name for easier search through logs.
