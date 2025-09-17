@@ -4,13 +4,24 @@ class AUA_LootReducerClass : ScriptComponentClass {}
 
 class AUA_LootReducer : ScriptComponent
 {
-	// Configurable patterns for items to delete from NPC inventory
-	protected static ref array<string> ITEMS_TO_DELETE_PATTERNS = {"grenade", "40mm", "ammo_rocket"};
-	protected static ref array<string> LAUNCHER_PATTERNS = {"rpg", "rocket", "launcher"};
+	// ==============================================
+	// CONFIGURATION CONSTANTS - MODIFY THESE TO ADJUST BEHAVIOR
+	// ==============================================
 
-	// Magazine ammo reduction constants
-	protected static const int MIN_AMMO_COUNT = 0;
-	protected static const int MAX_AMMO_COUNT = 3;
+	// Probability settings
+	protected static const float PRISTINE_LOOT_CHANCE = 0.2; // Chance to keep loot pristine (no processing)
+
+	// Magazine processing probabilities (for standalone magazines only)
+	protected static const float MAGAZINE_EMPTY_CHANCE = 0.8; // Chance for standalone magazines to be completely empty
+	protected static const float MAGAZINE_MIN_PERCENTAGE = 0.1; // Minimum ammo when standalone magazine is not empty
+	protected static const float MAGAZINE_MAX_PERCENTAGE = 0.5; // Maximum ammo when standalone magazine is not empty
+
+	// Loaded magazine ammo limits (magazines in weapons)
+	protected static const int LOADED_MAG_MIN_AMMO = 0; // Minimum ammo for loaded magazines (goes to full capacity)
+
+	// Item deletion pattern
+	protected static ref array<string> ITEMS_TO_DELETE_PATTERNS = {"weapons/grenades", "weapons/ammo", "items/medicine", "items/equipment"};
+	protected static ref array<string> LAUNCHER_PATTERNS = {"weapons/launchers"};
 	override void OnPostInit(IEntity owner)
 	{
 		super.OnPostInit(owner);
@@ -140,6 +151,11 @@ class AUA_LootReducer : ScriptComponent
 
 		foreach (IEntity item : allItems)
 		{
+			// Chance to keep this item completely pristine
+			float randomChance = Math.RandomFloat01();
+			if (randomChance < PRISTINE_LOOT_CHANCE)
+				continue; // Skip processing this item entirely
+
 			if (ProcessMagazineItem(item))
 				processedMagazines++;
 
@@ -176,7 +192,7 @@ class AUA_LootReducer : ScriptComponent
 					if (magazine)
 					{
 						// Set ammo to minimum count to empty the launcher
-						magazine.SetAmmoCount(MIN_AMMO_COUNT);
+						magazine.SetAmmoCount(LOADED_MAG_MIN_AMMO);
 						// Try to delete the rocket entity if it exists
 						IEntity magazineEntity = magazine.GetOwner();
 						if (magazineEntity)
@@ -196,7 +212,7 @@ class AUA_LootReducer : ScriptComponent
 			foreach (BaseMuzzleComponent muzzle : muzzles)
 			{
 				BaseMagazineComponent magazine = muzzle.GetMagazine();
-				if (magazine && ProcessMagazineComponent(magazine))
+				if (magazine && ProcessMagazineComponent(magazine, true)) // true = loaded magazine
 					processedAny = true;
 			}
 			return processedAny;
@@ -206,23 +222,45 @@ class AUA_LootReducer : ScriptComponent
 		BaseMagazineComponent magazineComponent = BaseMagazineComponent.Cast(item.FindComponent(BaseMagazineComponent));
 		if (magazineComponent)
 		{
-			return ProcessMagazineComponent(magazineComponent);
+			return ProcessMagazineComponent(magazineComponent, false); // false = standalone magazine
 		}
 
 		return false;
 	}
 
-	protected bool ProcessMagazineComponent(BaseMagazineComponent magazine)
+	protected bool ProcessMagazineComponent(BaseMagazineComponent magazine, bool isLoadedInWeapon = false)
 	{
 		if (!magazine)
 			return false;
 
 		int currentAmmo = magazine.GetAmmoCount();
-		if (currentAmmo <= MAX_AMMO_COUNT)
-			return false; // Already low enough
+		int newAmmo;
 
-		// Set random ammo count between MIN_AMMO_COUNT and MAX_AMMO_COUNT
-		int newAmmo = Math.RandomInt(MIN_AMMO_COUNT, MAX_AMMO_COUNT + 1); // +1 because RandomInt is exclusive on upper bound
+		if (isLoadedInWeapon)
+		{
+			// Loaded magazines: random ammo from 0 to full capacity
+			int maxCapacity = magazine.GetMaxAmmoCount();
+			newAmmo = Math.RandomInt(LOADED_MAG_MIN_AMMO, maxCapacity + 1); // +1 because RandomInt is exclusive on upper bound
+		}
+		else
+		{
+			// Standalone magazines: new weighted system
+			float emptyChance = Math.RandomFloat01();
+			if (emptyChance < MAGAZINE_EMPTY_CHANCE)
+			{
+				// Empty magazine
+				newAmmo = 0;
+			}
+			else
+			{
+				// Partially filled magazine based on percentage of capacity
+				int maxCapacity = magazine.GetMaxAmmoCount();
+				int minAmmo = Math.Max(1, Math.Round(maxCapacity * MAGAZINE_MIN_PERCENTAGE)); // At least 1 bullet
+				int maxAmmo = Math.Max(minAmmo, Math.Round(maxCapacity * MAGAZINE_MAX_PERCENTAGE));
+				newAmmo = Math.RandomInt(minAmmo, maxAmmo + 1); // +1 because RandomInt is exclusive on upper bound
+			}
+		}
+
 		magazine.SetAmmoCount(newAmmo);
 		return true;
 	}
