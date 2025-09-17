@@ -1,7 +1,7 @@
 SCR_ChimeraCharacter {
  ID "520EC961A090B1EE"
  components {
-  AUA_NPCDeathMagazineHandler "{6660C688445655D1}" {
+  AUA_LootReducer "{666277235CC6F1F3}" {
   }
  }
 }

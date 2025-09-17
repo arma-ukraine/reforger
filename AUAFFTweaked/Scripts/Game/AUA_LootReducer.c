@@ -1,8 +1,8 @@
-// Modifies NPC magazine ammo to 0-3 bullets when they die and removes grenades/rockets
-[ComponentEditorProps(category: "GameScripted/Custom", description: "Reduces NPC magazine ammo on death and removes explosives")]
-class AUA_NPCDeathMagazineHandlerClass : ScriptComponentClass {}
+// Reduces NPC loot quality when they die - limits magazine ammo and removes explosives
+[ComponentEditorProps(category: "GameScripted/Custom", description: "Reduces NPC loot quality on death")]
+class AUA_LootReducerClass : ScriptComponentClass {}
 
-class AUA_NPCDeathMagazineHandler : ScriptComponent
+class AUA_LootReducer : ScriptComponent
 {
 	// Configurable patterns for items to delete from NPC inventory
 	protected static ref array<string> ITEMS_TO_DELETE_PATTERNS = {"grenade", "40mm", "ammo_rocket"};
@@ -50,7 +50,7 @@ class AUA_NPCDeathMagazineHandler : ScriptComponent
 		}
 		else
 		{
-			Print("AUA_NPCDeathMagazineHandler: Could not find damage manager component", LogLevel.WARNING);
+			Print("AUA_LootReducer: Could not find damage manager component", LogLevel.WARNING);
 		}
 	}
 
@@ -151,7 +151,7 @@ class AUA_NPCDeathMagazineHandler : ScriptComponent
 			}
 		}
 
-		Print(string.Format("AUA_NPCDeathMagazineHandler: Processed %1 magazines, removed %2 items", processedMagazines, removedItems), LogLevel.NORMAL);
+		Print(string.Format("AUA_LootReducer: Processed %1 magazines, removed %2 items", processedMagazines, removedItems), LogLevel.NORMAL);
 	}
 
 	protected bool ProcessMagazineItem(IEntity item)
