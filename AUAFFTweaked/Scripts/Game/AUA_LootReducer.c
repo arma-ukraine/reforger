@@ -27,6 +27,11 @@ class AUA_LootReducer : ScriptComponent
 	};
 
 	protected static const ref array<string> LAUNCHER_PATTERNS = {"weapons/launchers"};
+
+	// Items exempt from all processing (neither magazine processing nor deletion)
+	protected static const ref array<string> EXEMPT_ITEM_PATTERNS = {
+		"items/equipment/accessories/dogtags"
+	};
 	override void OnPostInit(IEntity owner)
 	{
 		super.OnPostInit(owner);
@@ -96,6 +101,28 @@ class AUA_LootReducer : ScriptComponent
 
 		// Process magazines and remove explosives
 		ProcessInventory(character);
+	}
+
+	protected bool IsItemExempt(IEntity item)
+	{
+		if (!item)
+			return false;
+
+		auto prefabData = item.GetPrefabData();
+		if (!prefabData)
+			return false;
+
+		string prefabName = prefabData.GetPrefabName();
+		prefabName.ToLower();
+
+		// Check if item matches any exempt pattern
+		foreach (string pattern : EXEMPT_ITEM_PATTERNS)
+		{
+			if (prefabName.Contains(pattern))
+				return true;
+		}
+
+		return false;
 	}
 
 	protected bool ShouldDeleteItem(IEntity item)
@@ -172,6 +199,10 @@ class AUA_LootReducer : ScriptComponent
 
 		foreach (IEntity item : allItems)
 		{
+			// Check if item is exempt from all processing
+			if (IsItemExempt(item))
+				continue;
+
 			// Chance to keep this item completely pristine
 			float randomChance = Math.RandomFloat01();
 			if (randomChance < PRISTINE_LOOT_CHANCE)
