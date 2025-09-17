@@ -19,9 +19,14 @@ class AUA_LootReducer : ScriptComponent
 	// Loaded magazine ammo limits (magazines in weapons)
 	protected static const int LOADED_MAG_MIN_AMMO = 0; // Minimum ammo for loaded magazines (goes to full capacity)
 
-	// Item deletion pattern
-	protected static ref array<string> ITEMS_TO_DELETE_PATTERNS = {"weapons/grenades", "weapons/ammo", "items/medicine", "items/equipment"};
-	protected static ref array<string> LAUNCHER_PATTERNS = {"weapons/launchers"};
+	// Item deletion configuration - easily extensible
+	// Format: {patterns_array, probability_as_string}
+	protected static ref array<ref array<ref array<string>>> DELETION_CONFIG = {
+		{{"items/medicine", "items/equipment"}, {"0.95"}}, // medical items, maps, etc.
+		{{"weapons/grenades","weapons/ammo"}, {"0.8"}}, // grenades, rockets, etc.
+	};
+
+	protected static const ref array<string> LAUNCHER_PATTERNS = {"weapons/launchers"};
 	override void OnPostInit(IEntity owner)
 	{
 		super.OnPostInit(owner);
@@ -100,15 +105,31 @@ class AUA_LootReducer : ScriptComponent
 
 		// Check by prefab name patterns for items to delete
 		auto prefabData = item.GetPrefabData();
-		if (prefabData)
-		{
-			string prefabName = prefabData.GetPrefabName();
-			prefabName.ToLower();
+		if (!prefabData)
+			return false;
 
-			foreach (string pattern : ITEMS_TO_DELETE_PATTERNS)
+		string prefabName = prefabData.GetPrefabName();
+		prefabName.ToLower();
+
+		// Check each deletion config entry
+		foreach (auto configEntry : DELETION_CONFIG)
+		{
+			if (configEntry.Count() < 2)
+				continue;
+
+			// Get patterns array and probability
+			auto patterns = configEntry[0];
+			float deletionChance = configEntry[1][0].ToFloat();
+
+			// Check if item matches any pattern in this config entry
+			foreach (string pattern : patterns)
 			{
 				if (prefabName.Contains(pattern))
-					return true;
+				{
+					// Roll for deletion based on probability
+					float randomRoll = Math.RandomFloat01();
+					return randomRoll < deletionChance;
+				}
 			}
 		}
 
